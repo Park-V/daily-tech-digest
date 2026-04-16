@@ -1,0 +1,84 @@
+name: Daily Digest
+
+on:
+  # 11:30 UTC = 7:30 AM EDT (summer).  In winter (EST) this fires at 6:30 AM ET.
+  # Change to "30 12 * * *" (12:30 UTC) if you want 7:30 AM year-round in EST.
+  schedule:
+    - cron: '30 11 * * *'
+
+  # Lets you click "Run workflow" on the Actions tab any time.
+  workflow_dispatch:
+
+# Required so the job can push the updated state files back to the repo.
+permissions:
+  contents: write
+
+jobs:
+  run-digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Cache pip packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run digest
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
+          # digest.py reads FEEDLYVP_* internally; mapped from FEEDLYDIGEST_* secrets
+          FEEDLYVP_FROM_EMAIL: ${{ secrets.FEEDLYDIGEST_FROM_EMAIL }}
+          FEEDLYVP_TO_EMAIL: ${{ secrets.FEEDLYDIGEST_TO_EMAIL }}
+        run: python digest.py
+
+      - name: Commit updated state files
+        run: |
+          git config user.name "FeedlyVP Bot"
+          git config user.email "actions@github.com"
+          git add seen_urls.json digest_log.json
+          # Only commit if something actually changed
+          git diff --staged --quiet \
+            && echo "No state changes to commit." \
+            || git commit -m "chore: update digest state [skip ci]"
+          git push
+
+      - name: Send failure alert
+        if: failure()
+        env:
+          SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
+          FEEDLYVP_FROM_EMAIL: ${{ secrets.FEEDLYDIGEST_FROM_EMAIL }}
+          FEEDLYVP_TO_EMAIL: ${{ secrets.FEEDLYDIGEST_TO_EMAIL }}
+        run: |
+          python - <<'EOF'
+          import os
+          from sendgrid import SendGridAPIClient
+          from sendgrid.helpers.mail import Mail
+          body = (
+              "FeedlyVP failed today — check the logs at:\n"
+              "https://github.com/vickypark/feedlydigest/actions"
+          )
+          sg = SendGridAPIClient(os.environ["SENDGRID_API_KEY"])
+          sg.send(Mail(
+              from_email=os.environ["FEEDLYVP_FROM_EMAIL"],
+              to_emails=os.environ["FEEDLYVP_TO_EMAIL"],
+              subject="FeedlyVP FAILED — action required",
+              html_content=body,
+          ))
+          print("Failure alert sent.")
+          EOF

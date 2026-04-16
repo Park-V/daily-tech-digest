@@ -1,0 +1,54 @@
+name: Weekly Digest
+
+on:
+  # 12:00 UTC = 8:00 AM EDT (summer) / 7:00 AM EST (winter)
+  schedule:
+    - cron: '0 12 * * 0'   # every Sunday
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  run-weekly-digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Cache pip packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run weekly digest
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
+          FEEDLYVP_FROM_EMAIL: ${{ secrets.FEEDLYDIGEST_FROM_EMAIL }}
+          FEEDLYVP_TO_EMAIL: ${{ secrets.FEEDLYDIGEST_TO_EMAIL }}
+        run: python weekly_digest.py
+
+      - name: Commit updated digest_log.json
+        run: |
+          git config user.name "FeedlyVP Bot"
+          git config user.email "actions@github.com"
+          git add digest_log.json
+          git diff --staged --quiet \
+            && echo "No log changes to commit." \
+            || git commit -m "chore: update weekly digest log [skip ci]"
+          git push
