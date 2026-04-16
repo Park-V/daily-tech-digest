@@ -144,7 +144,7 @@ def fetch_feed(feed_cfg: dict, category: str) -> list | None:
 # ---------------------------------------------------------------------------
 
 def score_article(client: anthropic.Anthropic, article: dict, config: dict) -> dict | None:
-    """Score one article. Returns article with score fields, or None on failure."""
+    """Score one article. Retries up to 3 times on failure. Returns None if all attempts fail."""
     hi_kw = config.get("high_priority_keywords", [])
     comp_kw = config.get("competitor_keywords", [])
     kw_ctx = ""
@@ -162,30 +162,38 @@ def score_article(client: anthropic.Anthropic, article: dict, config: dict) -> d
         "Return ONLY valid JSON."
     )
 
-    try:
-        resp = client.messages.create(
-            model=MODEL,
-            max_tokens=300,
-            system=SCORING_SYSTEM,
-            messages=[{"role": "user", "content": prompt}],
-        )
-        raw = resp.content[0].text.strip()
-        # Tolerate ```json ... ``` wrappers
-        match = re.search(r"\{.*\}", raw, re.DOTALL)
-        if not match:
-            raise ValueError("No JSON object found in response")
-        data = json.loads(match.group())
-        article["score"] = int(data.get("score", 0))
-        article["ai_summary"] = str(data.get("summary", "")).strip()
-        article["why"] = str(data.get("why", "")).strip()
-        article["weighted_score"] = article["score"] * article["weight"]
-        return article
-    except Exception as exc:
-        print(
-            f"  [WARN] Scoring failed for '{article['title'][:55]}': {exc}",
-            file=sys.stderr,
-        )
-        return None
+    max_attempts = 3
+    retry_delay = 5  # seconds between retries
+
+    for attempt in range(1, max_attempts + 1):
+        try:
+            resp = client.messages.create(
+                model=MODEL,
+                max_tokens=300,
+                system=SCORING_SYSTEM,
+                messages=[{"role": "user", "content": prompt}],
+            )
+            raw = resp.content[0].text.strip()
+            # Tolerate ```json ... ``` wrappers
+            match = re.search(r"\{.*\}", raw, re.DOTALL)
+            if not match:
+                raise ValueError("No JSON object found in response")
+            data = json.loads(match.group())
+            article["score"] = int(data.get("score", 0))
+            article["ai_summary"] = str(data.get("summary", "")).strip()
+            article["why"] = str(data.get("why", "")).strip()
+            article["weighted_score"] = article["score"] * article["weight"]
+            return article
+        except Exception as exc:
+            print(
+                f"  [WARN] Attempt {attempt}/{max_attempts} failed for "
+                f"'{article['title'][:50]}': {type(exc).__name__}: {exc}",
+                file=sys.stderr,
+            )
+            if attempt < max_attempts:
+                time.sleep(retry_delay)
+
+    return None
 
 
 # ---------------------------------------------------------------------------
@@ -360,10 +368,20 @@ def main() -> None:
                 "FEEDLYVP_FROM_EMAIL": "sender email address",
             }
         )
-    missing = [k for k in required_env if not os.environ.get(k)]
+    missing = [k for k in required_env if not os.environ.get(k, "").strip()]
     if missing:
         for k in missing:
-            print(f"ERROR: {k} ({required_env[k]}) is not set", file=sys.stderr)
+            print(f"ERROR: {k} ({required_env[k]}) is not set or is empty", file=sys.stderr)
+        sys.exit(1)
+
+    # Confirm the key looks plausible before spending time on feed fetching
+    api_key = os.environ["ANTHROPIC_API_KEY"].strip()
+    if not api_key.startswith("sk-"):
+        print(
+            f"ERROR: ANTHROPIC_API_KEY does not look valid (got '{api_key[:8]}…'). "
+            "Expected a key starting with 'sk-'.",
+            file=sys.stderr,
+        )
         sys.exit(1)
 
     now = datetime.now(timezone.utc)
@@ -372,7 +390,7 @@ def main() -> None:
 
     config = load_config()
     seen_urls = load_seen_urls()
-    client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+    client = anthropic.Anthropic(api_key=api_key)
 
     # Check for stale digest (last successful run > 2 days ago)
     stale_warning = get_stale_warning(load_digest_log(), now)
