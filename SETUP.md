@@ -101,19 +101,12 @@ No pull request needed — committing directly to `main` is fine for a personal 
 
 ## 6. Schedule details
 
-The cron is set to **11:30 UTC**, which equals:
+The cron is set to **15:30 UTC**, which equals:
 
-- **7:30 AM EDT** (April – November, Eastern Daylight Time)
-- **6:30 AM EST** (November – March, Eastern Standard Time)
+- **7:30 AM PST** (November – March, Pacific Standard Time)
+- **8:30 AM PDT** (March – November, Pacific Daylight Time)
 
-If you want a consistent 7:30 AM year-round in EST, change line 5 of
-`.github/workflows/daily-digest.yml` to:
-
-```yaml
-    - cron: '30 12 * * *'   # 7:30 AM EST / 8:30 AM EDT
-```
-
-Commit that change the same way as a feeds edit (pencil icon → commit to main).
+The weekly digest runs on the same UTC time every Sunday.
 
 ---
 
