@@ -1,10 +1,9 @@
 name: Daily Digest
 
 on:
-  # 11:30 UTC = 7:30 AM EDT (summer).  In winter (EST) this fires at 6:30 AM ET.
-  # Change to "30 12 * * *" (12:30 UTC) if you want 7:30 AM year-round in EST.
+  # 15:30 UTC = 7:30 AM PST (winter) / 8:30 AM PDT (summer)
   schedule:
-    - cron: '30 11 * * *'
+    - cron: '30 15 * * *'
 
   # Lets you click "Run workflow" on the Actions tab any time.
   workflow_dispatch:
@@ -41,10 +40,8 @@ jobs:
       - name: Run digest
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
-          # digest.py reads FEEDLYVP_* internally; mapped from FEEDLYDIGEST_* secrets
-          FEEDLYVP_FROM_EMAIL: ${{ secrets.FEEDLYDIGEST_FROM_EMAIL }}
-          FEEDLYVP_TO_EMAIL: ${{ secrets.FEEDLYDIGEST_TO_EMAIL }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python digest.py
 
       - name: Commit updated state files
@@ -61,24 +58,15 @@ jobs:
       - name: Send failure alert
         if: failure()
         env:
-          SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
-          FEEDLYVP_FROM_EMAIL: ${{ secrets.FEEDLYDIGEST_FROM_EMAIL }}
-          FEEDLYVP_TO_EMAIL: ${{ secrets.FEEDLYDIGEST_TO_EMAIL }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
           python - <<'EOF'
-          import os
-          from sendgrid import SendGridAPIClient
-          from sendgrid.helpers.mail import Mail
-          body = (
-              "FeedlyVP failed today — check the logs at:\n"
-              "https://github.com/vickypark/feedlydigest/actions"
-          )
-          sg = SendGridAPIClient(os.environ["SENDGRID_API_KEY"])
-          sg.send(Mail(
-              from_email=os.environ["FEEDLYVP_FROM_EMAIL"],
-              to_emails=os.environ["FEEDLYVP_TO_EMAIL"],
-              subject="FeedlyVP FAILED — action required",
-              html_content=body,
+          import asyncio, os
+          from telegram import Bot
+          asyncio.run(Bot(os.environ["TELEGRAM_BOT_TOKEN"]).send_message(
+              chat_id=os.environ["TELEGRAM_CHAT_ID"],
+              text="⚠️ FeedlyVP failed today — check logs at https://github.com/vickypark/feedlydigest/actions",
           ))
-          print("Failure alert sent.")
+          print("Failure alert sent to Telegram.")
           EOF
