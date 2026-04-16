@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """
 FeedlyVP — Personal Tech News Digest
-Fetches RSS feeds, scores articles with Claude, emails the best ones via SendGrid.
+Fetches RSS feeds, scores articles with Claude, delivers via Telegram.
 """
 
 import argparse
+import asyncio
 import json
 import os
 import re
@@ -17,8 +18,8 @@ from pathlib import Path
 import feedparser
 import yaml
 import anthropic
-from sendgrid import SendGridAPIClient
-from sendgrid.helpers.mail import Mail
+from telegram import Bot
+from telegram.constants import ParseMode
 
 # ---------------------------------------------------------------------------
 # Paths & constants
@@ -32,15 +33,24 @@ TOP_N = 15
 SCORE_THRESHOLD = 7
 MODEL = "claude-sonnet-4-20250514"
 
-SCORING_SYSTEM = """You are a relevance filter for a Solution Consultant at Oracle NetSuite \
-who pitches and demos ERP and AI-infused enterprise software to existing customers.
+SCORING_SYSTEM = """You are a relevance filter for a technology and business professional \
+who follows tech strategy, AI, and the broader forces reshaping industries and companies.
 
-Score HIGH (8-10): enterprise AI, agentic workflows, finance automation,
-AP/AR/FP&A, ERP trends, competitor moves (Salesforce, SAP, Workday, \
-Microsoft Dynamics), AI policy, tech's business impact.
+Score HIGH (8-10):
+- AI breakthroughs, agent systems, foundation models, and their real-world deployment
+- How technology is changing business models, strategy, or competitive dynamics
+- Enterprise software, cloud, and platform shifts (major vendors, M&A, market moves)
+- Economic and policy forces acting on tech: regulation, labor, geopolitics, antitrust
+- Organizational and leadership change driven by technology
+- Substantive analysis from researchers, investors, or operators with original insight
 
-Score LOW (1-4): consumer gadgets, smartphone reviews, gaming, \
-celebrity tech, lifestyle.
+Score MEDIUM (5-7):
+- Solid tech or business reporting without a strong strategic angle
+- Product launches or funding rounds with broader market implications
+- Industry trends that are real but not urgent
+
+Score LOW (1-4): consumer gadgets, smartphone specs, gaming, celebrity or lifestyle \
+content, opinion pieces with no new information, and PR-driven announcements.
 
 Return ONLY valid JSON: {"score": <1-10>, "summary": "<2 sentences>", \
 "why": "<one short phrase>"}"""
@@ -231,114 +241,314 @@ def get_big_picture(client: anthropic.Anthropic, articles: list) -> str:
 # HTML builder
 # ---------------------------------------------------------------------------
 
-def _score_color(score: int) -> str:
+# Category display metadata: emoji + left-border accent colour
+_CATEGORY_META: dict[str, tuple[str, str]] = {
+    "AI & Research":            ("🤖", "#7c3aed"),
+    "Enterprise & ERP":         ("🏢", "#2563eb"),
+    "Tech Strategy & Analysis": ("📊", "#0f766e"),
+    "Broad Tech News":          ("📰", "#475569"),
+    "Community & Practitioner": ("💬", "#ea580c"),
+}
+_DEFAULT_CATEGORY_META = ("📌", "#6b7280")
+
+
+def _badge(score: int) -> tuple[str, str]:
+    """Return (background, text-color) for a score pill. 9-10 = green, 7-8 = blue."""
     if score >= 9:
-        return "#10b981"  # emerald
-    if score >= 7:
-        return "#f59e0b"  # amber
-    return "#ef4444"  # red
+        return ("#d1fae5", "#065f46")   # mint chip / deep green text
+    return ("#dbeafe", "#1e40af")       # sky chip / deep blue text
 
 
-def build_html(articles: list, big_picture: str, run_date: str, stale_warning: str = "") -> str:
-    cards = ""
-    for article in articles:
-        color = _score_color(article["score"])
-        cards += f"""
-        <div style="background:#ffffff;border-radius:10px;padding:20px 22px;
-                    margin-bottom:14px;border-left:4px solid {color};
-                    box-shadow:0 1px 4px rgba(0,0,0,0.07);">
-          <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
-            <tr>
-              <td style="font-size:11px;color:#888;text-transform:uppercase;
-                         letter-spacing:0.6px;">{article['feed_name']}</td>
-              <td align="right">
-                <span style="background:{color};color:#fff;border-radius:12px;
-                             padding:2px 9px;font-size:11px;font-weight:700;
-                             white-space:nowrap;">{article['score']}/10</span>
-              </td>
-            </tr>
-          </table>
-          <h3 style="margin:0 0 8px;font-size:16px;line-height:1.4;color:#111;">
-            <a href="{article['url']}" style="color:#111;text-decoration:none;">
-              {article['title']}
-            </a>
-          </h3>
-          <p style="margin:0 0 6px;color:#444;font-size:14px;line-height:1.65;">
-            {article['ai_summary']}
-          </p>
-          <span style="font-size:11px;color:#aaa;font-style:italic;">{article['why']}</span>
-        </div>"""
+def _group_by_category(articles: list) -> dict:
+    """Preserve ranked order within each group; preserve first-seen category order."""
+    groups: dict[str, list] = {}
+    for a in articles:
+        groups.setdefault(a.get("category", "Other"), []).append(a)
+    return groups
 
+
+def build_html(
+    articles: list,
+    big_picture: str,
+    run_date: str,
+    stale_warning: str = "",
+    feeds_ok: int = 0,
+) -> str:
+
+    # ── stale warning banner (built before main f-string to avoid nesting) ──
+    stale_banner = ""
+    if stale_warning:
+        stale_banner = f"""
+    <div class="stale-banner"
+         style="background:#fffbeb;border:1px solid #fcd34d;border-radius:10px;
+                padding:12px 16px;margin-bottom:20px;font-size:13px;
+                color:#92400e;line-height:1.5;">
+      {stale_warning}
+    </div>"""
+
+    # ── article sections grouped by category ────────────────────────────────
+    sections_html = ""
+    for category, cat_articles in _group_by_category(articles).items():
+        emoji, accent = _CATEGORY_META.get(category, _DEFAULT_CATEGORY_META)
+
+        cards_html = ""
+        for a in cat_articles:
+            badge_bg, badge_fg = _badge(a["score"])
+            safe_title = (
+                a["title"]
+                .replace("&", "&amp;")
+                .replace("<", "&lt;")
+                .replace(">", "&gt;")
+                .replace('"', "&quot;")
+            )
+            cards_html += f"""
+      <div class="card"
+           style="background:#ffffff;border-radius:12px;padding:20px 22px;
+                  margin-bottom:12px;border:1px solid #f1f5f9;
+                  box-shadow:0 1px 3px rgba(0,0,0,0.06),0 4px 16px rgba(0,0,0,0.04);">
+        <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:10px;">
+          <tr>
+            <td style="font-size:10px;font-variant:small-caps;font-weight:700;
+                       color:#94a3b8;letter-spacing:0.6px;vertical-align:middle;">
+              {a['feed_name']}
+            </td>
+            <td align="right" style="vertical-align:middle;width:1%;">
+              <span style="display:inline-block;background:{badge_bg};color:{badge_fg};
+                           border-radius:20px;padding:3px 11px;font-size:11px;
+                           font-weight:800;white-space:nowrap;letter-spacing:0.2px;">
+                {a['score']}&thinsp;/&thinsp;10
+              </span>
+            </td>
+          </tr>
+        </table>
+        <h3 style="margin:0 0 10px;font-size:16px;line-height:1.45;
+                   font-weight:700;color:#0f172a;">
+          <a href="{a['url']}" class="card-title"
+             style="color:#0f172a;text-decoration:none;">{safe_title}</a>
+        </h3>
+        <p class="summary"
+           style="margin:0 0 10px;color:#475569;font-size:14px;line-height:1.72;">
+          {a['ai_summary']}
+        </p>
+        <p class="why"
+           style="margin:0;font-size:12px;color:#94a3b8;font-style:italic;line-height:1.5;">
+          &#8627;&nbsp;{a['why']}
+        </p>
+      </div>"""
+
+        sections_html += f"""
+    <div style="margin-bottom:32px;">
+      <div style="border-left:3px solid {accent};padding:2px 0 2px 14px;margin-bottom:16px;">
+        <span class="section-label"
+              style="font-size:11px;font-weight:800;color:#374151;
+                     text-transform:uppercase;letter-spacing:1px;">
+          {emoji}&nbsp; {category}
+        </span>
+      </div>
+      {cards_html}
+    </div>"""
+
+    # ── assemble full email ──────────────────────────────────────────────────
     return f"""<!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <meta name="supported-color-schemes" content="light dark">
   <title>FeedlyVP &mdash; {run_date}</title>
+  <style>
+    :root {{ color-scheme: light dark; }}
+
+    /* ── Dark mode ───────────────────────────────────────── */
+    @media (prefers-color-scheme: dark) {{
+      body, .body-bg {{ background-color: #0c1117 !important; }}
+      .wrapper       {{ background-color: #0c1117 !important; }}
+      .card          {{ background-color: #161d27 !important;
+                        border-color: #1e2d3d !important; }}
+      .card-title    {{ color: #e2e8f0 !important; }}
+      .summary       {{ color: #94a3b8 !important; }}
+      .why           {{ color: #64748b !important; }}
+      .section-label {{ color: #94a3b8 !important; }}
+      .footer-text   {{ color: #475569 !important; }}
+      .footer-sub    {{ color: #334155 !important; }}
+      .footer-rule   {{ border-color: #1e293b !important; }}
+      .stale-banner  {{ background-color: #451a03 !important;
+                        border-color: #78350f !important;
+                        color: #fcd34d !important; }}
+    }}
+
+    /* ── Mobile — 375 px (iPhone SE / iPhone 17 Pro) ────── */
+    @media (max-width: 480px) {{
+      .wrapper {{ padding: 12px 8px !important; }}
+      .hero    {{ padding: 22px 18px !important; }}
+      .card    {{ padding: 16px 16px !important; }}
+    }}
+  </style>
 </head>
-<body style="margin:0;padding:0;background:#f0f2f5;
+<body class="body-bg"
+      style="margin:0;padding:0;background:#f1f5f9;-webkit-text-size-adjust:100%;
              font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,
              'Helvetica Neue',Arial,sans-serif;">
-  <div style="max-width:620px;margin:0 auto;padding:20px 12px;">
 
-    <!-- Header -->
-    <div style="background:linear-gradient(135deg,#1e1b4b 0%,#312e81 60%,#1e40af 100%);
-                border-radius:12px;padding:30px 24px;margin-bottom:20px;text-align:center;">
-      <h1 style="margin:0 0 6px;color:#fff;font-size:26px;font-weight:800;
-                 letter-spacing:-0.5px;">FeedlyVP</h1>
-      <p style="margin:0;color:#a5b4fc;font-size:13px;letter-spacing:0.3px;">
-        {run_date} &nbsp;·&nbsp; Enterprise Tech Digest
-      </p>
+  <div class="wrapper" style="max-width:600px;margin:0 auto;padding:24px 16px;">
+
+    <!-- ── HEADER ─────────────────────────────────────────────────── -->
+    <div style="text-align:center;margin-bottom:28px;">
+      <div style="display:inline-block;
+                  background:linear-gradient(160deg,#0f172a 0%,#1e293b 100%);
+                  border-radius:18px;padding:22px 36px;">
+        <p style="margin:0 0 2px;color:#64748b;font-size:10px;font-weight:700;
+                  text-transform:uppercase;letter-spacing:2px;">Enterprise Tech</p>
+        <h1 style="margin:0 0 4px;color:#f8fafc;font-size:28px;font-weight:800;
+                   letter-spacing:-0.5px;">FeedlyVP</h1>
+        <p style="margin:0;color:#64748b;font-size:12px;">{run_date}</p>
+      </div>
     </div>
 
-    {f'''<!-- Stale warning banner -->
-    <div style="background:#fef3c7;border:1px solid #f59e0b;border-radius:8px;
-                padding:12px 16px;margin-bottom:16px;font-size:13px;color:#92400e;">
-      {stale_warning}
-    </div>''' if stale_warning else ''}
+    {stale_banner}
 
-    <!-- Big Picture -->
-    <div style="background:linear-gradient(135deg,#4f46e5 0%,#7c3aed 100%);
-                border-radius:10px;padding:22px 24px;margin-bottom:22px;">
-      <p style="margin:0 0 10px;color:#c7d2fe;font-size:11px;text-transform:uppercase;
-                letter-spacing:1.2px;font-weight:700;">Today&rsquo;s Big Picture</p>
-      <p style="margin:0;color:#f5f3ff;font-size:15px;line-height:1.75;">
+    <!-- ── BIG PICTURE HERO ───────────────────────────────────────── -->
+    <div class="hero"
+         style="background:linear-gradient(145deg,#312e81 0%,#4338ca 50%,#6d28d9 100%);
+                border-radius:16px;padding:28px;margin-bottom:32px;
+                box-shadow:0 8px 32px rgba(79,70,229,0.22);">
+      <div style="display:inline-block;background:rgba(255,255,255,0.12);
+                  border-radius:20px;padding:4px 14px;margin-bottom:14px;">
+        <span style="color:rgba(255,255,255,0.9);font-size:10px;font-weight:800;
+                     text-transform:uppercase;letter-spacing:1.5px;">
+          &#10022;&thinsp;Today&rsquo;s Big Picture
+        </span>
+      </div>
+      <p style="margin:0;color:#e0e7ff;font-size:15px;line-height:1.8;">
         {big_picture}
       </p>
     </div>
 
-    <!-- Article count label -->
-    <p style="margin:0 0 12px;font-size:12px;color:#6b7280;
-              text-transform:uppercase;letter-spacing:0.8px;font-weight:600;">
-      Top {len(articles)} Stories
-    </p>
+    <!-- ── ARTICLE SECTIONS ───────────────────────────────────────── -->
+    {sections_html}
 
-    <!-- Article cards -->
-    {cards}
-
-    <!-- Footer -->
-    <div style="text-align:center;padding:22px 0 10px;color:#9ca3af;font-size:11px;">
-      <p style="margin:0;">Generated by FeedlyVP &nbsp;&middot;&nbsp; Powered by Claude</p>
+    <!-- ── FOOTER ─────────────────────────────────────────────────── -->
+    <div class="footer-rule"
+         style="border-top:1px solid #e2e8f0;padding-top:20px;text-align:center;">
+      <p class="footer-text"
+         style="margin:0 0 4px;color:#94a3b8;font-size:12px;">
+        {run_date}&nbsp;&middot;&nbsp;{len(articles)} articles&nbsp;&middot;&nbsp;{feeds_ok} feeds checked
+      </p>
+      <p class="footer-sub" style="margin:0;color:#cbd5e1;font-size:11px;">
+        FeedlyVP&nbsp;&middot;&nbsp;Powered by Claude
+      </p>
     </div>
+
   </div>
 </body>
 </html>"""
 
 
 # ---------------------------------------------------------------------------
-# SendGrid
+# Telegram delivery
 # ---------------------------------------------------------------------------
 
-def send_email(html: str, subject: str, to_email: str, from_email: str) -> int:
-    sg = SendGridAPIClient(os.environ["SENDGRID_API_KEY"])
-    message = Mail(
-        from_email=from_email,
-        to_emails=to_email,
-        subject=subject,
-        html_content=html,
+def _score_emoji(score: int) -> str:
+    if score == 10: return "🔥"
+    if score == 9:  return "⭐"
+    if score == 8:  return "🔵"
+    return "🟢"  # 7
+
+
+def _tg_escape(text: str) -> str:
+    """Escape a string for Telegram MarkdownV2. Backslash must be first."""
+    text = text.replace("\\", "\\\\")
+    for ch in ("_", "*", "[", "]", "(", ")", "~", "`", ">",
+               "#", "+", "-", "=", "|", "{", "}", ".", "!"):
+        text = text.replace(ch, f"\\{ch}")
+    return text
+
+
+def _tg_escape_url(url: str) -> str:
+    """Escape a URL for use inside a MarkdownV2 inline link [text](url)."""
+    return url.replace("\\", "\\\\").replace(")", "\\)")
+
+
+async def _send_telegram_digest(
+    bot_token: str,
+    chat_id: str,
+    articles: list,
+    big_picture: str,
+    run_date: str,
+    feeds_ok: int,
+    stale_warning: str,
+) -> int:
+    """Send full digest to Telegram. Returns total messages sent."""
+    delay = 1  # seconds between messages to avoid rate limits
+    sent = 0
+
+    async with Bot(token=bot_token) as bot:
+        # ── 1. Hero message ─────────────────────────────────────────────
+        stale_line = f"\n\n⚠️ {_tg_escape(stale_warning)}" if stale_warning else ""
+        hero = (
+            f"🗞 *FeedlyVP — {_tg_escape(run_date)}*"
+            f"{stale_line}\n\n"
+            f"{_tg_escape(big_picture)}\n\n"
+            f"📊 {len(articles)} articles scored 7\\+ from {feeds_ok} feeds today"
+        )
+        await bot.send_message(chat_id=chat_id, text=hero, parse_mode=ParseMode.MARKDOWN_V2)
+        sent += 1
+        await asyncio.sleep(delay)
+
+        # ── 2. One message per article ───────────────────────────────────
+        for a in articles:
+            emoji = _score_emoji(a["score"])
+            why_line = (
+                f"\n💡 _{_tg_escape(a['why'])}_\n" if a.get("why") else "\n"
+            )
+            msg = (
+                f"{emoji} *{_tg_escape(a['title'])}*\n\n"
+                f"🗂 {_tg_escape(a['category'])} · 📰 {_tg_escape(a['feed_name'])}\n\n"
+                f"{_tg_escape(a['ai_summary'])}\n"
+                f"{why_line}\n"
+                f"🔗 [Read Article]({_tg_escape_url(a['url'])})"
+            )
+            await bot.send_message(
+                chat_id=chat_id, text=msg, parse_mode=ParseMode.MARKDOWN_V2
+            )
+            sent += 1
+            await asyncio.sleep(delay)
+
+        # ── 3. Closing message ───────────────────────────────────────────
+        closing = (
+            f"✅ Digest complete — {len(articles)} articles from {feeds_ok} feeds\n"
+            "Next digest tomorrow at 7:30am PT"
+        )
+        await bot.send_message(chat_id=chat_id, text=closing)
+        sent += 1
+
+    return sent
+
+
+def deliver_telegram(
+    bot_token: str,
+    chat_id: str,
+    articles: list,
+    big_picture: str,
+    run_date: str,
+    feeds_ok: int,
+    stale_warning: str = "",
+) -> int:
+    """Synchronous entry point for Telegram delivery."""
+    return asyncio.run(
+        _send_telegram_digest(
+            bot_token, chat_id, articles, big_picture, run_date, feeds_ok, stale_warning
+        )
     )
-    response = sg.send(message)
-    return response.status_code
+
+
+def send_telegram_alert(bot_token: str, chat_id: str, text: str) -> None:
+    """Send a plain-text alert message to Telegram (sync wrapper)."""
+    async def _send() -> None:
+        async with Bot(token=bot_token) as bot:
+            await bot.send_message(chat_id=chat_id, text=text)
+    asyncio.run(_send())
 
 
 # ---------------------------------------------------------------------------
@@ -356,16 +566,15 @@ def main() -> None:
 
     print("=== FeedlyVP Digest ===")
     if args.preview:
-        print("  [PREVIEW MODE — email will not be sent]")
+        print("  [PREVIEW MODE — Telegram will not be used]")
 
-    # In preview mode SendGrid credentials are not needed
+    # In preview mode Telegram credentials are not needed
     required_env: dict[str, str] = {"ANTHROPIC_API_KEY": "Anthropic API key"}
     if not args.preview:
         required_env.update(
             {
-                "SENDGRID_API_KEY": "SendGrid API key",
-                "FEEDLYVP_TO_EMAIL": "recipient email address",
-                "FEEDLYVP_FROM_EMAIL": "sender email address",
+                "TELEGRAM_BOT_TOKEN": "Telegram bot token",
+                "TELEGRAM_CHAT_ID": "Telegram chat ID",
             }
         )
     missing = [k for k in required_env if not os.environ.get(k, "").strip()]
@@ -434,11 +643,10 @@ def main() -> None:
         )
         print(f"\nABORT: {alert}", file=sys.stderr)
         if not args.preview:
-            send_email(
-                alert,
-                "FeedlyVP ABORTED — unusually high article count",
-                os.environ["FEEDLYVP_TO_EMAIL"],
-                os.environ["FEEDLYVP_FROM_EMAIL"],
+            send_telegram_alert(
+                os.environ["TELEGRAM_BOT_TOKEN"],
+                os.environ["TELEGRAM_CHAT_ID"],
+                f"🚨 {alert}",
             )
         sys.exit(1)
 
@@ -488,29 +696,30 @@ def main() -> None:
     big_picture = get_big_picture(client, top_articles)
 
     # ------------------------------------------------------------------
-    # 5. Build HTML and deliver
+    # 5. Deliver
     # ------------------------------------------------------------------
-    html = build_html(top_articles, big_picture, run_date, stale_warning)
-    subject = f"FeedlyVP Digest — {run_date}"
-
     if args.preview:
         print("\n[5/5] Saving preview …")
+        html = build_html(top_articles, big_picture, run_date, stale_warning, feeds_ok)
         preview_path = BASE_DIR / "preview.html"
         preview_path.write_text(html, encoding="utf-8")
         print(f"  Saved → {preview_path}")
         # open in default browser on macOS
         subprocess.run(["open", str(preview_path)], check=False)
         print("  Opened in browser.")
-        status = None
+        messages_sent = None
     else:
-        print("\n[5/5] Building HTML and sending email …")
-        status = send_email(
-            html,
-            subject,
-            os.environ["FEEDLYVP_TO_EMAIL"],
-            os.environ["FEEDLYVP_FROM_EMAIL"],
+        print("\n[5/5] Delivering to Telegram …")
+        messages_sent = deliver_telegram(
+            os.environ["TELEGRAM_BOT_TOKEN"],
+            os.environ["TELEGRAM_CHAT_ID"],
+            top_articles,
+            big_picture,
+            run_date,
+            feeds_ok,
+            stale_warning,
         )
-        print(f"  SendGrid response: HTTP {status}")
+        print(f"  Sent {messages_sent} Telegram messages")
 
         # Persist state only on a real send (preview is non-destructive)
         save_seen_urls(seen_urls)
@@ -525,7 +734,7 @@ def main() -> None:
                 "feeds_failed": feeds_fail,
                 "articles_scored": len(scored),
                 "articles_sent": len(top_articles),
-                "sendgrid_status": status,
+                "telegram_messages_sent": messages_sent,
                 "big_picture": big_picture,
                 "articles": [
                     {
@@ -548,13 +757,12 @@ def main() -> None:
     print(f"\n{'='*36}")
     print(f"  Feeds fetched:     {feeds_ok}  ({feeds_fail} failed)")
     print(f"  Articles scored:   {len(scored)}  ({score_fail} failed)")
-    print(f"  Articles in email: {len(top_articles)}")
+    print(f"  Articles sent:     {len(top_articles)}")
     if args.preview:
         print(f"  Output:            {BASE_DIR / 'preview.html'}")
         print(f"  State files:       unchanged (preview mode)")
     else:
-        print(f"  Sent to:           {os.environ['FEEDLYVP_TO_EMAIL']}")
-        print(f"  SendGrid status:   {status}")
+        print(f"  Telegram messages: {messages_sent}")
     print(f"{'='*36}")
 
 
