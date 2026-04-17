@@ -131,5 +131,82 @@
         "category": "AI & Research"
       }
     ]
+  },
+  {
+    "type": "daily",
+    "date": "2026-04-17",
+    "run_at": "2026-04-17T04:42:07.678238+00:00",
+    "feeds_fetched": 15,
+    "feeds_failed": 0,
+    "articles_scored": 25,
+    "articles_sent": 8,
+    "telegram_messages_sent": 10,
+    "big_picture": "**Today's Big Picture:** Enterprise AI deployment is hitting critical technical and operational maturity challenges, with new research exposing fundamental reliability issues like numerical instability in LLMs and the urgent need for better autonomous agent frameworks that can handle complex, multi-step business workflows. Companies are responding by investing heavily in workforce upskilling rather than replacement, signaling that successful AI transformation requires human-AI collaboration rather than pure automation. For ERP consultants and enterprise software buyers, this means prioritizing AI solutions with robust error handling, formal verification capabilities, and clear workforce integration strategies over flashy but unreliable autonomous systems.",
+    "articles": [
+      {
+        "title": "WebXSkill: Skill Learning for Autonomous Web Agents",
+        "url": "https://arxiv.org/abs/2604.13318",
+        "source": "arXiv - AI",
+        "score": 9,
+        "summary": "WebXSkill introduces a novel framework for autonomous web agents that bridges the gap between textual workflow skills and executable code-based skills, addressing a key bottleneck in long-horizon browser task automation. This research tackles the critical challenge of enabling AI agents to perform complex, multi-step web-based workflows with better error recovery and adaptation capabilities.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Exploration and Exploitation Errors Are Measurable for Language Model Agents",
+        "url": "https://arxiv.org/abs/2604.13151",
+        "source": "arXiv - AI",
+        "score": 8,
+        "summary": "Research presents a framework for measuring exploration vs exploitation behaviors in language model agents, which is crucial for understanding and improving AI agent performance in complex decision-making tasks. This addresses a fundamental challenge in deploying autonomous AI systems across various domains including coding and physical AI applications.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "SciFi: A Safe, Lightweight, User-Friendly, and Fully Autonomous Agentic AI Workflow for Scientific Applications",
+        "url": "https://arxiv.org/abs/2604.13180",
+        "source": "arXiv - AI",
+        "score": 8,
+        "summary": "Research presents a framework for autonomous AI agents in scientific applications, featuring safety mechanisms and reliable deployment capabilities. This advances the practical implementation of agentic AI systems beyond current limitations in real-world research environments.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Numerical Instability and Chaos: Quantifying the Unpredictability of Large Language Models",
+        "url": "https://arxiv.org/abs/2604.13206",
+        "source": "arXiv - AI",
+        "score": 8,
+        "summary": "Research identifies numerical instability as a fundamental reliability issue for LLMs in agentic workflows, analyzing how floating-point precision errors propagate and amplify. This addresses a critical technical barrier to deploying AI agents in enterprise systems where predictable behavior is essential.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "These companies are actually upskilling their workers for AI - here's how they do it",
+        "url": "https://www.zdnet.com/article/how-companies-are-upskilling-workers-for-ai/",
+        "source": "ZDNet Enterprise",
+        "score": 7,
+        "summary": "Article examines how companies are proactively training workers for AI integration rather than replacing them, featuring real business leader perspectives on hiring and investment strategies. Provides tactical insights on workforce adaptation to AI transformation.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Antitrust on Aisle Five: How Well Do Divestiture Remedies Work?",
+        "url": "https://arxiv.org/abs/2604.15045",
+        "source": "arXiv - Economics & Tech Policy",
+        "score": 7,
+        "summary": "Academic research analyzing the long-term effectiveness of antitrust divestitures using grocery sector data, finding divested stores decline 31% in employment over five years. Provides systematic evidence on how structural remedies actually perform in practice, relevant to ongoing antitrust discussions in tech.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Towards Verified and Targeted Explanations through Formal Methods",
+        "url": "https://arxiv.org/abs/2604.14209",
+        "source": "arXiv - Machine Learning",
+        "score": 7,
+        "summary": "Research paper introduces formal methods to provide mathematical guarantees for AI explanations in safety-critical applications like autonomous driving and medical diagnosis. Addresses the gap between interpretable but unverified heuristic methods and formal verification techniques that lack targeted analysis.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "US Bill Mandates On-Device Age Verification",
+        "url": "https://reclaimthenet.org/us-bill-mandates-on-device-age-verification",
+        "source": "Hacker News",
+        "score": 7,
+        "summary": "A US bill mandating on-device age verification represents significant regulatory movement that could reshape how tech platforms and apps handle user authentication and data processing. This type of policy change forces technology companies to rethink their infrastructure and compliance strategies.",
+        "category": "Community & Practitioner"
+      }
+    ]
   }
 ]
