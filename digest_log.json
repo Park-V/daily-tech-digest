@@ -253,5 +253,50 @@
         "category": "Broad Tech News"
       }
     ]
+  },
+  {
+    "type": "daily",
+    "date": "2026-04-18",
+    "run_at": "2026-04-18T15:59:23.688948+00:00",
+    "feeds_fetched": 15,
+    "feeds_failed": 0,
+    "articles_scored": 39,
+    "articles_sent": 4,
+    "telegram_messages_sent": 6,
+    "big_picture": "**Today's Big Picture:** AI is rapidly expanding beyond its initial boundaries, with companies like Canva pivoting from niche tools to comprehensive workplace automation platforms and new players like Schematik extending AI coding assistance into hardware development. Meanwhile, the AI industry is experiencing significant organizational turbulence, as seen in OpenAI's leadership departures and strategic refocusing, while companies like Anthropic navigate shifting government relations through specialized offerings like cybersecurity models. For enterprise software buyers and ERP consultants, this signals both unprecedented opportunity\u2014as AI democratization makes advanced automation accessible to non-technical users\u2014and increased complexity in vendor selection, requiring careful evaluation of companies' long-term strategic stability and government compliance positioning.",
+    "articles": [
+      {
+        "title": "Canva Create - Canva launches its mission to democratize AI automation in the workplace",
+        "url": "https://diginomica.com/canva-launches-mission-democratize-ai-automation-workplace",
+        "source": "Diginomica",
+        "score": 7,
+        "summary": "Canva is launching a new AI platform to expand beyond visual design into broader workplace automation, representing a significant strategic pivot for the company. This move positions Canva to compete in the enterprise productivity space by democratizing AI tools for non-technical users.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Schematik Is \u2018Cursor for Hardware.\u2019 Anthropic Wants In",
+        "url": "https://www.wired.com/story/schematik-is-cursor-for-hardware-anthropic-wants-in-on-it/",
+        "source": "Wired",
+        "score": 8,
+        "summary": "Schematik is developing AI-powered code generation for hardware development, with Anthropic showing interest in the space. This represents an expansion of AI coding assistants from software into physical device design and engineering.",
+        "category": "Broad Tech News"
+      },
+      {
+        "title": "Anthropic\u2019s new cybersecurity model could get it back in the government\u2019s good graces",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/914229/tides-turning-anthropic-trump-administration-cybersecurity-mythos-preview",
+        "source": "The Verge",
+        "score": 8,
+        "summary": "Anthropic's new cybersecurity-focused AI model Claude Mythos Preview is potentially improving relations with the Trump administration after previous tensions over the company being labeled as politically biased. This represents a significant shift in AI policy dynamics and government-industry relations in the AI sector.",
+        "category": "Broad Tech News"
+      },
+      {
+        "title": "OpenAI\u2019s former Sora boss is leaving",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/914463/openai-sora-bill-peebles-kevin-weil-leaving-departing",
+        "source": "The Verge",
+        "score": 7,
+        "summary": "OpenAI's Sora video generation team leader Bill Peebles is leaving the company as OpenAI shifts priorities away from 'side quests' to focus on core areas. This reflects broader organizational changes at OpenAI as it navigates strategic focus and resource allocation decisions.",
+        "category": "Broad Tech News"
+      }
+    ]
   }
 ]
