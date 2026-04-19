@@ -298,5 +298,26 @@
         "category": "Broad Tech News"
       }
     ]
+  },
+  {
+    "type": "daily",
+    "date": "2026-04-19",
+    "run_at": "2026-04-19T15:59:16.072563+00:00",
+    "feeds_fetched": 15,
+    "feeds_failed": 0,
+    "articles_scored": 31,
+    "articles_sent": 1,
+    "telegram_messages_sent": 3,
+    "big_picture": "**Today's Big Picture:** The looming multi-year RAM shortage fundamentally reshapes enterprise technology planning, forcing CIOs to prioritize hardware acquisitions and extend refresh cycles well beyond typical 3-5 year windows. ERP solution consultants must immediately pivot to memory-optimized architectures and cloud-first strategies, as on-premises deployments will face severe cost inflation and availability constraints that could derail digital transformation timelines. This supply crisis creates a strategic inflection point where early hardware commitments and vendor relationships become competitive advantages, while late movers risk being priced out of essential infrastructure upgrades through 2030.",
+    "articles": [
+      {
+        "title": "The RAM shortage could last years",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/914672/the-ram-shortage-could-last-years",
+        "source": "The Verge",
+        "score": 7,
+        "summary": "A global RAM shortage is expected to persist through 2027-2030, with suppliers only meeting 60% of demand by late 2027 despite ramped production from Samsung, SK Hynix, and Micron. This hardware constraint could significantly impact enterprise technology deployments and AI infrastructure scaling.",
+        "category": "Broad Tech News"
+      }
+    ]
   }
 ]
