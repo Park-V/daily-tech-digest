@@ -514,5 +514,114 @@
         "category": "Broad Tech News"
       }
     ]
+  },
+  {
+    "type": "daily",
+    "date": "2026-04-21",
+    "run_at": "2026-04-21T16:35:23.901227+00:00",
+    "feeds_fetched": 15,
+    "feeds_failed": 0,
+    "articles_scored": 59,
+    "articles_sent": 12,
+    "telegram_messages_sent": 14,
+    "big_picture": "**Today's Big Picture:** The enterprise AI landscape is rapidly maturing from experimental chatbots to production-ready agentic systems that actually execute business processes, as evidenced by NVIDIA and Adobe's collaboration and Moonshot AI's 1,000-agent swarm technology\u2014but early adopters are already discovering the familiar pain of vendor lock-in that could constrain future AI strategies. Apple's CEO transition to John Ternus with AI as his primary challenge underscores how AI competency has become existential for tech leadership, while emerging tools that can clone open source software without attribution signal a fundamental shift in how intellectual property and competitive advantages will be created and protected. For enterprise buyers and ERP consultants, this means AI procurement decisions made today will have long-lasting strategic implications, requiring careful evaluation of vendor independence, integration flexibility, and the ability to adapt as agentic AI transforms core business processes over the next 2-3 years.",
+    "articles": [
+      {
+        "title": "Adobe Summit 2026 \u2013 AI has gone from know-it-all to actually getting work done, says NVIDIA CEO",
+        "url": "https://diginomica.com/adobe-summit-2026-ai-has-gone-know-it-all-actually-getting-work-done-says-nvidia-ceo",
+        "source": "Diginomica",
+        "score": 9,
+        "summary": "NVIDIA CEO Jensen Huang appeared at Adobe Summit to discuss the evolution of AI from knowledge systems to agentic AI that performs actual work. The collaboration between two major enterprise technology leaders signals a significant shift toward AI agents handling real business processes.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Early AI adopters stumble across the horror of vendor lock-in. Here we go again?",
+        "url": "https://diginomica.com/early-ai-adopters-stumble-across-horror-vendor-lock-here-we-go-again",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "Enterprise AI adopters are encountering vendor lock-in issues, a recurring problem that could significantly impact AI strategy and technology stack decisions. This highlights critical strategic considerations for companies deploying AI systems at scale.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Enterprise hits and misses - CIOs reckon with AI use cases, and bring on the agentic substrate debate",
+        "url": "https://diginomica.com/enterprise-hits-and-misses-cios-reckon-ai-use-cases-and-bring-agentic-substrate-debate",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "Analysis of enterprise AI adoption challenges facing CIOs, including discussion of agentic AI systems and Salesforce's strategic positioning. Covers the emerging debate around agentic substrate and practical AI implementation decisions for business leaders.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Moonshot AI's new Kimi K2.6 swarms your complex tasks with 1,000 collaborating agents",
+        "url": "https://www.zdnet.com/article/moonshot-ai-kimi-k2-6-swarms-complex-tasks-collaborating-agents/",
+        "source": "ZDNet Enterprise",
+        "score": 9,
+        "summary": "Moonshot AI's Kimi K2.6 introduces a system of 1,000 collaborating AI agents that can handle complex, multi-step engineering workflows. This represents a significant advancement in agentic AI systems that could transform how enterprises approach automated task execution and workflow management.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "DEI DOA?  Does IBM\u2019s $17m Trump 2.0 settlement signify the death of Diversity, Equity, and Inclusion?",
+        "url": "https://diginomica.com/dei-doa-does-ibms-17m-trump-20-settlement-signify-death-diversity-equity-and-inclusion",
+        "source": "Diginomica",
+        "score": 7,
+        "summary": "IBM settled a $17M lawsuit related to DEI practices, which could signal broader corporate shifts away from diversity programs under Trump 2.0. The settlement may influence how other tech companies approach DEI initiatives and compliance strategies.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Vibe coding requires more than a vibe",
+        "url": "https://diginomica.com/vibe-coding-requires-more-than-vibe",
+        "source": "Diginomica",
+        "score": 7,
+        "summary": "Zoho executive discusses how 'vibe coding' (likely AI-assisted development) creates opportunities for SaaS vendors to provide guidance and guardrails rather than being displaced. The piece addresses how enterprise software companies can adapt their strategy around non-developer coding capabilities.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Why UBI is making a comeback",
+        "url": "https://www.platformer.news/ubi-ai-public-wealth-fund-musk-openai-bores/",
+        "source": "Platformer",
+        "score": 7,
+        "summary": "Tech companies are promoting Universal Basic Income as a potential solution to address public concerns about AI-driven job displacement and economic disruption. The article examines this strategic positioning but expresses skepticism about the motivations and effectiveness of such proposals.",
+        "category": "Tech Strategy & Analysis"
+      },
+      {
+        "title": "John Ternus to become Apple CEO",
+        "url": "https://www.apple.com/newsroom/2026/04/tim-cook-to-become-apple-executive-chairman-john-ternus-to-become-apple-ceo/",
+        "source": "Hacker News",
+        "score": 8,
+        "summary": "This appears to be about a major leadership change at Apple, with John Ternus potentially becoming CEO. Leadership transitions at major tech companies like Apple have significant strategic implications for the industry and competitive dynamics.",
+        "category": "Community & Practitioner"
+      },
+      {
+        "title": "This AI Tool Rips Off Open Source Software Without Violating Copyright",
+        "url": "https://www.404media.co/this-ai-tool-rips-off-open-source-software-without-violating-copyright/",
+        "source": "404 Media",
+        "score": 7,
+        "summary": "Malus is a satirical but functional AI tool that creates 'clean room' clones of open source software, potentially allowing users to commercialize derivatives without attribution. This highlights emerging tensions around AI's ability to replicate code while technically avoiding copyright infringement.",
+        "category": "Tech Strategy & Analysis"
+      },
+      {
+        "title": "John Ternus\u2019 first big problem is AI",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/915662/john-ternus-apple-ceo-tim-cook-ai-problem-siri",
+        "source": "The Verge",
+        "score": 8,
+        "summary": "Apple announces John Ternus as Tim Cook's successor as CEO, with AI strategy being a critical challenge for the new leadership. The timing highlights Apple's ongoing struggle to compete in the AI space despite the technology's growing importance to tech companies.",
+        "category": "Broad Tech News"
+      },
+      {
+        "title": "BASIS: Balanced Activation Sketching with Invariant Scalars for \"Ghost Backpropagation\"",
+        "url": "https://arxiv.org/abs/2604.16324",
+        "source": "arXiv - Machine Learning",
+        "score": 7,
+        "summary": "BASIS introduces a new technique to reduce memory requirements for training deep neural networks by addressing the linear scaling bottleneck in backpropagation. This could enable training of much larger models that were previously memory-constrained.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "A Discordance-Aware Multimodal Framework with Multi-Agent Clinical Reasoning",
+        "url": "https://arxiv.org/abs/2604.16333",
+        "source": "arXiv - Machine Learning",
+        "score": 7,
+        "summary": "Research proposes a multi-agent AI system for medical decision support that addresses discordance between imaging data and patient symptoms in knee osteoarthritis diagnosis. The framework combines multimodal ML models with agent-based reasoning for clinical interpretation.",
+        "category": "AI & Research"
+      }
+    ]
   }
 ]
