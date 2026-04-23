@@ -756,5 +756,138 @@
         "category": "AI & Research"
       }
     ]
+  },
+  {
+    "type": "daily",
+    "date": "2026-04-23",
+    "run_at": "2026-04-23T04:17:12.096165+00:00",
+    "feeds_fetched": 15,
+    "feeds_failed": 0,
+    "articles_scored": 49,
+    "articles_sent": 15,
+    "telegram_messages_sent": 17,
+    "big_picture": "**Today's Big Picture:** Enterprise AI is rapidly evolving from experimental chatbots to autonomous agents that can perform complex business tasks, with major platforms like Google Cloud, ServiceNow, and OpenAI positioning themselves as the control layers for this agentic future\u2014making platform choice increasingly strategic for long-term competitive advantage. However, significant technical challenges around AI reliability, tool overuse, and behavioral consistency are emerging alongside growing regulatory concerns about systemic risks, requiring enterprise buyers to balance aggressive AI adoption with robust governance frameworks. For ERP consultants, this represents a fundamental shift toward advising on AI orchestration platforms and agent management rather than traditional software integration, as the winners will be those who can navigate both the immense productivity potential and the substantial operational risks of autonomous AI systems.",
+    "articles": [
+      {
+        "title": "Next '26 - control the agents, control the enterprise? Google Cloud enters the battle for enterprise AI governance",
+        "url": "https://diginomica.com/next-26-control-agents-control-enterprise-google-cloud-enters-battle-enterprise-ai-governance",
+        "source": "Diginomica",
+        "score": 9,
+        "summary": "Google Cloud is positioning itself as a key platform for enterprise AI governance and agentic AI systems, potentially following either an open Android-like strategy or closed iOS-like approach. The focus on controlling AI agents in enterprise settings represents a critical strategic battle for platform dominance in the next phase of business automation.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "ServiceNow beats Q1 2026 guidance as AI deals accelerate (and outcome-based pricing? Zavery isn't buying it)",
+        "url": "https://diginomica.com/servicenow-beats-q1-2026-guidance-ai-deals-accelerate-and-outcome-based-pricing-zavery-isnt-buying",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "ServiceNow's strong Q1 2026 earnings beat driven by AI deal acceleration represents a significant validation of enterprise AI adoption at scale. The discussion with CPO Amit Zavery on outcome-based pricing models reveals strategic shifts in how enterprise software vendors are monetizing AI capabilities.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Behavioral Transfer in AI Agents: Evidence and Privacy Implications",
+        "url": "https://arxiv.org/abs/2604.19925",
+        "source": "arXiv - Economics & Tech Policy",
+        "score": 9,
+        "summary": "Research with 10,659 human-agent pairs examines whether AI agents reflect their users' behavioral patterns, suggesting agents function as behavioral extensions rather than generic tools. This has major implications for AI deployment in business contexts and privacy regulation as agents increasingly act on behalf of humans.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Google brings Auto Browse and Skills to Chrome Enterprise - and a new 'Gemini Summary'",
+        "url": "https://www.zdnet.com/article/google-chrome-enterprise-update-auto-browse-skills-gemini-summary/",
+        "source": "ZDNet Enterprise",
+        "score": 8,
+        "summary": "Google is integrating AI automation capabilities directly into Chrome Enterprise, including Auto Browse for task automation and one-click workflows, positioning the browser as an AI workspace. This represents a significant strategic shift toward agentic AI in enterprise environments with potential implications for how businesses interact with web-based applications.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "The Tool-Overuse Illusion: Why Does LLM Prefer External Tools over Internal Knowledge?",
+        "url": "https://arxiv.org/abs/2604.19749",
+        "source": "arXiv - AI",
+        "score": 8,
+        "summary": "Research identifies 'tool overuse' phenomenon where LLMs unnecessarily rely on external tools instead of internal knowledge, revealing systematic misjudgments about their own capabilities. This has direct implications for enterprise AI agent deployment and efficiency optimization.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Explainable AML Triage with LLMs: Evidence Retrieval and Counterfactual Checks",
+        "url": "https://arxiv.org/abs/2604.19755",
+        "source": "arXiv - AI",
+        "score": 8,
+        "summary": "Research presents an explainable AI framework for anti-money laundering transaction monitoring that addresses hallucination and compliance risks when deploying LLMs in regulated financial workflows. The work tackles the critical challenge of making AI decisions auditable and faithful in high-stakes financial compliance environments.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "OpenAI now lets teams make custom bots that can do work on their own",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/917065/openai-chatgpt-workspace-agents-custom-teams-bots",
+        "source": "The Verge",
+        "score": 9,
+        "summary": "OpenAI launches enterprise-focused AI agents that can autonomously perform business tasks like finding product feedback and sales activities within ChatGPT workspaces. This represents a significant step toward agentic AI deployment in enterprise environments, directly competing with traditional business software vendors.",
+        "category": "Broad Tech News"
+      },
+      {
+        "title": "WorkflowGen:an adaptive workflow generation mechanism driven by trajectory experience",
+        "url": "https://arxiv.org/abs/2604.19756",
+        "source": "arXiv - Machine Learning",
+        "score": 8,
+        "summary": "WorkflowGen presents a framework to make LLM agents more efficient by reusing past experiences rather than generating workflows from scratch, addressing key enterprise challenges of cost and reliability. This tackles fundamental bottlenecks in deploying AI agents for complex business workflows like tool orchestration and business queries.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Accelerating PayPal's Commerce Agent with Speculative Decoding: An Empirical Study on EAGLE3 with Fine-Tuned Nemotron Models",
+        "url": "https://arxiv.org/abs/2604.19767",
+        "source": "arXiv - Machine Learning",
+        "score": 8,
+        "summary": "PayPal is using advanced speculative decoding techniques (EAGLE3) to optimize their Commerce Agent, achieving 22-49% throughput improvements with fine-tuned models. This represents a concrete example of how major enterprises are deploying sophisticated AI optimization techniques for real business applications.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Expert Upcycling: Shifting the Compute-Efficient Frontier of Mixture-of-Experts",
+        "url": "https://arxiv.org/abs/2604.19835",
+        "source": "arXiv - Machine Learning",
+        "score": 8,
+        "summary": "This paper introduces expert upcycling for Mixture-of-Experts models, a technique to efficiently scale large language models by progressively growing expert count while reducing training costs. The method addresses a critical bottleneck in training frontier AI models by optimizing the compute-memory tradeoff in MoE architectures.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "5 AI Models Tried to Scam Me. Some of Them Were Scary Good",
+        "url": "https://www.wired.com/story/ai-model-phishing-attack-cybersecurity/",
+        "source": "Wired",
+        "score": 8,
+        "summary": "Article examines AI models' capabilities in social engineering and deception, revealing concerning proficiency in scamming attempts. This highlights critical security and regulatory implications as AI agents become more sophisticated and deployed in enterprise environments.",
+        "category": "Broad Tech News"
+      },
+      {
+        "title": "Algorithm Selection with Zero Domain Knowledge via Text Embeddings",
+        "url": "https://arxiv.org/abs/2604.19753",
+        "source": "arXiv - AI",
+        "score": 7,
+        "summary": "Researchers propose ZeroFolio, a method that uses pretrained text embeddings to automatically select algorithms for different problems without domain expertise or hand-crafted features. This represents a step toward more generalized AI systems that can adapt to new domains without specialized training.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Routine Work, Firm Boundaries, and the Rise of Local Supplier Entry",
+        "url": "https://arxiv.org/abs/2604.19987",
+        "source": "arXiv - Economics & Tech Policy",
+        "score": 7,
+        "summary": "Academic research analyzing how routine cognitive work outsourcing is driving increased business formation but lower conversion to employer firms, suggesting technology is reshaping firm boundaries and supplier ecosystems. The study provides quantitative evidence that areas with higher routine work shares see more business applications, indicating structural changes in how work is organized.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Elon Musk admits that millions of Tesla vehicles won&#8217;t get unsupervised FSD",
+        "url": "https://www.theverge.com/transportation/917167/elon-musk-tesla-hw3-fsd",
+        "source": "The Verge",
+        "score": 8,
+        "summary": "Elon Musk revealed that 4 million Tesla vehicles with Hardware 3 won't receive unsupervised Full Self-Driving capability, breaking promises to customers who paid for the feature. This represents a significant strategic misstep affecting Tesla's autonomous vehicle roadmap and customer trust.",
+        "category": "Broad Tech News"
+      },
+      {
+        "title": "AI failure could trigger the next financial crisis, warns Elizabeth Warren",
+        "url": "https://www.theverge.com/policy/917026/ai-economy-bubble-elizabeth-warren",
+        "source": "The Verge",
+        "score": 8,
+        "summary": "Senator Elizabeth Warren warns that AI could trigger the next financial crisis, drawing parallels to the 2008 recession. This represents significant policy concern about AI's systemic risks to financial markets from a key regulatory voice.",
+        "category": "Broad Tech News"
+      }
+    ]
   }
 ]
