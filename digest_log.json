@@ -1323,5 +1323,138 @@
         "category": "AI & Research"
       }
     ]
+  },
+  {
+    "type": "daily",
+    "date": "2026-05-01",
+    "run_at": "2026-05-01T16:30:43.407777+00:00",
+    "feeds_fetched": 15,
+    "feeds_failed": 0,
+    "articles_scored": 78,
+    "articles_sent": 15,
+    "telegram_messages_sent": 17,
+    "big_picture": "**Today's Big Picture:** Enterprise AI is rapidly transitioning from experimental cost-cutting tools to revenue-generating, customer-facing applications, as evidenced by Citi's AI avatar deployment and Visa's agentic commerce strategy, while Google Cloud's surge past AWS demonstrates how AI capabilities are reshaping competitive dynamics across the entire enterprise software stack. The emergence of autonomous AI systems\u2014from scientific discovery platforms to self-healing ML pipeline generators\u2014signals that enterprises must prepare for AI that operates independently rather than just augmenting human workflows, fundamentally changing how ERP and enterprise software will be architected and integrated. For software buyers and consultants, this means prioritizing vendors with proven AI-native architectures and robust governance frameworks, as the window for retrofitting legacy systems with AI capabilities is rapidly closing in favor of platforms built from the ground up for autonomous operation.",
+    "articles": [
+      {
+        "title": "Citi Wealth's AI avatar is built on Google Cloud - and it's playing offense, not defense",
+        "url": "https://diginomica.com/citi-wealths-ai-avatar-built-google-cloud-and-its-playing-offence-not-defence",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "Citi Wealth is deploying an AI avatar called Citi Sky built on Google Cloud and DeepMind for US clients by 2026, focusing on revenue growth through personalized market insights rather than cost reduction. This represents a significant enterprise AI deployment in financial services with real customer-facing applications.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "What is Docling? IBM Research's open source answer to the document preparation problem in enterprise AI",
+        "url": "https://diginomica.com/what-docling-ibm-researchs-open-source-answer-document-preparation-problem-enterprise-ai",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "IBM Research released Docling, an open source tool for document preparation in enterprise AI workflows, addressing the critical challenge of converting unstructured documents for RAG systems. The discussion covers document chunking strategies, RAG explainability requirements, and IBM's broader open source AI strategy from a research perspective.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Scale, security, and trust - the three winning factors for Visa in an age of agentic commerce, according to CEO Ryan McInerney",
+        "url": "https://diginomica.com/scale-security-and-trust-three-winning-factors-visa-age-agentic-commerce-according-ceo-ryan",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "Visa's CEO discusses how the company is positioning itself for agentic commerce, focusing on scale, security, and trust as competitive advantages. The piece explores how a major payment platform is adapting its strategy for an AI-driven future where autonomous agents conduct transactions.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Google Cloud growth rates surge, twice the rate of AWS and now topping $20 billion a quarter",
+        "url": "https://diginomica.com/google-cloud-growth-rates-surge-twice-rate-aws-and-now-topping-20-billion-quarter",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "Google Cloud's growth rate is now double that of AWS, reaching $20B quarterly revenue, driven primarily by AI demand. This represents a significant shift in cloud market dynamics where AI capabilities are reshaping competitive positioning among major enterprise platforms.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "End-to-end autonomous scientific discovery on a real optical platform",
+        "url": "https://arxiv.org/abs/2604.27092",
+        "source": "arXiv - AI",
+        "score": 9,
+        "summary": "Researchers demonstrate the first LLM-based agent system capable of end-to-end autonomous scientific discovery in a real physical optical platform, producing nontrivial experimental results. This represents a breakthrough in AI agents moving beyond workflow assistance to genuine autonomous research and discovery.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Think it, Run it: Autonomous ML pipeline generation via self-healing multi-agent AI",
+        "url": "https://arxiv.org/abs/2604.27096",
+        "source": "arXiv - AI",
+        "score": 9,
+        "summary": "This paper presents a breakthrough five-agent system that automatically generates complete ML pipelines from natural language goals, representing a significant advance in autonomous AI workflows. The approach combines code-grounded RAG with explainable hybrid recommendation systems to handle end-to-end pipeline generation without human intervention.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Atlassian Service Collection hits $1 billion ARR \u2013 Q3 FY2026 brings record displacements and a data center surprise",
+        "url": "https://diginomica.com/atlassian-service-collection-hits-1-billion-arr-q3-fy2026-brings-record-displacements-and-data",
+        "source": "Diginomica",
+        "score": 7,
+        "summary": "Atlassian's Service Collection reaches $1 billion ARR milestone with 32% revenue growth to $1.8 billion, indicating strong enterprise software market performance. New CFO emphasizes underlying ARR metrics over headline revenue numbers, suggesting focus on sustainable recurring revenue growth.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Hopping over the debt - Process Intelligence can show banks how they operate, not how they think they operate",
+        "url": "https://diginomica.com/hopping-over-debt-process-intelligence-can-show-banks-how-they-operate-not-how-they-think-they",
+        "source": "Diginomica",
+        "score": 7,
+        "summary": "Article discusses how Process Intelligence can help legacy banks modernize without replacing core systems by revealing gaps between perceived and actual operational processes. Focuses on practical enterprise software solutions for financial institutions facing digital transformation challenges.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "We may now know what kind of AI bubble this is",
+        "url": "https://www.platformer.news/ai-bubble-railroad-mythos-openai-trial/",
+        "source": "Platformer",
+        "score": 8,
+        "summary": "Article analyzes the current AI investment bubble by comparing it to historical railroad infrastructure buildout rather than speculative crypto bubbles. This suggests the AI boom represents fundamental infrastructure development with lasting economic impact rather than pure speculation.",
+        "category": "Tech Strategy & Analysis"
+      },
+      {
+        "title": "Cyber-Insecurity in the AI Era",
+        "url": "https://www.technologyreview.com/2026/05/01/1136779/cyber-insecurity-in-the-ai-era/",
+        "source": "MIT Technology Review",
+        "score": 8,
+        "summary": "MIT Technology Review explores how AI is fundamentally changing cybersecurity by expanding attack surfaces and requiring security to be built around AI rather than added as an afterthought. The piece addresses the strategic shift needed from legacy security approaches to AI-native security frameworks.",
+        "category": "Tech Strategy & Analysis"
+      },
+      {
+        "title": "Operationalizing AI for Scale and Sovereignty",
+        "url": "https://www.technologyreview.com/2026/05/01/1136772/operationalizing-ai-for-scale-and-sovereignty/",
+        "source": "MIT Technology Review",
+        "score": 8,
+        "summary": "MIT Technology Review examines how companies are building internal AI capabilities with focus on data sovereignty and governance. The piece discusses AI factories as infrastructure for scaling enterprise AI while maintaining control over proprietary data.",
+        "category": "Tech Strategy & Analysis"
+      },
+      {
+        "title": "This startup\u2019s new mechanistic interpretability tool lets you debug LLMs",
+        "url": "https://www.technologyreview.com/2026/04/30/1136721/this-startups-new-mechanistic-interpretability-tool-lets-you-debug-llms/",
+        "source": "MIT Technology Review",
+        "score": 8,
+        "summary": "Goodfire's Silico tool enables real-time debugging and parameter adjustment of LLMs during training, potentially giving developers unprecedented control over AI model behavior. This mechanistic interpretability breakthrough could significantly impact how enterprise AI systems are built and fine-tuned.",
+        "category": "Tech Strategy & Analysis"
+      },
+      {
+        "title": "When Your LLM Reaches End-of-Life: A Framework for Confident Model Migration in Production Systems",
+        "url": "https://arxiv.org/abs/2604.27082",
+        "source": "arXiv - AI",
+        "score": 8,
+        "summary": "This research presents a practical Bayesian framework for migrating production LLM systems when models reach end-of-life, using automated evaluation calibrated against human judgment. The work addresses a critical enterprise AI challenge with real-world validation on a system serving 5.3M monthly interactions.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Trump\u2019s mass firing just dealt another blow to American science",
+        "url": "https://www.technologyreview.com/2026/05/01/1136722/mass-firing-trump-fresh-blow-american-science-nsf-nsb/",
+        "source": "MIT Technology Review",
+        "score": 7,
+        "summary": "Trump administration fired the entire 22-member National Science Foundation board, which oversees $9 billion in federal research funding. This represents a significant policy shift that could impact technology research and development across multiple sectors.",
+        "category": "Tech Strategy & Analysis"
+      },
+      {
+        "title": "Pentagon strikes classified AI deals with OpenAI, Google, and Nvidia \u2014 but not Anthropic",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/922113/pentagon-ai-classified-openai-google-nvidia",
+        "source": "The Verge",
+        "score": 9,
+        "summary": "The Pentagon has approved AI tools from OpenAI, Google, Microsoft, Amazon, Nvidia, and xAI for classified use while notably excluding Anthropic. This represents a major shift in how the Defense Department approaches AI deployment in sensitive national security contexts.",
+        "category": "Broad Tech News"
+      }
+    ]
   }
 ]
