@@ -2079,5 +2079,138 @@
         "category": "Community & Practitioner"
       }
     ]
+  },
+  {
+    "type": "daily",
+    "date": "2026-05-08",
+    "run_at": "2026-05-08T16:49:31.499153+00:00",
+    "feeds_fetched": 15,
+    "feeds_failed": 0,
+    "articles_scored": 66,
+    "articles_sent": 15,
+    "telegram_messages_sent": 17,
+    "big_picture": "**Today's Big Picture:** Enterprise software is shifting from AI experimentation to operational reality, with companies like HubSpot pioneering usage-based pricing models and ServiceNow positioning itself as the central platform to manage the inevitable \"AI mess\" that proliferates across organizations. The focus has moved beyond AI pilots to solving fundamental deployment challenges\u2014from authorization constraints in agentic systems to multi-agent coordination\u2014while enterprises demand concrete value demonstration rather than theoretical capabilities. For ERP consultants and software buyers, this signals a critical inflection point where AI integration strategies, governance frameworks, and vendor partnerships will determine competitive advantage, making platform consolidation and measured deployment approaches essential for managing both costs and complexity.",
+    "articles": [
+      {
+        "title": "\"Customers pay when the agent works\" - how HubSpot CEO Yamini Rangan plans to remove every blocker to AI adoption",
+        "url": "https://diginomica.com/customers-pay-when-agent-works-how-hubspot-ceo-yamini-plans-remove-every-blocker-ai-adoption",
+        "source": "Diginomica",
+        "score": 9,
+        "summary": "HubSpot CEO discusses removing barriers to AI adoption through a 'pay when agents work' model, directly addressing enterprise reluctance around agentic AI transformation. This represents a significant shift in enterprise software pricing that could accelerate AI agent deployment across business workflows.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "ServiceNow\u2019s Nick Tzitzon - \u2018The AI mess will land with IT. We have that history and will solve this for the whole enterprise\u2019",
+        "url": "https://diginomica.com/servicenows-nick-tzitzon-ai-mess-will-land-it-we-have-history-and-will-solve-whole-enterprise",
+        "source": "Diginomica",
+        "score": 9,
+        "summary": "ServiceNow executive discusses how enterprises will face an 'AI mess' as AI deployments proliferate, positioning ServiceNow's platform as the solution for CIOs to manage enterprise-wide AI chaos. The article addresses a critical strategic challenge around AI governance and enterprise platform consolidation.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Never mind 'show me the money', 'show me the value' when it comes to AI adoption!",
+        "url": "https://diginomica.com/never-mind-show-me-money-show-me-value-when-it-comes-ai-adoption",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "Organizations are finding AI value falling short of expectations, addressing a critical gap between AI hype and business reality. This directly impacts enterprise strategy and technology investment decisions across major business systems.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "ServiceNow Knowledge 2026 - beyond pilots: EMEA customers on AI at scale",
+        "url": "https://diginomica.com/servicenow-knowledge-2026-beyond-pilots-emea-customers-ai-scale",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "ServiceNow EMEA customers share real-world experiences scaling AI and automation from pilots to production across government, manufacturing, retail and energy sectors. The article provides practical insights on what it takes to successfully deploy enterprise AI at scale.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Partial Evidence Bench: Benchmarking Authorization-Limited Evidence in Agentic Systems",
+        "url": "https://arxiv.org/abs/2605.05379",
+        "source": "arXiv - AI",
+        "score": 9,
+        "summary": "This research introduces a benchmark to test a critical failure mode in enterprise AI agents: producing seemingly complete answers while missing evidence due to authorization constraints. The work addresses a fundamental challenge as AI agents are deployed in enterprise environments with complex access controls and security boundaries.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Something for the weekend - who's winning the game of AI? (And whose league are we playing in anyway?)",
+        "url": "https://diginomica.com/something-weekend-whos-winning-game-ai-and-whose-league-are-we-playing-anyway",
+        "source": "Diginomica",
+        "score": 7,
+        "summary": "Two Nobel Prize-winning chemists who revolutionized DNA sequencing costs offer perspective on AI innovation beyond foundation models. The piece suggests looking past the current AI model competition to focus on real-world deployment and impact.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Atlassian Team '26 - Cisco's Jason Andrews on what \"transform, don't migrate\" actually looks like",
+        "url": "https://diginomica.com/atlassian-team-26-ciscos-jason-andrews-what-transform-dont-migrate-actually-looks",
+        "source": "Diginomica",
+        "score": 7,
+        "summary": "Cisco's VP of Engineering Operations discusses enterprise transformation strategy and expectations for Atlassian's Rovo AI platform. The article provides operational insights from a major enterprise on implementing transformation versus migration approaches.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Did xAI just concede the AI race?",
+        "url": "https://www.platformer.news/did-xai-just-concede-the-ai-race/",
+        "source": "Platformer",
+        "score": 8,
+        "summary": "Analysis of Elon Musk's xAI potentially partnering with Anthropic, suggesting strategic positioning challenges in the AI race. The piece examines competitive dynamics and what this signals about xAI's market position relative to leading AI companies.",
+        "category": "Tech Strategy & Analysis"
+      },
+      {
+        "title": "ZAYA1-8B Technical Report",
+        "url": "https://arxiv.org/abs/2605.05365",
+        "source": "arXiv - AI",
+        "score": 8,
+        "summary": "ZAYA1-8B is a new reasoning-focused MoE model with 700M active parameters that matches larger models on math/coding benchmarks while using AMD's full-stack platform. This demonstrates significant efficiency gains in AI model architecture and competitive alternatives to dominant GPU platforms.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "BALAR : A Bayesian Agentic Loop for Active Reasoning",
+        "url": "https://arxiv.org/abs/2605.05386",
+        "source": "arXiv - AI",
+        "score": 8,
+        "summary": "BALAR introduces a Bayesian framework for structured multi-turn interactions between LLM agents and users, addressing a key limitation in current agentic AI systems. This represents a significant advancement in agent reasoning capabilities that could have major implications for enterprise AI deployment.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "SAT: Sequential Agent Tuning for Coordinator Free Plug and Play Multi-LLM Training with Monotonic Improvement Guarantees",
+        "url": "https://arxiv.org/abs/2605.05216",
+        "source": "arXiv - Machine Learning",
+        "score": 8,
+        "summary": "This research introduces Sequential Agent Tuning (SAT), a new training method for coordinating multiple smaller LLMs to work together without a central coordinator, addressing key challenges in multi-agent AI systems. The approach promises more cost-effective deployment of AI capabilities while maintaining performance, which has significant implications for enterprise AI adoption.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Understanding Annotator Safety Policy with Interpretability",
+        "url": "https://arxiv.org/abs/2605.05329",
+        "source": "arXiv - AI",
+        "score": 7,
+        "summary": "Research paper examines sources of disagreement in AI safety annotation, distinguishing between operational failures, policy ambiguity, and value differences. The work addresses a critical challenge in AI development - ensuring consistent safety standards across human annotators who guide model training.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Artificial Aesthetics: The Implicit Economics of Valuing AI-Generated Text",
+        "url": "https://arxiv.org/abs/2605.05578",
+        "source": "arXiv - Economics & Tech Policy",
+        "score": 7,
+        "summary": "This research quantifies user willingness to pay for aesthetic qualities in AI-generated text across different contexts, providing empirical data on how people value AI output quality. The study's economic approach to measuring AI text preferences could inform pricing strategies for AI services and understanding of market dynamics in AI-powered content generation.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "ICE Plans to Develop Own Smart Glasses to \u2018Supplement\u2019 Its Facial Recognition App",
+        "url": "https://www.404media.co/ice-plans-to-develop-own-smart-glasses-to-supplement-its-facial-recognition-app/",
+        "source": "404 Media",
+        "score": 7,
+        "summary": "ICE is developing custom smart glasses to enhance its facial recognition capabilities, representing a significant expansion of government surveillance technology. This reflects broader trends in enterprise AI deployment for specialized applications and raises important questions about AI regulation and policy oversight.",
+        "category": "Tech Strategy & Analysis"
+      },
+      {
+        "title": "Microsoft was worried OpenAI would run off to Amazon and \u2018shit-talk\u2019 Azure",
+        "url": "https://www.theverge.com/report/926771/microsoft-openai-amazon-worries-shit-talk-azure",
+        "source": "The Verge",
+        "score": 8,
+        "summary": "Court documents reveal internal Microsoft communications showing concerns that OpenAI might partner with Amazon instead, potentially undermining Microsoft's Azure cloud business. This provides rare insight into the strategic considerations behind one of the most important AI partnerships in the industry.",
+        "category": "Broad Tech News"
+      }
+    ]
   }
 ]
