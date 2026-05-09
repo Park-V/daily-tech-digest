@@ -2212,5 +2212,26 @@
         "category": "Broad Tech News"
       }
     ]
+  },
+  {
+    "type": "daily",
+    "date": "2026-05-09",
+    "run_at": "2026-05-09T16:12:54.711694+00:00",
+    "feeds_fetched": 15,
+    "feeds_failed": 0,
+    "articles_scored": 40,
+    "articles_sent": 1,
+    "telegram_messages_sent": 3,
+    "big_picture": "**Today's Big Picture:** The ongoing Musk-OpenAI legal battle is exposing the intense power struggles and talent wars driving AI industry consolidation, revealing how personal conflicts between tech leaders directly impact the strategic direction of foundational AI technologies. For enterprise software buyers, this courtroom drama underscores the critical importance of vendor stability and leadership continuity when making long-term AI investments, as internal turmoil at key AI companies can cascade into product roadmap uncertainty and partnership reliability issues. ERP solution consultants should prepare clients for a volatile AI landscape where the most promising technologies may come from companies experiencing significant leadership instability, requiring more rigorous due diligence on vendor viability beyond just technical capabilities.",
+    "articles": [
+      {
+        "title": "Musk v. Altman week 2: OpenAI fires back, and Shivon Zilis reveals that Musk tried to poach Sam Altman",
+        "url": "https://www.technologyreview.com/2026/05/08/1137008/musk-v-altman-week-2-openai-fires-back-and-shivon-zilis-reveals-that-musk-tried-to-poach-sam-altman/",
+        "source": "MIT Technology Review",
+        "score": 7,
+        "summary": "The Musk vs. OpenAI trial reveals internal dynamics and motivations behind one of AI's most important companies. Testimony about Musk's attempts to poach Altman and allegations of deception provide insight into the strategic conflicts shaping the AI industry.",
+        "category": "Tech Strategy & Analysis"
+      }
+    ]
   }
 ]
