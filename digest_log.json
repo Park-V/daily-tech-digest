@@ -2233,5 +2233,14 @@
         "category": "Tech Strategy & Analysis"
       }
     ]
+  },
+  {
+    "type": "weekly",
+    "date": "2026-05-10",
+    "run_at": "2026-05-10T16:29:36.226525+00:00",
+    "days_covered": 7,
+    "articles_featured": 17,
+    "telegram_messages_sent": 9,
+    "big_picture": "**Week in Review**: Enterprise software buyers face a critical inflection point as agentic AI systems promise transformative automation but threaten to create \"agentic chaos\" without proper governance frameworks, forcing CIOs to choose between point solutions that risk organizational fragmentation and comprehensive platforms like ServiceNow that offer enterprise-wide orchestration. The shift toward outcome-based pricing models\u2014where customers \"pay when agents work\"\u2014signals that vendors are acknowledging the trust gap between AI hype and business reality, creating new opportunities for ERP consultants to guide clients toward implementations that deliver measurable ROI rather than superficial automation. With power infrastructure becoming a bottleneck for AI workloads and regulatory precedents like Meta's $375 million child safety settlement reshaping platform liability, enterprise buyers must now evaluate AI solutions not just on functionality but on governance capabilities, energy efficiency, and compliance frameworks that can scale across their entire technology stack."
   }
 ]
