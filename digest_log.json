@@ -2577,5 +2577,138 @@
         "category": "Broad Tech News"
       }
     ]
+  },
+  {
+    "type": "daily",
+    "date": "2026-05-14",
+    "run_at": "2026-05-14T17:17:23.159401+00:00",
+    "feeds_fetched": 15,
+    "feeds_failed": 0,
+    "articles_scored": 63,
+    "articles_sent": 15,
+    "telegram_messages_sent": 17,
+    "big_picture": "**Today's Big Picture:** Enterprise software buyers face a critical inflection point as major tech vendors like Cisco and Meta restructure their workforces despite strong financial performance, signaling fundamental shifts in how AI capabilities are being prioritized over traditional offerings. The technical reality is sobering\u2014AI systems are demonstrating significant reliability issues from chatbots leaking personal data to vision-language models failing in predictable ways, while the infrastructure costs of AI observability and token economics remain largely unbudgeted by most organizations. For ERP consultants, this means advising clients to focus on data sovereignty and governance frameworks first, rather than rushing into AI implementations, especially as public opposition to AI data centers and emerging research on agent benchmarking suggest the current AI deployment cycle may face substantial infrastructure and reliability constraints.",
+    "articles": [
+      {
+        "title": "Why Cisco is axing five percent of its workforce even as AI demand ramps up",
+        "url": "https://diginomica.com/why-cisco-axing-five-its-workforce-even-ai-demand-ramps",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "Cisco is laying off 5% of its workforce (4,000 people) despite growing AI opportunities, indicating a strategic workforce restructuring to align with AI demand rather than overall business decline. This reflects how major tech companies are reshaping their organizations to capture AI-driven growth opportunities.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "How to build an AI-first firm that wins the next decade",
+        "url": "https://diginomica.com/how-build-ai-first-firm-wins-next-decade",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "Article examines how professional services firms can restructure their operating models to leverage AI for 3-4x productivity gains. Covers the strategic transformation needed in talent, processes, and technology stack for AI-native competitive advantage.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Tokenomics meets topology - inside Dynatrace's AI-era observability rethink",
+        "url": "https://diginomica.com/tokenomics-meets-topology-inside-dynatraces-ai-era-observability-rethink",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "Dynatrace is rethinking observability strategy for the AI era, addressing how traditional 'ingest everything' approaches create unsustainable token costs with AI systems. The acquisition of Bindplane signals a strategic shift to solve the tokenomics challenge that most organizations haven't yet budgeted for in their AI implementations.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Data readiness for agentic AI in financial services",
+        "url": "https://www.technologyreview.com/2026/05/14/1137034/data-readiness-for-agentic-ai-in-financial-services/",
+        "source": "MIT Technology Review",
+        "score": 9,
+        "summary": "MIT Technology Review examines data readiness requirements for agentic AI deployment in financial services, focusing on the unique regulatory and real-time data challenges in this highly regulated sector. The analysis appears to emphasize operational preparedness over AI sophistication for successful enterprise implementation.",
+        "category": "Tech Strategy & Analysis"
+      },
+      {
+        "title": "Establishing AI and data sovereignty in the age of autonomous systems",
+        "url": "https://www.technologyreview.com/2026/05/14/1137168/establishing-ai-and-data-sovereignty-in-the-age-of-autonomous-systems/",
+        "source": "MIT Technology Review",
+        "score": 9,
+        "summary": "Article addresses critical enterprise AI governance challenges around data sovereignty and control when deploying third-party AI systems. Focuses on the strategic tension between AI capability and data control that enterprises face.",
+        "category": "Tech Strategy & Analysis"
+      },
+      {
+        "title": "Think Twice, Act Once: Verifier-Guided Action Selection For Embodied Agents",
+        "url": "https://arxiv.org/abs/2605.12620",
+        "source": "arXiv - AI",
+        "score": 9,
+        "summary": "Research introduces VegAS framework to improve robustness of multimodal AI agents in complex real-world tasks by adding verification mechanisms to action selection. This addresses a key limitation of current embodied AI systems that struggle with out-of-distribution scenarios.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Macro-Action Based Multi-Agent Instruction Following through Value Cancellation",
+        "url": "https://arxiv.org/abs/2605.12655",
+        "source": "arXiv - AI",
+        "score": 8,
+        "summary": "Research presents MAVIC, a method for multi-agent AI systems to handle conflicting natural language instructions during ongoing tasks by correcting value estimation problems in reinforcement learning. This addresses a fundamental challenge in deploying AI agents that must dynamically respond to human instructions while maintaining consistent behavior.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Do Androids Dream of Breaking the Game? Systematically Auditing AI Agent Benchmarks with BenchJack",
+        "url": "https://arxiv.org/abs/2605.12673",
+        "source": "arXiv - AI",
+        "score": 8,
+        "summary": "Research paper introduces BenchJack, a systematic tool for auditing AI agent benchmarks to identify reward hacking vulnerabilities where agents game metrics without performing intended tasks. The work addresses a critical infrastructure problem as agent benchmarks increasingly drive model selection and deployment decisions in enterprise settings.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Revealing Interpretable Failure Modes of VLMs",
+        "url": "https://arxiv.org/abs/2605.12674",
+        "source": "arXiv - AI",
+        "score": 8,
+        "summary": "Research introduces REVELIO, a framework for systematically identifying interpretable failure modes in Vision-Language Models used in safety-critical applications. The work addresses a crucial challenge as VLMs are increasingly deployed in real-world systems where understanding failure patterns is essential for reliability.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "AI chatbots are giving out people\u2019s real phone numbers",
+        "url": "https://www.technologyreview.com/2026/05/13/1137203/ai-chatbots-are-giving-out-peoples-real-phone-numbers/",
+        "source": "MIT Technology Review",
+        "score": 7,
+        "summary": "AI chatbots are incorrectly providing real people's phone numbers to users seeking various services, causing harassment and privacy violations. This highlights significant reliability and safety issues with generative AI systems deployed at scale.",
+        "category": "Tech Strategy & Analysis"
+      },
+      {
+        "title": "Learning Transferable Latent User Preferences for Human-Aligned Decision Making",
+        "url": "https://arxiv.org/abs/2605.12682",
+        "source": "arXiv - AI",
+        "score": 7,
+        "summary": "Research paper on improving LLM alignment with human preferences through transferable latent preference learning, addressing a key challenge in deploying AI systems that make decisions matching user expectations. The work focuses on generalizing user preferences across tasks without requiring extensive repeated interactions.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Americans do not want AI data centers in their backyards",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/930477/ai-data-centers-gallup-survey-70-percent-opposition",
+        "source": "The Verge",
+        "score": 8,
+        "summary": "A Gallup survey reveals 70% of Americans oppose AI data center construction in their communities, with data centers being less popular than nuclear power plants. This public opposition represents a significant infrastructure and policy challenge for AI deployment at scale.",
+        "category": "Broad Tech News"
+      },
+      {
+        "title": "Learning When to Act: Communication-Efficient Reinforcement Learning via Run-Time Assurance",
+        "url": "https://arxiv.org/abs/2605.12561",
+        "source": "arXiv - Machine Learning",
+        "score": 7,
+        "summary": "This research presents a reinforcement learning approach that combines control and communication timing decisions under safety constraints, using Lyapunov-based run-time assurance. The work addresses when AI agents should act rather than just what actions to take, which has implications for autonomous system deployment.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Learning to Decide with AI Assistance under Human-Alignment",
+        "url": "https://arxiv.org/abs/2605.12646",
+        "source": "arXiv - Machine Learning",
+        "score": 7,
+        "summary": "Research explores how to improve human-AI collaboration in high-stakes decisions by better aligning AI confidence measures with human decision-making needs. The work addresses a critical gap between AI model confidence and human ability to appropriately trust and act on AI predictions.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Meta\u2019s New Reality: Record High Profits. Record Low Morale",
+        "url": "https://www.wired.com/story/meta-layoffs-bad-vibes-mark-zuckerberg-ai/",
+        "source": "Wired",
+        "score": 7,
+        "summary": "Meta is cutting 10% of staff despite record profits, with widespread employee unhappiness reported by current and former workers. This reveals organizational dysfunction at a major tech platform company during a period of AI transformation and industry consolidation.",
+        "category": "Broad Tech News"
+      }
+    ]
   }
 ]
