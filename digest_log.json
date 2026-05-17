@@ -2896,5 +2896,14 @@
         "category": "Community & Practitioner"
       }
     ]
+  },
+  {
+    "type": "weekly",
+    "date": "2026-05-17",
+    "run_at": "2026-05-17T16:30:30.362885+00:00",
+    "days_covered": 6,
+    "articles_featured": 18,
+    "telegram_messages_sent": 8,
+    "big_picture": "**Week in Review**: This week revealed a critical inflection point where enterprise AI is moving from pilot programs to production reality, but companies are discovering that orchestration layers, data readiness, and governance frameworks matter more than raw AI capability for actual business results. Major platform vendors like ServiceNow, Celonis, and Xero are positioning themselves as the \"voice of reason\" in AI adoption, while concerns about AI-driven layoffs and multi-agent system safety risks suggest that rushed implementations could backfire spectacularly. For enterprise software buyers and ERP consultants, the clear message is that 2025 success depends on building robust AI orchestration capabilities and data sovereignty strategies rather than simply integrating the latest LLM\u2014with established platforms likely offering safer paths to AI transformation than point solutions or direct LLM integrations."
   }
 ]
