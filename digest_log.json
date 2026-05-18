@@ -2905,5 +2905,138 @@
     "articles_featured": 18,
     "telegram_messages_sent": 8,
     "big_picture": "**Week in Review**: This week revealed a critical inflection point where enterprise AI is moving from pilot programs to production reality, but companies are discovering that orchestration layers, data readiness, and governance frameworks matter more than raw AI capability for actual business results. Major platform vendors like ServiceNow, Celonis, and Xero are positioning themselves as the \"voice of reason\" in AI adoption, while concerns about AI-driven layoffs and multi-agent system safety risks suggest that rushed implementations could backfire spectacularly. For enterprise software buyers and ERP consultants, the clear message is that 2025 success depends on building robust AI orchestration capabilities and data sovereignty strategies rather than simply integrating the latest LLM\u2014with established platforms likely offering safer paths to AI transformation than point solutions or direct LLM integrations."
+  },
+  {
+    "type": "daily",
+    "date": "2026-05-18",
+    "run_at": "2026-05-18T17:38:15.093202+00:00",
+    "feeds_fetched": 15,
+    "feeds_failed": 0,
+    "articles_scored": 62,
+    "articles_sent": 15,
+    "telegram_messages_sent": 17,
+    "big_picture": "**Today's Big Picture**\n\nEnterprise AI deployment is hitting a critical inflection point where the gap between AI investment and measurable business outcomes is driving urgent calls for accelerated value realization, while simultaneously revealing fundamental safety and governance challenges that could undermine enterprise adoption. The convergence of multiple research findings\u2014from hidden biases in \"fair\" AI outputs to security vulnerabilities in voice systems and alignment degradation during model compression\u2014suggests that current enterprise AI evaluation methods are dangerously inadequate for detecting risks that only emerge in production environments. For ERP consultants and enterprise software buyers, this means the window is closing for a measured, pilot-based approach to AI adoption; organizations must now balance the competitive pressure to deploy AI quickly against the mounting evidence that current AI systems have structural flaws that could create significant liability in high-stakes business processes like financial decisions and automated workflows.",
+    "articles": [
+      {
+        "title": "SAP Sapphire 2026 - why SAP CEO Christian Klein sees the need for speed when it comes to AI value realization",
+        "url": "https://diginomica.com/sap-sapphire-2026-why-sap-ceo-christian-klein-sees-need-speed-when-it-comes-ai-value-realization",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "SAP's CEO discusses the strategic imperative for enterprises to accelerate AI value realization while ensuring proper technology foundations are in place. The piece addresses the critical gap between AI investment and measurable business outcomes in enterprise software.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Import AI 457: AI stuxnet; cursed Muon optimizer; and positive alignment",
+        "url": "https://jack-clark.net/2026/05/18/import-ai-457-ai-stuxnet-cursed-muon-optimizer-and-positive-alignment/",
+        "source": "Import AI",
+        "score": 8,
+        "summary": "Import AI newsletter covers AI security vulnerabilities in weapons programs, optimizer developments, and AI alignment research. The investigation of decades-old malware in weapons systems highlights critical AI security implications for enterprise and government systems.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Fair outputs, Biased Internals: Causal Potency and Asymmetry of Latent Bias in LLMs for High-Stakes Decisions",
+        "url": "https://arxiv.org/abs/2605.15217",
+        "source": "arXiv - AI",
+        "score": 9,
+        "summary": "Research reveals that AI models can appear fair in outputs while maintaining biased internal representations that could potentially influence decisions in high-stakes applications like mortgage underwriting. This demonstrates a critical gap between surface-level fairness testing and deeper bias detection that has major implications for AI deployment in financial services.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Fair outputs, Biased Internals: Causal Potency and Asymmetry of Latent Bias in LLMs for High-Stakes Decisions",
+        "url": "https://arxiv.org/abs/2605.15217",
+        "source": "arXiv - Economics & Tech Policy",
+        "score": 9,
+        "summary": "Research reveals that AI models used for high-stakes decisions like mortgage underwriting can exhibit fair outputs while maintaining biased internal representations that could still influence outcomes asymmetrically across demographic groups. This finding has critical implications for AI deployment in financial services and enterprise decision-making systems.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Boomi World '26 - talking AI sovereignty needs with AI Field CTO Patricia Moore",
+        "url": "https://diginomica.com/boomi-world-26-talking-ai-sovereignty-needs-ai-field-cto-patricia-moore",
+        "source": "Diginomica",
+        "score": 7,
+        "summary": "Article discusses AI sovereignty concerns with Boomi's AI Field CTO, addressing enterprise customers' needs around AI governance and control. Covers important enterprise AI deployment considerations but appears to be event-driven content.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Inside Anduril and Meta\u2019s quest to make smart glasses for warfare",
+        "url": "https://www.technologyreview.com/2026/05/18/1137412/inside-anduril-and-metas-quest-to-make-smart-glasses-for-warfare/",
+        "source": "MIT Technology Review",
+        "score": 8,
+        "summary": "Anduril and Meta are developing AR military headsets that enable drone strike orders through eye-tracking and voice commands, representing a significant convergence of consumer tech and defense applications. This partnership illustrates how major tech platforms are expanding into military markets with AI-powered interface technologies.",
+        "category": "Tech Strategy & Analysis"
+      },
+      {
+        "title": "SDOF: Taming the Alignment Tax in Multi-Agent Orchestration with State-Constrained Dispatch",
+        "url": "https://arxiv.org/abs/2605.15204",
+        "source": "arXiv - AI",
+        "score": 8,
+        "summary": "Research paper introduces SDOF framework for enforcing business process constraints in multi-agent AI systems, addressing a key limitation of current orchestration frameworks like LangChain and CrewAI. This tackles the critical 'alignment tax' problem where AI agents deviate from required business workflows.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "SkillSmith: Compiling Agent Skills into Boundary-Guided Runtime Interfaces",
+        "url": "https://arxiv.org/abs/2605.15215",
+        "source": "arXiv - AI",
+        "score": 8,
+        "summary": "SkillSmith proposes a compiler-runtime framework to optimize LLM agent systems by reducing redundancy in skill execution and context injection. The research addresses practical efficiency challenges in deploying AI agents at scale, which is crucial for enterprise automation systems.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "The Download: Musk v. Altman week 3, and Trump\u2019s tech trading",
+        "url": "https://www.technologyreview.com/2026/05/18/1137407/the-download-musk-altman-trial-trump-tech-trading/",
+        "source": "MIT Technology Review",
+        "score": 7,
+        "summary": "Coverage of the Musk v. Altman legal battle and Trump's tech policy positions, focusing on high-profile conflicts in AI leadership and potential regulatory changes. These stories represent significant strategic inflection points for the AI industry and tech policy landscape.",
+        "category": "Tech Strategy & Analysis"
+      },
+      {
+        "title": "TeamTR: Trust-Region Fine-Tuning for Multi-Agent LLM Coordination",
+        "url": "https://arxiv.org/abs/2605.15207",
+        "source": "arXiv - Machine Learning",
+        "score": 8,
+        "summary": "Research paper identifies a critical structural problem in multi-agent LLM systems where sequential fine-tuning creates compounding errors that scale quadratically with team size. The work addresses a fundamental challenge in deploying coordinated AI agent systems for complex reasoning tasks.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Quantization Undoes Alignment: Bias Emergence in Compressed LLMs Across Models and Precision Levels",
+        "url": "https://arxiv.org/abs/2605.15208",
+        "source": "arXiv - Machine Learning",
+        "score": 8,
+        "summary": "Research reveals that post-training quantization of large language models introduces bias and degrades alignment, with implications for enterprise AI deployment safety. The study provides systematic analysis across multiple models and precision levels, highlighting a critical issue for companies deploying compressed LLMs in production.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Voice AI Systems Are Vulnerable to Hidden Audio Attacks",
+        "url": "https://spectrum.ieee.org/voice-ai-audio-attacks",
+        "source": "Hacker News",
+        "score": 8,
+        "summary": "Voice AI systems can be compromised through hidden audio attacks that are inaudible to humans but can manipulate AI responses. This represents a significant security vulnerability as voice AI becomes more prevalent in enterprise and autonomous systems.",
+        "category": "Community & Practitioner"
+      },
+      {
+        "title": "Qwen 3.7 Preview",
+        "url": "https://twitter.com/Alibaba_Qwen/status/2056403591464984753",
+        "source": "Hacker News",
+        "score": 8,
+        "summary": "Qwen 3.7 Preview represents a significant AI foundation model release from Alibaba's research team, likely featuring improvements in reasoning and multimodal capabilities. This type of frontier model advancement directly impacts enterprise AI adoption and competitive dynamics in the foundation model space.",
+        "category": "Community & Practitioner"
+      },
+      {
+        "title": "Does Theory of Mind Improvement Really Benefit Human-AI Interactions? Empirical Findings from Interactive Evaluations",
+        "url": "https://arxiv.org/abs/2605.15205",
+        "source": "arXiv - AI",
+        "score": 7,
+        "summary": "Research proposes new interactive evaluation methods for Theory of Mind in LLMs, moving beyond static benchmarks to measure real-world human-AI interaction effectiveness. This addresses a key gap in how we assess AI systems' social capabilities for practical deployment.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Researchers Wanted Preschool Teachers to Wear Cameras to Train AI",
+        "url": "https://www.404media.co/researchers-wanted-preschool-teachers-to-wear-cameras-to-train-ai/",
+        "source": "404 Media",
+        "score": 7,
+        "summary": "Researchers are collecting first-person video data from preschool teachers wearing cameras to train AI systems, raising important questions about AI training methodologies and privacy in educational settings. This represents a concerning expansion of AI data collection into sensitive environments involving children.",
+        "category": "Tech Strategy & Analysis"
+      }
+    ]
   }
 ]
