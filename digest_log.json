@@ -3038,5 +3038,138 @@
         "category": "Tech Strategy & Analysis"
       }
     ]
+  },
+  {
+    "type": "daily",
+    "date": "2026-05-19",
+    "run_at": "2026-05-19T17:43:01.207778+00:00",
+    "feeds_fetched": 15,
+    "feeds_failed": 0,
+    "articles_scored": 70,
+    "articles_sent": 15,
+    "telegram_messages_sent": 17,
+    "big_picture": "**Today's Big Picture:** Enterprise AI is rapidly evolving from experimental chatbots to autonomous agents that execute real-world actions, but this shift is exposing critical security and safety gaps that require immediate attention\u2014as demonstrated by AI's ability to discover thousands of zero-day vulnerabilities in weeks and the urgent need for new runtime safety frameworks. Major platforms like Zendesk and Google are pivoting toward outcome-based AI services that actually solve problems rather than just manage them, while financial markets are beginning to punish companies engaged in \"AI washing\" without substance. For enterprise software buyers and ERP consultants, this signals a crucial inflection point: the window for superficial AI adoption is closing, and success now requires genuine AI integration with robust security frameworks, measurable outcomes, and authentic capabilities rather than marketing promises.",
+    "articles": [
+      {
+        "title": "Everpure - \u2018the perimeter has already failed and in a post-Mythos world, recovery speed is everything\u2019",
+        "url": "https://diginomica.com/everpure-perimeter-has-already-failed-and-post-mythos-world-recovery-speed-everything",
+        "source": "Diginomica",
+        "score": 9,
+        "summary": "Anthropic's Mythos model discovered over 2,000 zero-day vulnerabilities in seven weeks, fundamentally changing how enterprises must approach cybersecurity resilience and recovery speed. This AI capability to rapidly find and exploit vulnerabilities represents a paradigm shift requiring new enterprise security strategies.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "AgentWall: A Runtime Safety Layer for Local AI Agents",
+        "url": "https://arxiv.org/abs/2605.16265",
+        "source": "arXiv - AI",
+        "score": 9,
+        "summary": "New research proposes AgentWall, a runtime safety layer for AI agents that addresses critical security gaps as agents evolve from text generators to systems executing real-world actions like shell commands and API calls. This tackles a fundamental safety challenge in the deployment of autonomous AI systems in enterprise environments.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Skim: Speculative Execution for Fast and Efficient Web Agents",
+        "url": "https://arxiv.org/abs/2605.16565",
+        "source": "arXiv - AI",
+        "score": 9,
+        "summary": "Skim introduces a speculative execution framework that dramatically reduces computational costs for web agents by exploiting predictable website structures, bypassing expensive frontier-model inference for routine tasks. This represents a significant breakthrough in making AI agents more efficient and economically viable for real-world deployment.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Zendesk Relate 2026 - Zendesk prepares for an outcome-based future built on \u2018verified resolutions\u2019",
+        "url": "https://diginomica.com/zendesk-relate-2026-outcome-based-future-verified-resolutions",
+        "source": "Diginomica",
+        "score": 7,
+        "summary": "Zendesk is pivoting from a support tool to an AI-enhanced platform focused on 'verified resolutions' that actually solve customer problems rather than just managing them. This represents a significant strategic shift toward outcome-based service delivery using AI agents.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Zendesk Relate 2026 - Zendesk expands its Resolution Platform for AI-driven service delivery",
+        "url": "https://diginomica.com/zendesk-relate-2026-resolution-platform-ai-driven-service-delivery",
+        "source": "Diginomica",
+        "score": 7,
+        "summary": "Zendesk is expanding its Resolution Platform to become an integrated service delivery platform with enhanced AI automation capabilities. This represents the company's strategic push toward AI-driven service resolution across internal and external operations.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Altman 1, Musk 0 - but the AI titans court clash ends on a technicality, not with OpenAI cleared of charges",
+        "url": "https://diginomica.com/altman-1-musk-0-ai-tech-titans-court-clash-ends-technicality-not-openai-cleared-charges",
+        "source": "Diginomica",
+        "score": 7,
+        "summary": "Covers the legal dispute between Elon Musk and Sam Altman/OpenAI, which ended on a technicality rather than clearing OpenAI of the underlying charges. The outcome has strategic implications for OpenAI's governance and future direction in the competitive AI landscape.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Let them live! How Guild Mortgage used Appian to make legacy systems a foundation for safe AI adoption",
+        "url": "https://diginomica.com/let-them-live-guild-mortgage-appian-legacy-systems-safe-ai-adoption",
+        "source": "Diginomica",
+        "score": 7,
+        "summary": "Guild Mortgage is using Appian's process automation platform to modernize legacy systems while introducing AI in a regulated environment, choosing transformation over replacement. The case demonstrates how financial services companies can build AI capabilities on existing infrastructure within compliance constraints.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "ANNEAL: Adapting LLM Agents via Governed Symbolic Patch Learning",
+        "url": "https://arxiv.org/abs/2605.16309",
+        "source": "arXiv - AI",
+        "score": 8,
+        "summary": "ANNEAL introduces a neuro-symbolic approach for LLM agents that learns from failures by repairing underlying symbolic knowledge structures rather than just updating prompts or weights. This addresses a critical limitation in current AI agent systems where they repeatedly fail on the same types of tasks despite being able to recover from individual errors.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "From Prompts to Protocols: An AI Agent for Laboratory Automation",
+        "url": "https://arxiv.org/abs/2605.16552",
+        "source": "arXiv - AI",
+        "score": 8,
+        "summary": "Research presents an AI agent architecture that uses large language models to automate laboratory operations, allowing scientists to interact naturally with complex instrument coordination instead of writing code. This demonstrates practical AI agent deployment in enterprise settings, moving beyond simple chatbots to autonomous workflow orchestration.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Dissipation of Debt Financing Privilege on Corporate AI Washing: Evidence from China",
+        "url": "https://arxiv.org/abs/2605.16808",
+        "source": "arXiv - Economics & Tech Policy",
+        "score": 8,
+        "summary": "Academic study examines how China's 14th Five Year Plan policy shock increased debt financing costs for companies engaged in AI washing - claiming AI capabilities without substance. Research validates AI washing detection methods and shows real financial consequences for strategic deception.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Google I/O 2026 live: Biggest updates on Android, Gemini AI, XR, and more we're seeing",
+        "url": "https://www.zdnet.com/article/google-io-05-19-2026-live-blog/",
+        "source": "ZDNet Enterprise",
+        "score": 7,
+        "summary": "Google I/O 2026 coverage focusing on Android, Gemini AI, and XR developments from the company's annual developer conference. Live reporting format suggests comprehensive coverage of Google's latest strategic technology announcements.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Here\u2019s why Elon Musk lost his suit against OpenAI",
+        "url": "https://www.technologyreview.com/2026/05/18/1137488/elon-musk-suit-openai-verdict/",
+        "source": "MIT Technology Review",
+        "score": 7,
+        "summary": "Elon Musk lost his lawsuit against OpenAI due to statute of limitations, with a jury ruling he sued too late. This resolves a high-profile legal challenge that had implications for AI governance and corporate accountability in the rapidly evolving AI industry.",
+        "category": "Tech Strategy & Analysis"
+      },
+      {
+        "title": "What to expect from Google this week",
+        "url": "https://www.technologyreview.com/2026/05/18/1137439/what-to-expect-from-google-this-week/",
+        "source": "MIT Technology Review",
+        "score": 7,
+        "summary": "MIT Technology Review previews Google I/O developer conference, positioning Google as third place in the foundation model race behind competitors. The analysis focuses on Google's strategic position in AI and what announcements might help them catch up.",
+        "category": "Tech Strategy & Analysis"
+      },
+      {
+        "title": "Google I/O 2026: All the news and announcements",
+        "url": "https://www.theverge.com/tech/932454/google-io-2026-news-announcements",
+        "source": "The Verge",
+        "score": 9,
+        "summary": "Google I/O 2026 features Gemini AI developments with focus on agentic AI capabilities and new model versions. The event represents Google's strategic positioning in the AI platform competition against major enterprise software vendors.",
+        "category": "Broad Tech News"
+      },
+      {
+        "title": "Reducing Credit Assignment Variance via Counterfactual Reasoning Paths",
+        "url": "https://arxiv.org/abs/2605.16302",
+        "source": "arXiv - Machine Learning",
+        "score": 8,
+        "summary": "Research introduces a counterfactual credit assignment framework to address high gradient variance in reinforcement learning for multi-step reasoning with large language models. This tackles a key technical challenge preventing LLMs from sustained improvement in complex reasoning tasks.",
+        "category": "AI & Research"
+      }
+    ]
   }
 ]
