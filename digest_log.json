@@ -3171,5 +3171,138 @@
         "category": "AI & Research"
       }
     ]
+  },
+  {
+    "type": "daily",
+    "date": "2026-05-20",
+    "run_at": "2026-05-20T18:03:02.536118+00:00",
+    "feeds_fetched": 15,
+    "feeds_failed": 0,
+    "articles_scored": 70,
+    "articles_sent": 15,
+    "telegram_messages_sent": 17,
+    "big_picture": "**Today's Big Picture:** The enterprise software landscape is rapidly polarizing between companies betting everything on autonomous AI agents that can operate without human intervention\u2014with leaders like Blue Yonder and monday.com claiming \"the agent is the app\"\u2014and pragmatists like Alteryx drawing hard lines around AI's limitations amid reports that 51% of professionals say AI actually reduces their productivity. This isn't just a technology shift but a fundamental business model disruption, as traditional system integrator services risk becoming automated product features while companies struggle with the gap between AI hype and workplace reality. For ERP consultants and enterprise buyers, the critical decision isn't whether to adopt AI, but how to distinguish between genuinely transformative agentic capabilities (like Blue Yonder's 80% touchless order management) and AI \"workslop\" that creates more problems than it solves\u2014making vendor evaluation and implementation strategy more crucial than ever.",
+    "articles": [
+      {
+        "title": "ICON 2026 \u2014 Blue Yonder CEO Duncan Angove isn't nervous to say \u2018the agent is the app\u2019 (or that the SI industry is about to become a product feature)",
+        "url": "https://diginomica.com/icon-2026-blue-yonder-ceo-duncan-angove-isnt-nervous-say-agent-app-or-si-industry-about-become",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "Blue Yonder CEO Duncan Angove discusses how AI agents will fundamentally transform enterprise software, predicting that traditional system integrator services will become automated product features. The article covers strategic implications of agentic AI for business workflows and competitive dynamics in enterprise software.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Math, not Frankenstein architecture - why Alteryx Inspire 2026 drew a hard line on what Large Language Models cannot do",
+        "url": "https://diginomica.com/math-not-frankenstein-alteryx-inspire-2026-what-ai-cant-do",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "Alteryx takes a pragmatic stance on LLM limitations in enterprise data analytics, offering hands-on demonstration of their approach to AI integration. The company appears to be drawing clear boundaries around what AI can and cannot effectively do in data processing workflows.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "AI may have crept up on organizations, but time is running out to ignore it. monday.com CEO Roy Mann pitches the way ahead",
+        "url": "https://diginomica.com/ai-may-have-crept-organizations-time-running-out-ignore-it-mondaycom-ceo-roy-mann-pitches-way-ahead",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "monday.com CEO discusses the strategic imperative for organizations to adopt agentic AI systems that can operate autonomously without human intervention. The piece focuses on how AI agents are reshaping enterprise workflows and the competitive dynamics forcing companies to accelerate adoption.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "The Insurability Frontier of AI Risk: Mapping Threats to Affirmative Coverage, Silent Exposures, and Exclusions",
+        "url": "https://arxiv.org/abs/2605.18784",
+        "source": "arXiv - Economics & Tech Policy",
+        "score": 9,
+        "summary": "This research maps how commercial insurance is adapting to AI risks, analyzing 55 AI threat categories across 26 insurance products to identify coverage gaps and exclusions. It addresses a critical business infrastructure question as companies deploy agentic AI systems at scale.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Confluent Current London 2026 - AI requires a data rethink",
+        "url": "https://diginomica.com/confluent-current-london-2026-ai-requires-data-rethink",
+        "source": "Diginomica",
+        "score": 7,
+        "summary": "Confluent CEO discusses how data streaming technology can solve AI implementation bottlenecks for enterprises. The article covers new data streaming products positioned to enable more effective AI deployment in business contexts.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "What to build AI on? Red Hat\u2019s Summit offers answers",
+        "url": "https://diginomica.com/what-build-ai-red-hats-summit-offers-answers",
+        "source": "Diginomica",
+        "score": 7,
+        "summary": "Red Hat's Summit focused on AI infrastructure and platform decisions for enterprises. The coverage appears to analyze strategic technology choices for building enterprise AI systems.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "The latest research is less-than-kind to AI - but its cognitive corrosion can be avoided",
+        "url": "https://diginomica.com/latest-research-less-kind-ai-cognitive-corrosion",
+        "source": "Diginomica",
+        "score": 7,
+        "summary": "Article discusses enterprise AI implementation strategy with focus on cognitive engagement over pure productivity, featuring insights from Zoho executive on avoiding negative impacts of AI deployment. Covers practical considerations for enterprise leaders rolling out AI systems.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "ICON 2026 - Knauf's 80% touchless order management goal - and the Blue Yonder foundation being built to reach it",
+        "url": "https://diginomica.com/icon-2026-knaufs-80-touchless-order-management-goal-and-blue-yonder-foundation-being-built-reach-it",
+        "source": "Diginomica",
+        "score": 7,
+        "summary": "Knauf is working with Blue Yonder to achieve 80% touchless order management using cognitive planning solutions, emphasizing that data quality and people matter more than technology. The case study illustrates enterprise AI deployment in supply chain automation with specific business targets.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "ICON 2026 - Blue Yonder's cognitive platform keeps taking shape, and customers are starting to see results",
+        "url": "https://diginomica.com/icon-2026-blue-yonders-cognitive-platform-keeps-taking-shape-and-customers-are-starting-see-results",
+        "source": "Diginomica",
+        "score": 7,
+        "summary": "Blue Yonder unveiled cognitive AI solutions for category management and production planning at their customer conference, with existing customers demonstrating measurable results from their AI platform investments. The story focuses on real-world enterprise AI deployment showing tangible business outcomes rather than just product announcements.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Google's James Manyika is betting that doomers are wrong about AI and jobs",
+        "url": "https://www.platformer.news/james-manyika-google-ai-jobs-io-2026/",
+        "source": "Platformer",
+        "score": 8,
+        "summary": "Google's James Manyika argues against AI job displacement doom scenarios, suggesting tasks become more automatable while jobs themselves remain resilient. This represents a key strategic perspective on AI's economic impact from a major tech leader.",
+        "category": "Tech Strategy & Analysis"
+      },
+      {
+        "title": "Position: Let's Develop Data Probes to Fundamentally Understand How Data Affects LLM Performance",
+        "url": "https://arxiv.org/abs/2605.18801",
+        "source": "arXiv - AI",
+        "score": 8,
+        "summary": "Researchers propose developing 'data probes' to systematically understand how different data characteristics affect LLM performance across training, tuning, and alignment stages. This addresses a fundamental gap in AI development where current approaches rely on expensive trial-and-error experimentation rather than principled understanding of data's role.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Operationalizing Document AI: A Microservice Architecture for OCR and LLM Pipelines in Production",
+        "url": "https://arxiv.org/abs/2605.18818",
+        "source": "arXiv - AI",
+        "score": 8,
+        "summary": "Academic paper presents production-ready microservice architecture for Document AI pipelines combining OCR and LLMs, processing thousands of multi-page documents per hour. Addresses the critical gap between AI research and real-world enterprise deployment at scale.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "AgentNLQ: A General-Purpose Agent for Natural Language to SQL",
+        "url": "https://arxiv.org/abs/2605.19010",
+        "source": "arXiv - AI",
+        "score": 8,
+        "summary": "Research paper presents a multi-agent AI system achieving 78.1% accuracy on natural language to SQL conversion, addressing a critical enterprise need for database querying. The agentic approach represents advancement in making databases more accessible to business users without SQL expertise.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Google says AI agents spending your money is a 'more fun' way to shop",
+        "url": "https://www.zdnet.com/article/google-says-ai-agents-spending-your-money-is-a-more-fun-way-to-shop/",
+        "source": "ZDNet Enterprise",
+        "score": 7,
+        "summary": "Google is introducing AI agents that can autonomously make purchases through a Universal Cart system that aggregates products from multiple retailers. This represents a significant step toward agentic AI systems handling financial transactions and procurement decisions.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "51% of professionals say AI workslop lowers their productivity - stop it in 2 steps",
+        "url": "https://www.zdnet.com/article/workslop-can-kill-your-productivity-heres-how-to-turn-ai-into-a-competitive-advantage/",
+        "source": "ZDNet Enterprise",
+        "score": 7,
+        "summary": "Survey finding that 51% of professionals report AI reducing their productivity highlights a critical gap between AI hype and workplace reality. The focus on preventing 'AI workslop' (presumably sloppy AI work) addresses a key enterprise adoption challenge.",
+        "category": "Enterprise & ERP"
+      }
+    ]
   }
 ]
