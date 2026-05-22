@@ -3437,5 +3437,138 @@
         "category": "Broad Tech News"
       }
     ]
+  },
+  {
+    "type": "daily",
+    "date": "2026-05-22",
+    "run_at": "2026-05-22T17:21:10.656873+00:00",
+    "feeds_fetched": 15,
+    "feeds_failed": 0,
+    "articles_scored": 65,
+    "articles_sent": 15,
+    "telegram_messages_sent": 17,
+    "big_picture": "**Today's Big Picture:** Enterprise software is undergoing a fundamental shift toward agentic AI, with major ERP vendors like Workday, Sage, and Blue Yonder racing to integrate autonomous AI workflows into core business processes\u2014but the gap between AI hype and operational reality remains significant, as evidenced by practical deployment challenges in supply chain and the need for \"honest conversations\" about AI capabilities. New infrastructure is rapidly emerging to support this transition, from specialized IDEs for agent development to sophisticated frameworks for multi-agent orchestration, while research advances in tool-augmented agents and self-optimizing systems point toward genuinely autonomous business process automation. For enterprise buyers and ERP consultants, this represents both an unprecedented opportunity to reimagine business workflows and a critical need to distinguish between vendor marketing promises and actual deployable AI capabilities that can deliver measurable business value.",
+    "articles": [
+      {
+        "title": "The re-invention of Workday - CEO Aneel Bhusri lays down the law on agentic AI",
+        "url": "https://diginomica.com/re-invention-workday-ceo-aneel-bhusri-lays-down-law-agentic-ai",
+        "source": "Diginomica",
+        "score": 9,
+        "summary": "Workday CEO discusses strategic shift toward agentic AI for enterprise HR and finance workflows, positioning against major ERP competitors. This represents a significant platform evolution for a major enterprise software vendor with clear business model implications.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "ICON 2026 - Blue Yonder's Chris Burchett on the AI reality in supply chain - and why customers need an honest conversation",
+        "url": "https://diginomica.com/icon-2026-blue-yonders-chris-burchett-ai-reality-supply-chain-and-why-customers-need-honest",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "Blue Yonder's SVP discusses practical AI implementation in supply chain management, focusing on autonomous workflows and realistic customer expectations for AI deployment. The article provides operational insights into enterprise AI adoption challenges and the engineering realities of building AI-driven supply chain systems.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Tool-Augmented Agent for Closed-loop Optimization,Simulation,and Modeling Orchestration",
+        "url": "https://arxiv.org/abs/2605.20190",
+        "source": "arXiv - AI",
+        "score": 9,
+        "summary": "COSMO-Agent demonstrates a sophisticated tool-augmented RL framework that enables LLMs to autonomously orchestrate complex CAD-CAE workflows, representing a significant advance in agentic AI systems for industrial applications. This research shows how AI agents can bridge semantic gaps between different software domains and complete closed-loop optimization processes that traditionally required extensive human intervention.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "AgentCo-op: Retrieval-Based Synthesis of Interoperable Multi-Agent Workflows",
+        "url": "https://arxiv.org/abs/2605.20425",
+        "source": "arXiv - AI",
+        "score": 9,
+        "summary": "AgentCo-op introduces a retrieval-based framework for composing multi-agent workflows that can handle complex, open-ended tasks through reusable components and self-repair mechanisms. This addresses a critical challenge in deploying AI agent systems at enterprise scale where standardized interfaces and reliable evaluation are lacking.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Accounting, assurance, and agentic - Sage Group CEO Stephen Hare sets out his stall to meet Finance customer needs",
+        "url": "https://diginomica.com/accounting-assurance-and-agentic-sage-group-ceo-stephen-hare-sets-out-his-stall-meet-finance",
+        "source": "Diginomica",
+        "score": 7,
+        "summary": "Sage Group CEO discusses integrating agentic AI into enterprise finance and accounting workflows, positioning the company's strategy around AI-driven automation for core business processes. The piece covers how a major ERP vendor is adapting to AI transformation in enterprise software.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Is the web being summarized to death?",
+        "url": "https://www.platformer.news/google-agents-daily-brief-newsletters-ask-youtube/",
+        "source": "Platformer",
+        "score": 8,
+        "summary": "Google I/O announced AI agents for Gmail and YouTube that could fundamentally change how users consume content, potentially reducing traffic to publishers and reshaping platform-publisher economics. This represents a significant shift in how AI intermediates between platforms and content creators, with major business model implications.",
+        "category": "Tech Strategy & Analysis"
+      },
+      {
+        "title": "Google I/O showed how the path for AI-driven science is shifting",
+        "url": "https://www.technologyreview.com/2026/05/22/1137813/google-i-o-showed-how-the-path-for-ai-science-is-shifting/",
+        "source": "MIT Technology Review",
+        "score": 8,
+        "summary": "Google DeepMind CEO Demis Hassabis declared we're at the 'foothills of the singularity' at Google I/O, signaling a major strategic shift in how AI-driven science and research will evolve. The article analyzes the implications of this bold positioning from one of the most influential AI leaders.",
+        "category": "Tech Strategy & Analysis"
+      },
+      {
+        "title": "Roundtables: Can AI Learn to Understand the World?",
+        "url": "https://www.technologyreview.com/2026/05/21/1137756/roundtables-can-ai-learn-to-understand-the-world/",
+        "source": "MIT Technology Review",
+        "score": 8,
+        "summary": "MIT Technology Review roundtable discussion on world models - AI systems that understand and interact with the external world, moving beyond current LLM limitations. Features expert analysis on a key frontier in AI development that could enable more sophisticated agent systems.",
+        "category": "Tech Strategy & Analysis"
+      },
+      {
+        "title": "SOLAR: A Self-Optimizing Open-Ended Autonomous Agent for Lifelong Learning and Continual Adaptation",
+        "url": "https://arxiv.org/abs/2605.20189",
+        "source": "arXiv - AI",
+        "score": 8,
+        "summary": "SOLAR proposes a self-optimizing autonomous agent architecture that addresses critical challenges in deploying LLMs in dynamic real-world environments, specifically tackling concept drift and adaptation costs. This research directly addresses key barriers to enterprise AI deployment where business conditions constantly change.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "The Download: coding\u2019s future, the \u2018Steroid Olympics,\u2019 and AI-driven science",
+        "url": "https://www.technologyreview.com/2026/05/22/1137845/the-download-coding-future-steroid-olympics-ai-science/",
+        "source": "MIT Technology Review",
+        "score": 7,
+        "summary": "MIT Technology Review's daily newsletter covering Anthropic's Code with Claude developer event and its implications for the future of coding, plus other AI-driven science developments. The focus on agentic AI capabilities in coding represents a significant shift in how software development workflows may evolve.",
+        "category": "Tech Strategy & Analysis"
+      },
+      {
+        "title": "Teaching Language Models to Forecast Research Success Through Comparative Idea Evaluation",
+        "url": "https://arxiv.org/abs/2605.21491",
+        "source": "arXiv - Machine Learning",
+        "score": 8,
+        "summary": "Researchers developed a method for language models to predict which AI-generated research ideas will succeed before experiments are conducted, addressing a key bottleneck as AI accelerates scientific hypothesis generation. The work tackles the emerging challenge of efficiently filtering through hundreds of AI-generated ideas without exhaustive testing.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Launch HN: Superset (YC P26) \u2013 IDE for the agents era",
+        "url": "https://github.com/superset-sh/superset",
+        "source": "Hacker News",
+        "score": 8,
+        "summary": "Superset is launching an IDE specifically designed for building AI agents, representing a significant infrastructure play in the emerging agentic AI market. This addresses a key bottleneck in enterprise AI adoption - the development tooling needed to create and deploy autonomous AI systems.",
+        "category": "Community & Practitioner"
+      },
+      {
+        "title": "Position: The Pre/Post-Training Boundary Should Govern IP in Industry-Academia ML Collaborations",
+        "url": "https://arxiv.org/abs/2605.22632",
+        "source": "arXiv - Economics & Tech Policy",
+        "score": 7,
+        "summary": "Researchers propose a new contract framework (PBOS) to resolve the fundamental tension between academic publishing requirements and industry IP protection in AI/ML collaborations. The framework aims to standardize how industry-academia partnerships handle intellectual property around pre-training vs post-training phases.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Google appeals search monopoly ruling, says it won business &#8216;fair and square\u2019",
+        "url": "https://www.theverge.com/policy/936175/google-search-monopoly-ruling-appeal",
+        "source": "The Verge",
+        "score": 8,
+        "summary": "Google has officially appealed the federal court ruling that found it operates an illegal search monopoly, arguing it won market dominance through fair competition. This case represents a major antitrust action that could reshape how big tech companies operate and compete.",
+        "category": "Broad Tech News"
+      },
+      {
+        "title": "Waymo suspends freeway driving amid safety concerns",
+        "url": "https://www.theverge.com/transportation/936129/waymo-freeway-suspend-atlanta-san-antonio-flood-pause",
+        "source": "The Verge",
+        "score": 8,
+        "summary": "Waymo suspended freeway driving across all US markets due to safety concerns, forcing longer routes on local roads. This represents a significant operational setback for the leading autonomous vehicle company and highlights ongoing challenges in scaling self-driving technology.",
+        "category": "Broad Tech News"
+      }
+    ]
   }
 ]
