@@ -3570,5 +3570,58 @@
         "category": "Broad Tech News"
       }
     ]
+  },
+  {
+    "type": "daily",
+    "date": "2026-05-24",
+    "run_at": "2026-05-24T16:31:48.873539+00:00",
+    "feeds_fetched": 15,
+    "feeds_failed": 0,
+    "articles_scored": 32,
+    "articles_sent": 5,
+    "telegram_messages_sent": 7,
+    "big_picture": "**Today's Big Picture:** The enterprise AI landscape is experiencing a dramatic maturation marked by aggressive pricing wars and emerging technical realities that demand serious strategic recalibration. While DeepSeek's 75% price cuts and new coding agents signal that powerful AI capabilities are becoming commoditized, fundamental issues like constraint decay in code generation and evolving security exploits reveal that enterprise deployment still carries significant operational risks. For ERP consultants and enterprise software buyers, this means the window for AI experimentation is rapidly closing in favor of disciplined evaluation focused on reliability, security, and genuine business value rather than AI branding hype.",
+    "articles": [
+      {
+        "title": "DeepSeek reasonix, DeepSeek native coding agent with high caching and low cost",
+        "url": "https://esengine.github.io/DeepSeek-Reasonix/",
+        "source": "Hacker News",
+        "score": 8,
+        "summary": "DeepSeek's new reasoning and coding agent represents a significant development in AI agent capabilities, potentially offering enterprise-grade automation at lower costs. This could impact competitive dynamics in the AI agent market and enterprise software space.",
+        "category": "Community & Practitioner"
+      },
+      {
+        "title": "Constraint Decay: The Fragility of LLM Agents in Back End Code Generation",
+        "url": "https://arxiv.org/abs/2605.06445",
+        "source": "Hacker News",
+        "score": 8,
+        "summary": "Research on constraint decay reveals fundamental limitations in LLM agents' ability to maintain system constraints during code generation, highlighting critical reliability issues for enterprise deployment. This addresses a key technical barrier to autonomous AI systems in business-critical applications.",
+        "category": "Community & Practitioner"
+      },
+      {
+        "title": "'AI washing': firms are scrambling to rebrand themselves as tech-focused",
+        "url": "https://www.theguardian.com/technology/2026/may/24/ai-washing-pr-firms-scrambling-rebrand",
+        "source": "Hacker News",
+        "score": 8,
+        "summary": "Article addresses the critical business phenomenon of 'AI washing' where companies are rebranding themselves as AI-focused without substantive technology changes. This reflects broader market dynamics around AI hype, investor expectations, and the strategic imperative for companies to position themselves in the AI narrative.",
+        "category": "Community & Practitioner"
+      },
+      {
+        "title": "DeepSeek to Make Permanent 75% Discount on Flagship AI Model",
+        "url": "https://www.bloomberg.com/news/articles/2026-05-23/deepseek-to-make-permanent-75-discount-on-flagship-ai-model",
+        "source": "Hacker News",
+        "score": 8,
+        "summary": "DeepSeek's permanent 75% price cut on their flagship AI model represents a significant competitive move that could reshape AI pricing across the industry. This aggressive pricing strategy could accelerate enterprise AI adoption and force other foundation model providers to reconsider their pricing structures.",
+        "category": "Community & Practitioner"
+      },
+      {
+        "title": "Hackers are learning to exploit chatbot &#8216;personalities&#8217;",
+        "url": "https://www.theverge.com/column/935545/hackers-ai-chatbots",
+        "source": "The Verge",
+        "score": 7,
+        "summary": "Article discusses how hackers are evolving their techniques to exploit AI chatbot personalities and behaviors, moving beyond simple prompt injection attacks. This represents a significant security concern as AI systems become more widely deployed in enterprise environments.",
+        "category": "Broad Tech News"
+      }
+    ]
   }
 ]
