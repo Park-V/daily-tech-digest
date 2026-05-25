@@ -3623,5 +3623,106 @@
         "category": "Broad Tech News"
       }
     ]
+  },
+  {
+    "type": "daily",
+    "date": "2026-05-25",
+    "run_at": "2026-05-25T17:18:22.498321+00:00",
+    "feeds_fetched": 15,
+    "feeds_failed": 0,
+    "articles_scored": 43,
+    "articles_sent": 11,
+    "telegram_messages_sent": 13,
+    "big_picture": "**Today's Big Picture:** Enterprise AI is rapidly evolving beyond simple chatbots toward sophisticated agentic systems that can conduct research, communicate directly between models, and handle complex multi-step workflows\u2014but this advancement brings new challenges in energy costs, security vulnerabilities, and the fundamental reliability of reasoning in smaller models. Organizations deploying AI must now grapple with measuring true operational costs at the goal level rather than per-query, implementing robust attribution and uncertainty measurement systems for compliance, and preparing for an accelerated cybersecurity arms race where AI tools both discover and exploit vulnerabilities. For ERP consultants and enterprise buyers, this means prioritizing vendors who can demonstrate explainable AI workflows, realistic energy accounting, and robust uncertainty quantification over those simply offering the latest model capabilities.",
+    "articles": [
+      {
+        "title": "RMA: an Agentic System for Research-Level Mathematical Problems",
+        "url": "https://arxiv.org/abs/2605.22875",
+        "source": "arXiv - AI",
+        "score": 9,
+        "summary": "RMA presents an agentic AI framework specifically designed for research-level mathematical problems, demonstrating advanced autonomous reasoning capabilities that go beyond competition math to tackle complex, long-horizon problems requiring literature synthesis and iterative refinement. This represents a significant advancement in AI agent systems' ability to handle sophisticated, multi-step reasoning tasks that mirror real-world research workflows.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Latent Cache Flow: Model-to-Model Communication Without Text",
+        "url": "https://arxiv.org/abs/2605.22863",
+        "source": "arXiv - Machine Learning",
+        "score": 9,
+        "summary": "This paper introduces Latent Cache Flow, a novel method for AI agent communication that bypasses text-based exchanges by directly transferring KV cache states between models. This could significantly reduce latency and information loss in multi-agent AI systems, addressing a key bottleneck in agentic AI deployment.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "BOHM: Zero-Cost Hierarchical Attribution for Compound AI Systems",
+        "url": "https://arxiv.org/abs/2605.22866",
+        "source": "arXiv - AI",
+        "score": 8,
+        "summary": "BOHM introduces a new attribution method for compound AI systems that works with third-party APIs and agentic orchestrators where traditional Shapley-based methods fail. This addresses a critical need for explainability in enterprise AI deployments using multiple specialized components and external services.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Energy per Successful Goal: Goal-Level Energy Accounting for Agentic AI Systems",
+        "url": "https://arxiv.org/abs/2605.22883",
+        "source": "arXiv - AI",
+        "score": 8,
+        "summary": "Researchers introduce A-LEMS, a new energy measurement framework for agentic AI systems that accounts for multi-step workflows, tool calls, and retries at the goal level rather than per model invocation. This addresses a critical gap in understanding the true energy costs of AI agent deployments as they become more prevalent in enterprise workflows.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Generative AI and the Reorganization of Labor Demand",
+        "url": "https://arxiv.org/abs/2605.23159",
+        "source": "arXiv - Economics & Tech Policy",
+        "score": 8,
+        "summary": "Academic research examining how generative AI is causing firms to reorganize labor demand patterns using nationwide job posting data across all economic sectors. The study goes beyond simple job displacement to analyze how companies are restructuring where they hire and what job functions contain as AI diffuses through the economy.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "The Readout Shortcut: Positional Number Copying Dominates Arithmetic CoT Readout in Small Language Models",
+        "url": "https://arxiv.org/abs/2605.22870",
+        "source": "arXiv - Machine Learning",
+        "score": 8,
+        "summary": "Research reveals that small language models using chain-of-thought prompting rely on a positional shortcut rather than logical reasoning, copying the last number before answer delimiters. This finding challenges fundamental assumptions about how CoT works in smaller models and has implications for enterprise AI deployment.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "The AI Era Is Creating a Bug Hunting Arms Race",
+        "url": "https://www.wired.com/story/the-ai-era-is-creating-a-bug-hunting-arms-race/",
+        "source": "Wired",
+        "score": 8,
+        "summary": "The article explores how AI is accelerating both vulnerability discovery and exploitation, creating a cybersecurity arms race. This represents a significant shift in enterprise security dynamics as AI tools become more capable of automated threat detection and attack development.",
+        "category": "Broad Tech News"
+      },
+      {
+        "title": "SciAtlas: A Large-Scale Knowledge Graph for Automated Scientific Research",
+        "url": "https://arxiv.org/abs/2605.22878",
+        "source": "arXiv - AI",
+        "score": 7,
+        "summary": "SciAtlas presents a large-scale knowledge graph designed to help AI agents navigate scientific research more effectively, addressing limitations of current keyword and vector-based retrieval systems. The work tackles the challenge of AI agents conducting deep research while avoiding logical hallucinations in complex knowledge domains.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Reading Calibrated Uncertainty from Language Model Trajectories",
+        "url": "https://arxiv.org/abs/2605.22864",
+        "source": "arXiv - Machine Learning",
+        "score": 7,
+        "summary": "Research paper introduces new methods for measuring uncertainty in language model outputs by analyzing the internal trajectory of how models form representations, rather than just looking at final softmax probabilities. This addresses a key challenge in making AI systems more reliable and trustworthy for deployment.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "FuRA: Full-Rank Parameter-Efficient Fine-Tuning with Spectral Preconditioning",
+        "url": "https://arxiv.org/abs/2605.22869",
+        "source": "arXiv - Machine Learning",
+        "score": 7,
+        "summary": "FuRA introduces a new parameter-efficient fine-tuning method that uses spectral preconditioning to preserve pretrained model features while adapting to new tasks. This addresses a key challenge in deploying foundation models for enterprise applications where maintaining model stability during adaptation is crucial.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "IBM Spins Off the First Pure-Play Quantum Chip Foundry",
+        "url": "https://futurumgroup.com/insights/2-billion-chips-act-investment-in-quantum-bets-on-ibms-300mm-superconducting-silicon/",
+        "source": "Hacker News",
+        "score": 7,
+        "summary": "IBM is spinning off a dedicated quantum chip foundry, representing a significant strategic move to commercialize quantum computing hardware. This could reshape the quantum computing supply chain and accelerate enterprise quantum adoption.",
+        "category": "Community & Practitioner"
+      }
+    ]
   }
 ]
