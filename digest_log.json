@@ -3724,5 +3724,138 @@
         "category": "Community & Practitioner"
       }
     ]
+  },
+  {
+    "type": "daily",
+    "date": "2026-05-26",
+    "run_at": "2026-05-26T18:08:42.164591+00:00",
+    "feeds_fetched": 15,
+    "feeds_failed": 0,
+    "articles_scored": 63,
+    "articles_sent": 15,
+    "telegram_messages_sent": 17,
+    "big_picture": "**Today's Big Picture:** Enterprise software is undergoing a fundamental shift from reactive AI tools to proactive agentic systems, but major vendors like SAP and Salesforce are emphasizing human-centered approaches while the underlying technology races toward full autonomy. The gap between organizational AI ambitions and operational readiness is creating strategic risks, particularly as research reveals critical issues with AI confidence calibration and reasoning efficiency that directly impact enterprise deployment viability. For ERP solution consultants, this means clients need immediate focus on workforce reskilling and infrastructure assessment rather than just AI feature adoption, as the technology's rapid evolution toward goal-directed agents will soon make today's implementation strategies obsolete.",
+    "articles": [
+      {
+        "title": "SAP Sapphire 2026 - SAP CTO Philipp Herzig on SAP's API policy changes, and why \"organizational memory\" matters for agentic AI",
+        "url": "https://diginomica.com/sap-sapphire-2026-sap-cto-philipp-herzig-saps-api-policy-changes-and-why-organizational-memory",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "SAP's CTO discusses significant API policy changes and the company's 'organizational memory' initiative for agentic AI systems. This covers enterprise AI strategy at a major ERP vendor, with implications for how businesses will deploy AI agents in core workflows.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Rethinking organizational design in the age of agentic AI",
+        "url": "https://www.technologyreview.com/2026/05/26/1137584/rethinking-organizational-design-in-the-age-of-agentic-ai/",
+        "source": "MIT Technology Review",
+        "score": 9,
+        "summary": "Article examines the strategic disconnect between organizations' AI agent ambitions and their operational readiness, highlighting infrastructure and process gaps. Focuses on enterprise transformation challenges as companies attempt to implement agentic AI systems across core business functions.",
+        "category": "Tech Strategy & Analysis"
+      },
+      {
+        "title": "Toward Reliable Design of LLM-Enabled Agentic Workflows: Optimizing Latency-Reliability-Cost Tradeoffs",
+        "url": "https://arxiv.org/abs/2605.23929",
+        "source": "arXiv - AI",
+        "score": 9,
+        "summary": "This research paper addresses critical engineering challenges for multi-agent AI systems, analyzing fundamental tradeoffs between latency, reliability, and cost in LLM-powered workflows. It provides performance models that could directly inform how enterprises design and deploy agentic AI systems in production.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Coding Beyond Your Training: Claude Code and the Technological Frontier of Software Developers",
+        "url": "https://arxiv.org/abs/2605.25438",
+        "source": "arXiv - Economics & Tech Policy",
+        "score": 9,
+        "summary": "Academic research studying the causal impact of AI coding assistants on developer productivity using rigorous econometric methods and a large panel dataset. Shows significant increases in commits and repositories, providing empirical evidence for AI's transformative effect on software development capabilities.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "What 20,000 job cuts? HSBC sets out its stall as a people-centric employer with AI skills training top of the agenda",
+        "url": "https://diginomica.com/what-20000-job-cuts-hsbc-sets-out-its-stall-people-centric-employer-ai-skills-training-top-agenda",
+        "source": "Diginomica",
+        "score": 7,
+        "summary": "HSBC is cutting 20,000 jobs while positioning itself as people-centric, emphasizing AI skills training for remaining staff. The bank acknowledges generative AI will eliminate positions but won't specify how many roles are at risk.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Why Salesforce is prioritizing its AI focus on people",
+        "url": "https://diginomica.com/why-salesforce-prioritizing-its-ai-focus-people",
+        "source": "Diginomica",
+        "score": 7,
+        "summary": "Salesforce is relocating its AI Center to London as part of a $6 billion UK investment, emphasizing human-centered AI development over pure infrastructure expansion. The strategy focuses on keeping humans in control of AI systems rather than creating automated loops.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "A reality check on the AI jobs hysteria",
+        "url": "https://www.technologyreview.com/2026/05/26/1137855/a-reality-check-on-the-ai-jobs-hysteria/",
+        "source": "MIT Technology Review",
+        "score": 8,
+        "summary": "MIT Technology Review provides a reality check on AI's impact on white-collar jobs, examining claims about widespread displacement against evidence from recent tech layoffs. The article offers substantive analysis on how AI will actually reshape knowledge work rather than simply eliminating it.",
+        "category": "Tech Strategy & Analysis"
+      },
+      {
+        "title": "It\u2019s time to address the looming crisis in entry-level work.",
+        "url": "https://www.technologyreview.com/2026/05/26/1137865/its-time-to-address-the-looming-crisis-in-entry-level-work/",
+        "source": "MIT Technology Review",
+        "score": 8,
+        "summary": "MIT Technology Review examines how AI is eroding entry-level career opportunities despite stable aggregate employment numbers, potentially creating a structural shift in how people enter the workforce. This represents a deeper strategic concern about AI's impact on business talent pipelines and organizational development beyond simple job displacement metrics.",
+        "category": "Tech Strategy & Analysis"
+      },
+      {
+        "title": "Import AI 458: Reckoning with the future; and a singularity story",
+        "url": "https://jack-clark.net/2026/05/26/import-ai-458-reckoning-with-the-future-and-a-singularity-story/",
+        "source": "Import AI",
+        "score": 7,
+        "summary": "Import AI newsletter issue featuring a lengthy essay on AI's future implications and a fictional exploration of a positive singularity scenario. The content appears to focus on strategic thinking about AI's trajectory and societal impact.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "AI Agents Plunged the Tech World Into Chaos. Here\u2019s Exactly How That Happened",
+        "url": "https://www.wired.com/story/how-ai-agents-plunged-tech-world-into-chaos/",
+        "source": "Wired",
+        "score": 9,
+        "summary": "This appears to be a comprehensive analysis of how AI agents have disrupted the technology industry, focusing on specific systems (Claude Code and OpenClaw) that triggered major transformation. The story likely covers the strategic implications and chaos these AI agent deployments created across the tech ecosystem.",
+        "category": "Broad Tech News"
+      },
+      {
+        "title": "Confidence Calibration in Large Language Models",
+        "url": "https://arxiv.org/abs/2605.23909",
+        "source": "arXiv - AI",
+        "score": 8,
+        "summary": "Research shows LLMs exhibit human-like overconfidence patterns, being most overconfident on difficult tasks while underconfident on easy ones. This foundational research on AI confidence calibration is critical for enterprise deployment where reliability assessments determine real-world application viability.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "How Much Thinking is Enough? Quantifying and Understanding Redundancy in LLM Reasoning",
+        "url": "https://arxiv.org/abs/2605.23926",
+        "source": "arXiv - AI",
+        "score": 8,
+        "summary": "Research paper quantifies redundancy in LLM reasoning chains, potentially enabling significant efficiency improvements in AI systems. The work addresses a critical bottleneck in deploying reasoning-capable AI at scale by measuring unnecessary computational overhead.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Context: Proactive Goal-Directed Intelligence via Composable Sandboxed Programs, Declarative Wiring, and Structured Interaction",
+        "url": "https://arxiv.org/abs/2605.23928",
+        "source": "arXiv - AI",
+        "score": 8,
+        "summary": "Research presents Context architecture that moves beyond reactive chatbots to proactive goal-directed AI agents that can advance tasks autonomously without user prompts. The system uses composable sandboxed programs and structured interaction patterns to enable more sophisticated agentic AI behavior.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "The Download: puncturing the AI jobs panic",
+        "url": "https://www.technologyreview.com/2026/05/26/1138028/the-download-ai-jobs-data/",
+        "source": "MIT Technology Review",
+        "score": 7,
+        "summary": "MIT Technology Review article examines the reality behind AI's impact on white-collar employment, providing a counterpoint to widespread job displacement fears. The piece likely offers data-driven analysis on actual AI adoption effects versus media hype.",
+        "category": "Tech Strategy & Analysis"
+      },
+      {
+        "title": "Algometrics: Forecasting Under Algorithmic Feedback",
+        "url": "https://arxiv.org/abs/2605.23978",
+        "source": "arXiv - Machine Learning",
+        "score": 8,
+        "summary": "This research introduces 'algometrics' - a framework for understanding how predictive algorithms change the very data they're trying to forecast when deployed in markets. The work addresses a critical challenge as AI systems become more autonomous and influential in financial markets and business decisions.",
+        "category": "AI & Research"
+      }
+    ]
   }
 ]
