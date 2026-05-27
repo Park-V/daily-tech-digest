@@ -3857,5 +3857,138 @@
         "category": "AI & Research"
       }
     ]
+  },
+  {
+    "type": "daily",
+    "date": "2026-05-27",
+    "run_at": "2026-05-27T18:09:14.241799+00:00",
+    "feeds_fetched": 15,
+    "feeds_failed": 0,
+    "articles_scored": 65,
+    "articles_sent": 15,
+    "telegram_messages_sent": 17,
+    "big_picture": "**Today's Big Picture**\n\nEnterprise AI is hitting a strategic inflection point where the fundamental questions have shifted from \"what can AI do?\" to \"how do we actually implement it effectively?\" - with data management challenges, governance restructuring, and the need for operational context emerging as the primary blockers to value realization. The traditional enterprise software narrative is fracturing as ERP vendors struggle to articulate compelling AI integration stories while infrastructure decisions increasingly favor hybrid and on-premises deployments driven by cost pressures and data sovereignty requirements. For enterprise buyers and ERP consultants, this means the next 18 months will be defined by tactical implementation challenges around data foundations, cross-functional governance models, and contextual AI agent deployment rather than the theoretical capabilities that have dominated recent discussions.",
+    "articles": [
+      {
+        "title": "If agentic AI truly makes every enterprise frictionless, what's left to compete on?",
+        "url": "https://diginomica.com/if-agentic-ai-truly-makes-every-enterprise-frictionless-whats-left-compete",
+        "source": "Diginomica",
+        "score": 9,
+        "summary": "This article examines a fundamental strategic question about how agentic AI will reshape competitive dynamics when enterprise processes become frictionless and automated. It addresses the core business strategy implications of AI agents eliminating traditional operational differentiators.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Getting value out of enterprise AI consistently hits a data road block. Box CEO Aaron Levie wants to have a conversation with you",
+        "url": "https://diginomica.com/getting-value-out-enterprise-ai-consistently-hits-data-road-block-box-ceo-aaron-levie-wants-have",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "Box CEO Aaron Levie discusses how data management challenges are consistently blocking enterprise AI value realization, highlighting a critical infrastructure bottleneck affecting AI deployment. The conversation focuses on practical enterprise AI implementation barriers rather than theoretical capabilities.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Zendesk\u2019s Shana Simmons on why AI governance cannot live in Legal alone",
+        "url": "https://diginomica.com/zendesk-shana-simmons-ai-governance-not-legal-alone",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "Zendesk executive discusses how AI governance requires cross-functional collaboration beyond traditional legal silos, reflecting broader organizational changes needed as AI transforms business operations. The piece addresses the strategic challenge of restructuring corporate governance for AI deployment.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "ERP vendors have lost the control of the narrative. What's the story?",
+        "url": "https://diginomica.com/erp-vendors-have-lost-control-narrative-whats-story",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "Analysis of how ERP vendors are struggling to create compelling narratives around AI integration, suggesting a strategic inflection point in enterprise software. The piece examines the gap between AI hype and actual value creation in core business systems.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "AI-accelerated ERP transformation requires context, period",
+        "url": "https://diginomica.com/ai-accelerated-erp-transformation-requires-context-period",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "Celonis executives argue that AI-accelerated ERP transformations require operational context to succeed, proposing digital twin capabilities combined with enterprise AI agents as the solution. The piece addresses the strategic challenge of making enterprise AI implementations effective rather than just technologically impressive.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Claude Code's creator on the end of the software engineer",
+        "url": "https://www.platformer.news/boris-cherny-interview-ai-jobs/",
+        "source": "Platformer",
+        "score": 9,
+        "summary": "Anthropic's Boris Cherny discusses how AI coding tools will fundamentally reshape software engineering roles, predicting significant job displacement alongside new job creation. The article also covers AI policy developments including papal guidance and changes to Trump's AI executive order.",
+        "category": "Tech Strategy & Analysis"
+      },
+      {
+        "title": "Is Agent Memory a Database? Rethinking Data Foundations for Long-Term AI Agent Memory",
+        "url": "https://arxiv.org/abs/2605.26252",
+        "source": "arXiv - AI",
+        "score": 9,
+        "summary": "Research paper identifies fundamental flaws in current AI agent memory systems, arguing that treating memory as simple storage creates four critical failure modes. Proposes rethinking data foundations for long-term agent memory beyond traditional database paradigms.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "What does co-operation look like between Alteryx, Snowflake, Databricks and Google? A channel strategy explainer from Inspire 2026",
+        "url": "https://diginomica.com/what-does-cooperation-look-between-alteryx-snowflake-databricks-and-google-channel-strategy",
+        "source": "Diginomica",
+        "score": 7,
+        "summary": "Article discusses partnership strategies between major data platform vendors (Alteryx, Snowflake, Databricks, Google) and how enterprise buyers should evaluate vendor relationships around business logic ownership. Focuses on channel strategy and vendor ecosystem dynamics in the enterprise data space.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Why AI dev quality needs systems thinking and community building",
+        "url": "https://diginomica.com/why-ai-dev-quality-needs-systems-thinking-and-community-building",
+        "source": "Diginomica",
+        "score": 7,
+        "summary": "Leapwork CEO discusses how agentic AI development requires new approaches to software quality assurance through continuous validation systems. The piece addresses the operational challenges of deploying AI agents in enterprise environments where quality control becomes more complex.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "AI is an arms race, and the US wants $9 billion in Nvidia superchips to keep up",
+        "url": "https://www.zdnet.com/article/heres-why-the-government-wants-to-spend-9-billion-on-ai-superchips/",
+        "source": "ZDNet Enterprise",
+        "score": 8,
+        "summary": "The US government plans to spend $9 billion on Nvidia superchips as part of an AI arms race strategy. This represents a major policy and economic move showing how AI competition is driving massive government investment in computing infrastructure.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Why the future of AI is on-premises - business advice from Dell Tech World 2026",
+        "url": "https://www.zdnet.com/article/dell-tech-world-2026-why-the-future-of-ai-is-moving-on-premises/",
+        "source": "ZDNet Enterprise",
+        "score": 8,
+        "summary": "Dell's conference highlights a strategic shift toward on-premises and hybrid AI infrastructure driven by cost pressures, data sovereignty requirements, and the rise of AI agents in enterprise workflows. This represents a significant architectural change in how enterprises deploy AI, moving away from cloud-only models.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Multi-Agent LLM System for Automated Vulnerability Discovery and Reproduction",
+        "url": "https://arxiv.org/abs/2605.21779",
+        "source": "Hacker News",
+        "score": 9,
+        "summary": "Multi-agent LLM systems for automated vulnerability discovery represent a significant advancement in AI-powered cybersecurity, demonstrating how agent-based AI can autonomously handle complex technical workflows. This could transform enterprise security operations by automating vulnerability assessment and reproduction processes that currently require significant manual expertise.",
+        "category": "Community & Practitioner"
+      },
+      {
+        "title": "Can LLMs Introspect? A Reality Check",
+        "url": "https://arxiv.org/abs/2605.26242",
+        "source": "arXiv - AI",
+        "score": 8,
+        "summary": "Research paper questioning whether large language models can truly introspect or are merely pattern matching, challenging recent claims about LLM self-awareness. This addresses fundamental questions about AI capabilities that could impact how we design and deploy AI agents in enterprise settings.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Personalizing Embodied Multimodal Large Language Model Agents over Long-term User Interactions",
+        "url": "https://arxiv.org/abs/2605.26256",
+        "source": "arXiv - AI",
+        "score": 8,
+        "summary": "Academic research on POLAR, a framework for embodied AI agents that can personalize their behavior through long-term memory and user interaction history. This represents important progress toward more contextually aware AI agents that can accumulate and leverage user-specific knowledge over time.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "GEM: Geometric Entropy Mixing for Optimal LLM Data Curation",
+        "url": "https://arxiv.org/abs/2605.26121",
+        "source": "arXiv - Machine Learning",
+        "score": 8,
+        "summary": "This paper introduces GEM, a novel framework for optimizing LLM training data composition through geometric methods on hyperspheres, addressing fundamental issues with current data curation approaches. The work tackles a critical bottleneck in foundation model development where data quality and mixing strategies are becoming more important than raw data volume.",
+        "category": "AI & Research"
+      }
+    ]
   }
 ]
