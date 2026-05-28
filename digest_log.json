@@ -3990,5 +3990,138 @@
         "category": "AI & Research"
       }
     ]
+  },
+  {
+    "type": "daily",
+    "date": "2026-05-28",
+    "run_at": "2026-05-28T18:21:54.676175+00:00",
+    "feeds_fetched": 15,
+    "feeds_failed": 0,
+    "articles_scored": 66,
+    "articles_sent": 15,
+    "telegram_messages_sent": 17,
+    "big_picture": "**Today's Big Picture:** Enterprise AI is hitting a critical inflection point where the gap between individual productivity gains and coordinated organizational value is becoming the make-or-break factor for AI investments, as evidenced by companies like Salesforce thriving with integrated AI agents while others struggle with fragmented implementations. The fundamental limitations of current LLMs\u2014particularly their inability to perform true causal reasoning and their bias toward correlation over causation\u2014are forcing enterprises to rethink AI strategy from \"replace everything\" to \"augment strategically,\" especially as real-world deployments like Groupon's workforce replacement reveal both the promise and peril of agentic AI. For ERP solution consultants, this means the next 18 months will be defined by helping clients navigate the difference between AI tools that create workflow fragmentation versus AI agents that enhance unified business processes\u2014a distinction that will determine whether AI investments deliver transformational value or expensive complexity.",
+    "articles": [
+      {
+        "title": "Agentic AI \u2013 an infinite regress of cost/benefit challenges?",
+        "url": "https://diginomica.com/agentic-ai-infinite-regress-costbenefit-challenges",
+        "source": "Diginomica",
+        "score": 9,
+        "summary": "Article examines the critical strategic challenge of enterprises deploying AI agents to make management decisions while retaining ultimate responsibility. This addresses a fundamental governance and risk issue as agentic AI becomes more prevalent in business operations.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Your AI strategy is leaving billions on the table. Here\u2019s what the best teams do differently",
+        "url": "https://diginomica.com/ai-strategy-what-best-teams-do-differently",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "Atlassian executive discusses how AI is accelerating individual productivity but creating fragmentation challenges at the team level, highlighting a critical strategic issue in enterprise AI adoption. The article appears to address the gap between individual AI tools and coordinated team workflows, a key challenge for organizations implementing AI at scale.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Agentforce and Slackbot dominate Salesforce Q1 successes, as CEO Benioff forecasts Coworker impact to come",
+        "url": "https://diginomica.com/agentforce-and-slackbot-dominate-salesforce-q1-successes-ceo-benioff-forecasts-coworker-impact-come",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "Salesforce's Q1 results highlight strong performance from Agentforce AI agents and Slack, while some traditional business units lag. CEO Benioff's forecast about AI 'Coworkers' suggests major enterprise workflow transformation ahead.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Have Salesforce customers been heading down the wrong path with their idea of Headless 360? CMO Patrick Stokes does a little course correction",
+        "url": "https://diginomica.com/have-salesforce-customers-been-heading-down-wrong-path-their-idea-headless-360-cmo-patrick-stokes",
+        "source": "Diginomica",
+        "score": 7,
+        "summary": "Salesforce CMO clarifies misconceptions about Headless 360 following its launch at TDX developer conference last month. The article addresses customer confusion and provides course correction on the platform's actual capabilities and positioning.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Why Groupon is betting on agentic AI picking up the slack left by losing 25% of its workforce",
+        "url": "https://diginomica.com/why-groupon-betting-agentic-ai-picking-slack-left-losing-25-its-workforce",
+        "source": "Diginomica",
+        "score": 7,
+        "summary": "Groupon's CEO is implementing agentic AI systems to compensate for a 25% workforce reduction, representing a real-world case study of AI replacing human labor at scale. This reflects broader trends of companies using AI agents for operational efficiency during cost-cutting periods.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Anthropic launches Opus 4.8, with honesty as its killer feature",
+        "url": "https://www.zdnet.com/article/anthropics-launches-opus-4-8-where-honesty-is-the-killer-feature/",
+        "source": "ZDNet Enterprise",
+        "score": 8,
+        "summary": "Anthropic releases Claude Opus 4.8 with enhanced honesty and reliability features, positioning it for enterprise coding and complex workflows. The focus on trustworthiness addresses a critical barrier to AI adoption in business-critical applications.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Why LLMs Fail at Causal Discovery and How Interventional Agents Escape",
+        "url": "https://arxiv.org/abs/2605.27567",
+        "source": "arXiv - AI",
+        "score": 8,
+        "summary": "Research proves a fundamental limitation in LLMs' ability to perform causal discovery, showing that current training methods cannot distinguish between different causal graphs that produce similar observational data. This represents a significant theoretical breakthrough in understanding the boundaries of current AI systems for scientific reasoning and decision-making.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Who Uses AI? Platform Selection and the Measurement of Occupational AI Exposure",
+        "url": "https://arxiv.org/abs/2605.21743",
+        "source": "arXiv - Economics & Tech Policy",
+        "score": 8,
+        "summary": "Research reveals that AI exposure measurements based on platform usage logs are biased by user demographics rather than actual occupational AI applicability, with employment impact estimates varying dramatically depending on which platform data is used. This highlights critical methodological flaws in how we measure AI's labor market effects.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Amazon Thinks the Future of Data Centers Depends on a Technical Problem It Just Solved",
+        "url": "https://www.wired.com/story/amazon-thinks-the-future-of-data-centers-depends-on-a-technical-problem-it-just-solved/",
+        "source": "Wired",
+        "score": 8,
+        "summary": "Amazon claims a breakthrough in data center networking that dramatically accelerates information flow through its cloud infrastructure. This represents a significant infrastructure advancement that could impact enterprise cloud services and competitive positioning against other major cloud providers.",
+        "category": "Broad Tech News"
+      },
+      {
+        "title": "Identifying and Understanding Human Values in Text: A Tailorable LLM-based Architecture",
+        "url": "https://arxiv.org/abs/2605.27373",
+        "source": "arXiv - AI",
+        "score": 7,
+        "summary": "Research paper presents an LLM-based architecture for identifying human values in text to enable ethical decision-making in autonomous AI systems. This addresses a critical challenge as AI agents become more autonomous and need to align their decisions with human values rather than just utility maximization.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "On the Origin of Synthetic Information by Means of Steganographic Inheritance",
+        "url": "https://arxiv.org/abs/2605.27551",
+        "source": "arXiv - AI",
+        "score": 7,
+        "summary": "Academic paper exploring the philosophical and practical challenges of tracing the origins and lineage of AI-generated synthetic information. The work addresses fundamental questions about truth, trust, and verification in an era where AI capabilities make information provenance increasingly difficult to determine.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Headway Therapy Patients Forced to Scan Their Faces to Keep Getting Care",
+        "url": "https://www.404media.co/headway-therapy-facial-scan-biometric-data-identity-verification/",
+        "source": "404 Media",
+        "score": 7,
+        "summary": "Headway, a virtual therapy platform, is requiring facial scanning from providers and patients to continue care, raising significant privacy concerns in healthcare technology. This highlights how biometric data collection is expanding into sensitive sectors like mental health services.",
+        "category": "Tech Strategy & Analysis"
+      },
+      {
+        "title": "$E^3$-Agent: An Executable and Evolving Agent for Resource Management of Edge Generative Inference",
+        "url": "https://arxiv.org/abs/2605.27428",
+        "source": "arXiv - Machine Learning",
+        "score": 7,
+        "summary": "This research presents an AI agent system for managing computational resources in edge deployments of generative AI models, addressing real-world challenges of unknown and changing performance characteristics. The work tackles practical infrastructure problems that will become increasingly important as generative AI moves from centralized cloud deployments to edge computing environments.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "The Pentagon Knew Enemies Could Track Troops\u2019 Phones for Years. Now They Are",
+        "url": "https://www.wired.com/story/the-pentagon-knew-enemies-could-track-troops-phones-for-years-now-they-are/",
+        "source": "Wired",
+        "score": 7,
+        "summary": "The Pentagon has failed to implement known solutions to prevent adversaries from tracking troops through location data, despite years of warnings. This highlights critical cybersecurity gaps in military operations during active warfare.",
+        "category": "Broad Tech News"
+      },
+      {
+        "title": "Here Comes Ojai, Waymo\u2019s New Chinese-Made Robotaxi",
+        "url": "https://www.wired.com/story/here-comes-ojai-waymos-new-chinese-made-robotaxi/",
+        "source": "Wired",
+        "score": 7,
+        "summary": "Waymo is deploying new Chinese-manufactured robotaxis called Ojai in California and Arizona for public use. This represents a significant step in autonomous vehicle commercialization and highlights the global supply chain dynamics in the robotaxi market.",
+        "category": "Broad Tech News"
+      }
+    ]
   }
 ]
