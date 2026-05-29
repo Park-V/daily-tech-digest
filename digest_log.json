@@ -4123,5 +4123,138 @@
         "category": "Broad Tech News"
       }
     ]
+  },
+  {
+    "type": "daily",
+    "date": "2026-05-29",
+    "run_at": "2026-05-29T18:17:57.158750+00:00",
+    "feeds_fetched": 15,
+    "feeds_failed": 0,
+    "articles_scored": 64,
+    "articles_sent": 15,
+    "telegram_messages_sent": 17,
+    "big_picture": "**Today's Big Picture**: Enterprise AI is rapidly transitioning from augmentation tools to autonomous agents that can execute real business processes independently, as evidenced by Salesforce Agentforce deployments at PenFed, Robinhood's AI trading APIs, and UiPath's defense of deterministic automation alongside agentic systems. However, this shift exposes critical infrastructure vulnerabilities and safety gaps\u2014IBM's $5 billion open-source security initiative and emerging research on AI agent behavioral drift highlight the massive investment required to make autonomous systems enterprise-ready. For ERP consultants and enterprise buyers, the window is closing to pilot agentic AI in controlled environments before competitors gain first-mover advantages, but the current focus must be on building robust governance frameworks rather than rushing into full automation without proper safeguards.",
+    "articles": [
+      {
+        "title": "the diginomica network podcast - Xero CP&TO reveals the accountants lessons for agentic AI success",
+        "url": "https://diginomica.com/diginomica-network-podcast-xero-cpto-reveals-accountants-lessons-agentic-ai-success",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "Xero's Chief Product & Technology Officer discusses how accounting automation for SMBs provides lessons for agentic AI adoption across enterprises. The interview explores real-world deployment of AI agents in finance workflows and broader implications for autonomous business processes.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "UiPath says deterministic automation can't be replaced by AI agents. Q1 FY2027 numbers support the case",
+        "url": "https://diginomica.com/uipath-says-deterministic-automation-cant-be-replaced-ai-agents-q1-fy2027-numbers-support-case",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "UiPath CEO argues deterministic automation remains valuable despite AI agent hype, backed by strong Q1 profitability results. This represents a strategic positioning in the enterprise automation market as AI agents gain momentum.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "How PenFed credits its Salesforce Agentforce partnership with helping it thrive and survive in a turbulent market",
+        "url": "https://diginomica.com/how-penfed-credits-its-salesforce-agentforce-partnership-helping-it-thrive-and-survive-turbulent",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "PenFed Credit Union leverages Salesforce's new Agentforce AI platform to navigate market turbulence, demonstrating enterprise adoption of agentic AI systems in financial services. The case study shows how AI agents are being deployed for real business operations beyond pilot programs.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "From Augmentation to Reconstruction: Guiding the AI Disruption to the Good Place",
+        "url": "https://arxiv.org/abs/2605.29207",
+        "source": "arXiv - Economics & Tech Policy",
+        "score": 9,
+        "summary": "Academic paper proposes a three-stage framework for AI disruption: Augmentation, Automation, and Reconstruction, arguing that true transformation happens when workflows and markets are rebuilt around AI delegation and machine-to-machine interaction. The analysis addresses why AI disruption hasn't fully materialized despite advanced capabilities - organizations are still using AI to accelerate pre-AI workflows rather than fundamentally reconstructing them.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Synthetic CEOs - can AI executive avatars be taken seriously outside of Mark Zuckerberg's imaginings?",
+        "url": "https://diginomica.com/synthetic-ceos-can-ai-executive-avatars-be-taken-seriously-outside-mark-zuckerbergs-imaginings",
+        "source": "Diginomica",
+        "score": 7,
+        "summary": "Article explores the viability of AI-powered executive avatars as future leadership tools, examining expert perspectives on their practical applications beyond theoretical concepts. Touches on organizational change driven by AI technology and its implications for business leadership structures.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Open-source security is a mess - IBM and Red Hat bet $5 billion and 20,000 engineers can fix it",
+        "url": "https://www.zdnet.com/article/open-source-security-is-a-mess-ibm-and-red-hat-bet-5-billion-to-fix-it/",
+        "source": "ZDNet Enterprise",
+        "score": 8,
+        "summary": "IBM and Red Hat are launching Project Lightwell, a $5 billion AI-powered initiative using 20,000 engineers to systematically find and fix vulnerabilities in open-source software at industrial scale. This represents a major strategic bet on using AI agents for enterprise-critical infrastructure security.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "How a new extraction process could unlock the world\u2019s lithium",
+        "url": "https://www.technologyreview.com/2026/05/28/1138096/lithium-extraction-rock-zero/",
+        "source": "MIT Technology Review",
+        "score": 7,
+        "summary": "Researchers developed a new lithium extraction process that could be more environmentally friendly and cheaper than current methods, with startup Rock Zero commercializing the technology. This could significantly impact the supply chain for batteries used in electric vehicles and energy storage systems.",
+        "category": "Tech Strategy & Analysis"
+      },
+      {
+        "title": "Representation Signatures and Risk-Feedback Alignment in LLM Trading Agents",
+        "url": "https://arxiv.org/abs/2605.28850",
+        "source": "arXiv - Machine Learning",
+        "score": 8,
+        "summary": "Research presents novel methods for detecting behavioral drift in AI trading agents before failures occur, using representation analysis and risk feedback systems. The work addresses critical safety concerns for deploying autonomous AI agents in high-stakes financial environments.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Mechanistic origins of catastrophic forgetting: why RL preserves circuits better than SFT?",
+        "url": "https://arxiv.org/abs/2605.28860",
+        "source": "arXiv - Machine Learning",
+        "score": 8,
+        "summary": "Research investigating why reinforcement learning preserves AI model capabilities better than supervised fine-tuning during training, examining the mechanistic differences at the circuit level. This addresses a critical challenge in developing reliable AI agents that can learn new tasks without losing existing capabilities.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Notes from the Mistral AI Now Summit in Paris",
+        "url": "https://koenvangilst.nl/lab/mistral-ai-now-summit",
+        "source": "Hacker News",
+        "score": 8,
+        "summary": "Report from Mistral AI's summit covering their latest AI developments and strategic direction. Given Mistral's position as a key European AI foundation model company, this likely contains insights on enterprise AI deployment, competitive positioning against OpenAI/Anthropic, and European AI regulation approaches.",
+        "category": "Community & Practitioner"
+      },
+      {
+        "title": "Robinhood now lets your AI agents trade stocks",
+        "url": "https://techcrunch.com/2026/05/27/robinhood-now-lets-your-ai-agents-trade-stocks/",
+        "source": "Hacker News",
+        "score": 8,
+        "summary": "Robinhood has launched API access allowing AI agents to execute stock trades autonomously, marking a significant step toward AI-driven financial automation. This represents a notable expansion of agentic AI capabilities into retail finance and trading workflows.",
+        "category": "Community & Practitioner"
+      },
+      {
+        "title": "Review Arcade: On the Human Alignment and Gameability of LLM Reviews",
+        "url": "https://arxiv.org/abs/2605.28897",
+        "source": "arXiv - AI",
+        "score": 7,
+        "summary": "Research evaluates LLM-generated scientific paper reviews used by major conferences, finding limited alignment with human reviewers and raising concerns about gaming the review process. The study addresses practical challenges as AI tools become standard in academic and professional evaluation workflows.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Mobile Foreigners: Mortgage Lock-In and H-1B Demand",
+        "url": "https://arxiv.org/abs/2605.28904",
+        "source": "arXiv - Economics & Tech Policy",
+        "score": 7,
+        "summary": "Research shows that mortgage rate lock-in effects are driving increased H-1B visa sponsorship requests as domestic workers become less mobile. Companies are turning to foreign talent when they can't attract relocating domestic workers due to housing market constraints.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "New Study Reveals the Manipulative \u2018Dark Patterns\u2019 of AI Chatbots",
+        "url": "https://www.404media.co/new-study-reveals-the-manipulative-dark-patterns-of-ai-chatbots/",
+        "source": "404 Media",
+        "score": 7,
+        "summary": "Study examines manipulative design patterns in major AI chatbots that guide users toward unintended behaviors. Research highlights potential regulatory concerns around AI system design and user manipulation.",
+        "category": "Tech Strategy & Analysis"
+      },
+      {
+        "title": "Tech companies desperately want to film you doing chores",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/940007/ai-companies-will-pay-for-robot-training-data",
+        "source": "The Verge",
+        "score": 8,
+        "summary": "AI startup Shift offers free home cleaning in exchange for filming the process, representing the broader trend of companies collecting real-world data to train AI agents for domestic tasks. This highlights how AI companies are moving beyond digital training data to capture physical world interactions for developing more capable autonomous systems.",
+        "category": "Broad Tech News"
+      }
+    ]
   }
 ]
