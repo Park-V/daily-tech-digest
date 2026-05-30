@@ -4256,5 +4256,42 @@
         "category": "Broad Tech News"
       }
     ]
+  },
+  {
+    "type": "daily",
+    "date": "2026-05-30",
+    "run_at": "2026-05-30T16:33:10.030554+00:00",
+    "feeds_fetched": 15,
+    "feeds_failed": 0,
+    "articles_scored": 39,
+    "articles_sent": 3,
+    "telegram_messages_sent": 5,
+    "big_picture": "**Today's Big Picture:** Enterprise software is rapidly evolving from traditional ticketing systems to autonomous AI agents that can handle complex workflows end-to-end, as demonstrated by Workday's latest capabilities, fundamentally changing how businesses will procure and implement software solutions. The AI landscape itself is experiencing a seismic shift with Anthropic's rise potentially creating new enterprise partnership opportunities and competitive pressure that could benefit buyers through better pricing and innovation. Meanwhile, increasing government intervention in tech funding signals a more volatile regulatory environment that enterprise buyers and consultants should factor into long-term vendor stability assessments and technology roadmaps.",
+    "articles": [
+      {
+        "title": "No need for tickets says Workday's Jerry Ting, as new agents take on IT provisioning and travel",
+        "url": "https://diginomica.com/no-need-tickets-workday-jerry-ting-agents-it-provisioning-travel",
+        "source": "Diginomica",
+        "score": 9,
+        "summary": "Workday is deploying AI agents for enterprise workflows like IT provisioning and travel booking, representing a significant shift toward autonomous business processes. This demonstrates how major enterprise software vendors are moving beyond chatbots to agents that can orchestrate complex multi-step workflows.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Anthropic surpasses OpenAI to become most valuable AI startup",
+        "url": "https://qazinform.com/news/anthropic-surpasses-openai-to-become-worlds-most-valuable-ai-startup",
+        "source": "Hacker News",
+        "score": 8,
+        "summary": "Anthropic reportedly surpasses OpenAI in valuation to become the most valuable AI startup, marking a significant shift in competitive dynamics among foundation model companies. This represents a major market development in the AI race with potential implications for enterprise AI adoption and strategic partnerships.",
+        "category": "Community & Practitioner"
+      },
+      {
+        "title": "Proposed new US funding rules: We can cancel any grant at any time",
+        "url": "https://arstechnica.com/science/2026/05/the-office-of-management-and-budget-tries-again-to-cripple-us-science/",
+        "source": "Hacker News",
+        "score": 7,
+        "summary": "New US funding rules would allow government to cancel grants at any time, potentially impacting tech companies and research institutions receiving federal funding. This represents a significant policy shift that could affect AI research, enterprise software development, and other tech initiatives dependent on government grants.",
+        "category": "Community & Practitioner"
+      }
+    ]
   }
 ]
