@@ -4322,5 +4322,14 @@
         "category": "Community & Practitioner"
       }
     ]
+  },
+  {
+    "type": "weekly",
+    "date": "2026-05-31",
+    "run_at": "2026-05-31T16:41:57.366707+00:00",
+    "days_covered": 8,
+    "articles_featured": 23,
+    "telegram_messages_sent": 10,
+    "big_picture": "This week highlighted the fundamental disruption occurring in enterprise software as agentic AI moves from pilot programs to production workflows, with companies like Groupon, PenFed, and Workday demonstrating real operational deployments that automate complex multi-step processes previously requiring human intervention. DeepSeek's aggressive 75% price cuts and technical advances signal an acceleration in AI commoditization that will force enterprise software vendors to fundamentally restructure their value propositions beyond basic AI features, while traditional ERP providers struggle to articulate compelling narratives around AI integration. For enterprise buyers and consultants, the critical shift is moving beyond \"AI washing\" to identify solutions that reconstruct workflows around AI delegation rather than simply augmenting existing processes, as the companies successfully deploying agentic systems are those rebuilding operations from the ground up rather than retrofitting AI onto legacy approaches."
   }
 ]
