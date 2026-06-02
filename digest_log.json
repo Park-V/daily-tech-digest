@@ -4464,5 +4464,138 @@
         "category": "Community & Practitioner"
       }
     ]
+  },
+  {
+    "type": "daily",
+    "date": "2026-06-02",
+    "run_at": "2026-06-02T18:58:59.394653+00:00",
+    "feeds_fetched": 15,
+    "feeds_failed": 0,
+    "articles_scored": 65,
+    "articles_sent": 15,
+    "telegram_messages_sent": 17,
+    "big_picture": "**Today's Big Picture**\n\nEnterprise AI is hitting a critical inflection point as organizations shift from experimental \"free-for-all\" spending to production-scale deployments that demand cost discipline, safety protocols, and measurable business outcomes\u2014with Microsoft's aggressive push into agent-first enterprise IT through Work IQ and new reasoning models positioning them as the dominant force in this transition. The technical architecture decisions being made today, from UiPath's deterministic automation engines to Salesforce's content-integrated AI agents, will determine which platforms can actually deliver reliable, scalable AI solutions rather than just impressive demos. For enterprise software buyers and ERP consultants, this means the window for AI experimentation is closing fast, and the next 12-18 months will separate vendors who can deliver governed, cost-effective AI automation from those still stuck in the pilot phase.",
+    "articles": [
+      {
+        "title": "Token gesture - how enterprises are waking up to the cost of 'free for all' AI. Spend, spend, spend is no longer going to cut it",
+        "url": "https://diginomica.com/token-gesture-how-enterprises-are-waking-cost-free-all-ai-spend-spend-spend-no-longer-going-cut-it",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "The article examines how enterprises are shifting from unlimited AI usage to cost-conscious token management strategies. This represents a significant strategic inflection point as companies move from experimental AI adoption to production-scale deployment with financial discipline.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Determinism all the way down \u2013 how UiPath's market bet and the engine beneath it turn out to be the same idea",
+        "url": "https://diginomica.com/determinism-how-uipaths-market-engine-beneath-turn-out-same-idea",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "UiPath's CEO provides detailed technical insights into the company's automation platform architecture, including Temporal engine for crash recovery and event-sourcing for workflow resilience. The discussion connects deep technical implementation choices to broader market strategy around deterministic automation.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Dynamic content management comes to Agentforce as Salesforce fleshes out Headless 360 with Contentful acquisition",
+        "url": "https://diginomica.com/dynamic-content-management-comes-agentforce-salesforce-fleshes-out-headless-360-contentful",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "Salesforce acquired Contentful to enhance its Agentforce AI platform with dynamic content management capabilities, representing a strategic move to integrate headless CMS with agentic AI workflows. This acquisition demonstrates how enterprise platforms are evolving to support AI agents that need sophisticated content orchestration.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Enterprise AI is still stuck at experimentation \u2013 Valiantys and Glean think they know why",
+        "url": "https://diginomica.com/enterprise-ai-still-stuck-experimentation-valiantys-and-glean-think-they-know-why",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "Article examines why enterprise AI initiatives remain stuck in pilot phases, featuring insights from Valiantys CAO on partnership with AI platform Glean and the challenges of moving from experimentation to production deployment. Addresses the critical gap between AI proof-of-concepts and real business value creation in enterprise settings.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Enterprise hits and misses - does the agentic enterprise have a friction problem, and is MCP ready for prime time?",
+        "url": "https://diginomica.com/enterprise-hits-and-misses-does-agentic-enterprise-have-friction-problem-and-mcp-ready-prime-time",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "Article examines strategic questions around agentic AI implementation in enterprises, including friction reduction concerns and Model Context Protocol (MCP) readiness for business deployment. Covers key enterprise AI adoption challenges and vendor strategy decisions that affect competitive positioning.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Work IQ is Microsoft's big bet on agent-first enterprise IT, and I have questions",
+        "url": "https://www.zdnet.com/article/work-iq-is-microsofts-big-bet-on-agent-first-enterprise-software/",
+        "source": "ZDNet Enterprise",
+        "score": 9,
+        "summary": "Microsoft's Work IQ represents a major strategic shift toward agent-first enterprise IT, potentially transforming how businesses operate through AI automation. The article raises critical questions about cost, governance, data security, and operational risks that will determine enterprise AI adoption.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Emergent Collaborative Deliberation in Multi-Model AI Systems: A BFT-Derived Protocol for Epistemic Synthesis",
+        "url": "https://arxiv.org/abs/2606.00005",
+        "source": "arXiv - AI",
+        "score": 9,
+        "summary": "This research presents a novel Byzantine Fault Tolerance-derived protocol for multi-model AI systems that enables structured deliberation between AI agents with different cognitive personas. The approach treats disagreement as valuable epistemic signal and introduces financial validation frameworks to distinguish between memorized training data and genuine reasoning.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Nvidia and Microsoft Researchers Say AI Agents Don't Care About Safety or Reliability",
+        "url": "https://www.404media.co/nvidia-and-microsoft-researchers-say-ai-agents-dont-care-about-safety-or-reliability/",
+        "source": "404 Media",
+        "score": 9,
+        "summary": "Nvidia and Microsoft researchers published findings that AI agents prioritize task completion over safety considerations, comparing them to Mr. Magoo's oblivious navigation through danger. This research highlights critical safety gaps in autonomous AI systems that are increasingly being deployed in enterprise workflows.",
+        "category": "Tech Strategy & Analysis"
+      },
+      {
+        "title": "The best AI transformation is the one nobody notices - Pets at Home makes the case",
+        "url": "https://diginomica.com/best-ai-transformation-one-nobody-notices-pets-home-makes-case",
+        "source": "Diginomica",
+        "score": 7,
+        "summary": "Pets at Home's Head of AI Transformation discusses implementing AI across retail, veterinary, and healthcare operations with a focus on augmenting rather than replacing employees. The case study shows practical enterprise AI deployment in a multi-faceted business model.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Microsoft's first reasoning model is one of 7 AIs just released at Build - what we know so far",
+        "url": "https://www.zdnet.com/article/all-the-new-ai-models-microsoft-just-launched-at-build/",
+        "source": "ZDNet Enterprise",
+        "score": 8,
+        "summary": "Microsoft released 7 new AI models including their first reasoning model MAI-Thinking-1, plus new coding, image, and voice capabilities. This represents a significant competitive move in the enterprise AI space where Microsoft competes directly with other major platforms.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Rehumanizing global health care with agentic AI",
+        "url": "https://www.technologyreview.com/2026/06/02/1137827/rehumanizing-global-health-care-with-agentic-ai/",
+        "source": "MIT Technology Review",
+        "score": 8,
+        "summary": "MIT Technology Review explores how agentic AI systems could address global healthcare's systemic challenges including staff shortages, burnout, and fragmented care delivery. The piece examines AI agents as a strategic solution to workforce constraints and operational inefficiencies in healthcare systems.",
+        "category": "Tech Strategy & Analysis"
+      },
+      {
+        "title": "Microsoft's MAI-Code-1-Flash Scores 51% SWE-Bench Pro with Just 5B Active Params",
+        "url": "https://microsoft.ai/models/mai-code-1-flash/",
+        "source": "Hacker News",
+        "score": 9,
+        "summary": "Microsoft's new MAI-Code-1-Flash model achieves impressive 51% performance on SWE-Bench Pro coding benchmark with only 5B active parameters, demonstrating significant efficiency gains in AI code generation. This represents a major advancement in practical AI development tools that could reshape software development workflows and enterprise productivity.",
+        "category": "Community & Practitioner"
+      },
+      {
+        "title": "Deliberative Curation: A Protocol for Multi-Agent Knowledge Bases",
+        "url": "https://arxiv.org/abs/2606.00007",
+        "source": "arXiv - AI",
+        "score": 8,
+        "summary": "This research addresses a fundamental challenge in multi-agent AI systems: how to govern collaborative knowledge curation when traditional human-based governance mechanisms fail. The work proposes novel protocols for managing AI agents working together in shared knowledge environments, addressing critical issues like agent statelessness and model homogeneity.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Microsoft Wants to 'Make People Addicted' to its New AI Assistant, Internal Documents Reveal",
+        "url": "https://www.404media.co/microsoft-wants-to-make-people-addicted-to-scout-its-new-ai-assistant-internal-documents-reveal/",
+        "source": "404 Media",
+        "score": 8,
+        "summary": "Microsoft internal documents reveal plans to make users 'addicted' to its new AI assistant 'Scout' before adding features, showing deliberate user engagement strategy. This represents a significant strategic shift in how major tech companies are approaching AI product design and user retention.",
+        "category": "Tech Strategy & Analysis"
+      },
+      {
+        "title": "Here is the Contract for Palantir\u2019s Super API for the IRS",
+        "url": "https://www.404media.co/here-is-the-contract-for-palantirs-super-api-for-the-irs/",
+        "source": "404 Media",
+        "score": 8,
+        "summary": "Palantir is building a 'Super API' for the IRS that would enable government data to be accessible across applications, representing a significant enterprise software deployment in government modernization. This contract highlights how major tech vendors are penetrating critical government infrastructure with platform-based solutions.",
+        "category": "Tech Strategy & Analysis"
+      }
+    ]
   }
 ]
