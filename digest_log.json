@@ -4597,5 +4597,138 @@
         "category": "Tech Strategy & Analysis"
       }
     ]
+  },
+  {
+    "type": "daily",
+    "date": "2026-06-03",
+    "run_at": "2026-06-03T19:05:10.879730+00:00",
+    "feeds_fetched": 15,
+    "feeds_failed": 0,
+    "articles_scored": 68,
+    "articles_sent": 15,
+    "telegram_messages_sent": 17,
+    "big_picture": "**Today's Big Picture:** The enterprise software market is experiencing a decisive shift toward \"agentic AI\" - autonomous systems that can independently execute business processes - with major vendors like Snowflake, Salesforce, and Epicor repositioning their platforms around this capability rather than traditional AI assistants. However, real-world testing reveals a significant gap between vendor promises and current performance, as hands-on evaluations of Microsoft's Copilot agents show these systems are \"confidently bad\" at actual enterprise work, suggesting buyers should demand proof-of-concept pilots before major investments. For ERP consultants, this creates both opportunity and risk: while agentic AI represents the future of enterprise automation, the technology's current limitations mean implementation strategies must balance ambitious vendor roadmaps with pragmatic assessments of what these systems can actually deliver today.",
+    "articles": [
+      {
+        "title": "Snowflake Summit 2026 - \"An AI platform for every professional\", promises co-founder Beno\u00eet Dageville",
+        "url": "https://diginomica.com/snowflake-summit-2026-ai-platform-every-professional-promises-co-founder-benoit-dageville",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "Snowflake's co-founder outlines vision for AI platform serving all professionals, focusing on agentic enterprise applications. This represents a significant strategic pivot for the data platform company into broader AI-driven business automation.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Paranoid no more! Salesforce Chief Revenue Officer Miguel Milano on loving the massive win on offer from agentic AI",
+        "url": "https://diginomica.com/paranoid-no-more-salesforce-chief-revenue-officer-miguel-milano-loving-massive-win-offer-agentic-ai",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "Salesforce's Chief Revenue Officer discusses the company's strategic pivot to agentic AI 2.5 years ago and the massive business opportunities it presents. This represents a major enterprise software vendor's strategic direction on autonomous AI systems.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Re-inventing Marketing with agentic AI, the McKinsey method",
+        "url": "https://diginomica.com/re-inventing-marketing-agentic-ai-mckinsey-method",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "McKinsey discusses how agentic AI is transforming marketing functions at a major industry conference. The focus on autonomous AI agents in enterprise marketing represents a significant shift in how businesses approach customer engagement and operational efficiency.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "What OpenMDW 1.1 guarantees an enterprise that an Apache license on model weights can't",
+        "url": "https://diginomica.com/what-openmdw-11-guarantees-enterprise-apache-license-model-weights-cant",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "The Linux Foundation's OpenMDW 1.1 license addresses critical enterprise legal gaps around AI model deployment that Apache licenses don't cover. This tackles a fundamental barrier to enterprise AI adoption by clarifying intellectual property rights and usage guarantees for open AI models.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Snowflake Summit 2026- how Snowflake is making a strategic shift towards agentic AI",
+        "url": "https://diginomica.com/snowflake-summit-2026-how-snowflake-making-strategic-shift-towards-agentic-ai",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "Snowflake is making a strategic pivot toward agentic AI systems to enable autonomous enterprise operations. The focus on building an agentic control plane represents a significant shift in how enterprise data platforms approach AI-driven business automation.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Epicor Insights 2026 in review - Epicor makes their Cognitive ERP case, but did customers come along?",
+        "url": "https://diginomica.com/epicor-insights-2026-review-epicor-made-cognitive-erp-case-did-customers-come-along",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "Epicor is positioning their ERP platform around 'Cognitive ERP' and agentic AI capabilities, with customer adoption being a key question. The article provides ground-level insights from actual customer implementations at a major industry conference.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "AI and the new value equation - the three phases of the AI Transformation Journey (2/3)",
+        "url": "https://diginomica.com/ai-and-new-value-equation-three-phases-ai-transformation-journey-23",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "This appears to be a strategic analysis of AI transformation phases in enterprise settings, focusing on how businesses can move beyond simple cost reduction to unlock greater value from AI investments. The piece is co-authored by notable experts including Vala Afshar and provides framework thinking for enterprise AI strategy.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Do Matching Mechanisms Work with LLM Agents?",
+        "url": "https://arxiv.org/abs/2606.03030",
+        "source": "arXiv - Economics & Tech Policy",
+        "score": 9,
+        "summary": "Research examines how LLM agents perform in economic matching mechanisms, finding they generally outperform free negotiation markets in stability and efficiency while demonstrating higher truthful preference reporting. This addresses a critical question about AI agents' behavior in structured economic systems as they become more prevalent in enterprise decision-making.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "I paid Microsoft's premium Copilot agents to do my work - they were confidently bad at it",
+        "url": "https://www.zdnet.com/article/microsoft-365-premium-copilot-agents-hands-on/",
+        "source": "ZDNet Enterprise",
+        "score": 8,
+        "summary": "A hands-on evaluation of Microsoft's premium Copilot agents reveals significant performance gaps in real-world enterprise work scenarios. This practical assessment provides valuable insights into the current limitations of agentic AI deployment in business contexts.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "The Download: Trump\u2019s new AI order, and smart glasses for warfare",
+        "url": "https://www.technologyreview.com/2026/06/03/1138322/the-download-trump-ai-order-smart-glasses-warfare/",
+        "source": "MIT Technology Review",
+        "score": 8,
+        "summary": "Trump signed a new AI executive order after scrapping the previous one, which likely contains significant policy changes affecting AI development and deployment. The newsletter also covers smart glasses for military applications, indicating enterprise AI adoption in defense sectors.",
+        "category": "Tech Strategy & Analysis"
+      },
+      {
+        "title": "AURA: Action-Gated Memory for Robot Policies at Constant VRAM",
+        "url": "https://arxiv.org/abs/2606.02775",
+        "source": "arXiv - AI",
+        "score": 8,
+        "summary": "AURA introduces a memory-efficient architecture for embodied AI agents running on edge hardware, addressing the fundamental mismatch between datacenter-optimized AI systems and resource-constrained robotics applications. This research tackles a key infrastructure challenge for deploying AI agents in physical environments where memory bandwidth and storage limitations create new bottlenecks.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "ChatHealthAI: Aligning Electronic Health Record Representations with Large Language Models for Grounded Clinical Reasoning",
+        "url": "https://arxiv.org/abs/2606.02802",
+        "source": "arXiv - AI",
+        "score": 8,
+        "summary": "Research proposes ChatHealthAI, a framework bridging structured EHR data with large language models for clinical reasoning. This represents significant progress in enterprise healthcare AI applications where structured data integration with LLMs is crucial.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Google Is Quietly Buying Code From Play Store Developers to Train AI",
+        "url": "https://www.404media.co/google-is-quietly-buying-code-from-play-store-developers-to-train-ai/",
+        "source": "404 Media",
+        "score": 8,
+        "summary": "Google is running a confidential program to purchase code from Android developers to train AI systems. This represents a significant strategic shift toward acquiring real-world codebases for AI development rather than relying solely on publicly available or synthetic training data.",
+        "category": "Tech Strategy & Analysis"
+      },
+      {
+        "title": "I tested Microsoft Copilot Health with my real medical records - here's my verdict",
+        "url": "https://www.zdnet.com/article/microsoft-copilot-health-medical-issues/",
+        "source": "ZDNet Enterprise",
+        "score": 7,
+        "summary": "A hands-on test of Microsoft Copilot Health using real medical records, examining AI's ability to handle personal health data and answer medical questions. The evaluation likely covers practical utility, accuracy concerns, and privacy implications of enterprise AI in healthcare applications.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "An economist's case against the AI jobs-pocalypse",
+        "url": "https://www.platformer.news/an-economists-case-against-the-ai-jobs-pocalypse/",
+        "source": "Platformer",
+        "score": 7,
+        "summary": "A labor economist argues against AI causing mass permanent unemployment, while advocating for social safety net improvements. The piece addresses economic policy implications of AI adoption rather than focusing on specific enterprise AI applications.",
+        "category": "Tech Strategy & Analysis"
+      }
+    ]
   }
 ]
