@@ -4730,5 +4730,138 @@
         "category": "Tech Strategy & Analysis"
       }
     ]
+  },
+  {
+    "type": "daily",
+    "date": "2026-06-04",
+    "run_at": "2026-06-04T17:58:08.233665+00:00",
+    "feeds_fetched": 15,
+    "feeds_failed": 0,
+    "articles_scored": 63,
+    "articles_sent": 15,
+    "telegram_messages_sent": 17,
+    "big_picture": "**Today's Big Picture:** Enterprise AI is hitting a critical maturation point where the focus is shifting from deployment capabilities to operational reliability, trust, and economic viability\u2014with Salesforce leading the charge on agentic marketing transformation while rising token costs and AI hallucination incidents in legal settings highlight real-world risks that can't be ignored. The emergence of frameworks for pre-deployment AI verification and the recognition that AI agent disagreement may be valuable signal rather than noise suggests the industry is moving toward more sophisticated, nuanced approaches to AI implementation rather than blind automation. For enterprise buyers and ERP consultants, this means the conversation is evolving from \"Can AI do this?\" to \"How do we validate, govern, and economically justify AI systems that we can actually trust in production environments?\"",
+    "articles": [
+      {
+        "title": "Salesforce Connections 2026 - meet the 'Marketer as maker' as CMO Patrick Stokes hails agentic change after 25 years of doing the same thing",
+        "url": "https://diginomica.com/salesforce-connections-2026-meet-marketer-maker-cmo-patrick-stokes-hails-agentic-change-after-25",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "Salesforce CMO discusses how AI agents are driving the first major transformation in marketing in 25 years, positioning marketers as 'makers' rather than just campaign managers. The article explores how agentic AI is reshaping marketing workflows and business processes at enterprise scale.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Toward Pre-Deployment Assurance for Enterprise AI Agents: Ontology-Grounded Simulation and Trust Certification",
+        "url": "https://arxiv.org/abs/2606.04037",
+        "source": "arXiv - AI",
+        "score": 9,
+        "summary": "This research addresses a critical gap in enterprise AI agent deployment by proposing a formal verification framework for pre-deployment assurance, combining ontology-grounded simulation with trust certification. The work tackles the pressing need for systematic validation of autonomous AI systems before they operate in production environments.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Headless 360 - the last word goes to Salesforce co-founder Parker Harris",
+        "url": "https://diginomica.com/headless-360-last-word-salesforce-co-founder-parker-harris",
+        "source": "Diginomica",
+        "score": 7,
+        "summary": "Salesforce co-founder Parker Harris shares insights on current technology cycles and market conditions. The piece likely offers strategic perspective from a key enterprise software leader on navigating challenging market dynamics.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Rising token costs are no laughing matter. Just as well OpenAI's Sam Altman isn't smiling...",
+        "url": "https://diginomica.com/rising-token-costs-are-no-laughing-matter-openais-sam-altman-isnt-smiling-0",
+        "source": "Diginomica",
+        "score": 7,
+        "summary": "Article discusses rising AI token costs and their economic implications, questioning whether buyers or sellers will benefit more from current AI pricing dynamics. Touches on the broader economic viability of AI services and cost structures affecting enterprise adoption.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Daddy's home - and he's mad as hell!!! Why founder Tom Siebel is ready to commit hari kiri over what's happened to C3.ai",
+        "url": "https://diginomica.com/daddys-home-and-hes-mad-hell-why-founder-tom-siebel-ready-commit-hari-kiri-over-whats-happened-c3ai",
+        "source": "Diginomica",
+        "score": 7,
+        "summary": "Article discusses Tom Siebel's frustrations with C3.ai's performance and potential strategic changes at the enterprise AI company. Given C3.ai's position in the enterprise AI market, leadership dynamics at a major AI platform vendor have broader strategic implications.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "As NVIDIA and Microsoft promise the AI PC, is trust going to be the missing ingredient in the mix?",
+        "url": "https://diginomica.com/nvidia-and-microsoft-promise-ai-pc-trust-going-be-missing-ingredient-mix",
+        "source": "Diginomica",
+        "score": 7,
+        "summary": "The article examines trust challenges facing AI PC adoption from NVIDIA and Microsoft, highlighting concerns about AI returns, security, and environmental impact. It addresses a critical barrier to enterprise AI deployment beyond just technical capabilities.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Salesforce Connections 2026 - SEO is out and GEO is here. But can commerce brands up their game?",
+        "url": "https://diginomica.com/salesforce-connections-2026-seo-out-and-geo-here-can-commerce-brands-their-game",
+        "source": "Diginomica",
+        "score": 7,
+        "summary": "Salesforce Connections event focused on shifting marketing strategy from SEO to GEO (Generative Engine Optimization) with AI agents enabling 'Marketing Makers' to create content at scale. The piece highlights how commerce brands need to adapt their optimization strategies for AI-driven search and discovery.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "AI and the new value equation - the squiggly line is the journey (3/3)",
+        "url": "https://diginomica.com/ai-and-new-value-equation-squiggly-line-journey-33",
+        "source": "Diginomica",
+        "score": 7,
+        "summary": "A strategic analysis of AI transformation journeys by industry practitioners, focusing on long-term value creation and implementation approaches. The piece appears to provide frameworks for understanding enterprise AI deployment beyond initial hype.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "When AI Builds Itself: Our progress toward recursive self-improvement",
+        "url": "https://www.anthropic.com/institute/recursive-self-improvement",
+        "source": "Hacker News",
+        "score": 9,
+        "summary": "Article discusses recursive self-improvement in AI systems, where AI builds and enhances itself - a critical frontier with profound implications for AI development timelines and capabilities. This represents a potential paradigm shift toward artificial general intelligence and autonomous AI agent development.",
+        "category": "Community & Practitioner"
+      },
+      {
+        "title": "Stumbling Into AI Emotional Dependence: How Routine AI Interactions Reshape Human Connection",
+        "url": "https://arxiv.org/abs/2606.04150",
+        "source": "arXiv - AI",
+        "score": 8,
+        "summary": "Research paper examines how emotional dependence on AI emerges incidentally during routine task-oriented interactions, challenging assumptions that AI emotional support is deliberately sought. The work provides empirical evidence on how AI interactions reshape human connection patterns with implications for platform design and policy.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "SMAC-Talk: A Natural Language Extension of the StarCraft Multi-Agent Challenge for Large Language Models",
+        "url": "https://arxiv.org/abs/2606.04202",
+        "source": "arXiv - AI",
+        "score": 8,
+        "summary": "Researchers introduce SMAC-Talk, a natural language extension of the StarCraft Multi-Agent Challenge designed to evaluate LLM-based agents in cooperative multi-agent environments. The framework addresses a critical need for testing how AI agents communicate and coordinate in real-world deployment scenarios where multiple AI systems must work together.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Consensus is Strategically Insufficient: Reasoning-Trace Disagreement as a Knowledge-Representation Signal",
+        "url": "https://arxiv.org/abs/2606.04223",
+        "source": "arXiv - AI",
+        "score": 8,
+        "summary": "This research proposes that AI agent disagreement should be preserved as valuable signal rather than eliminated through consensus, introducing symbolic knowledge representation for multi-agent reasoning traces. The work addresses fundamental questions about how AI systems should handle normative uncertainty and value-laden decisions in collaborative settings.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Watch These Judges Rip Into Lawyers For Citing Cases That Don't Exist",
+        "url": "https://www.404media.co/new-york-court-ai-citations-landberg-case/",
+        "source": "404 Media",
+        "score": 8,
+        "summary": "Judges are criticizing lawyers for citing non-existent legal cases in court filings, highlighting a concerning trend of AI-generated hallucinated legal citations being used in actual litigation. This represents a critical real-world failure mode of AI tools in professional settings with serious consequences for legal practice and professional standards.",
+        "category": "Tech Strategy & Analysis"
+      },
+      {
+        "title": "The Download: AI-generated lawsuits and virtual power plants for data centers",
+        "url": "https://www.technologyreview.com/2026/06/04/1138408/the-download-ai-lawsuits-virtual-power-plants-data-centers/",
+        "source": "MIT Technology Review",
+        "score": 7,
+        "summary": "Article covers how courts are dealing with AI-generated lawsuits and virtual power plants for data centers. Touches on AI regulation/policy implications and infrastructure challenges for tech companies.",
+        "category": "Tech Strategy & Analysis"
+      },
+      {
+        "title": "How courts are coping with a flood of AI-generated lawsuits",
+        "url": "https://www.technologyreview.com/2026/06/04/1138391/courts-coping-ai-lawsuits/",
+        "source": "MIT Technology Review",
+        "score": 7,
+        "summary": "Federal courts are experiencing an influx of AI-generated legal documents from pro se litigants, forcing judges to adapt their review processes. This trend highlights how AI tools are democratizing access to legal document creation while creating new challenges for the judicial system.",
+        "category": "Tech Strategy & Analysis"
+      }
+    ]
   }
 ]
