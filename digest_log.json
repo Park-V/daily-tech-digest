@@ -4863,5 +4863,138 @@
         "category": "Tech Strategy & Analysis"
       }
     ]
+  },
+  {
+    "type": "daily",
+    "date": "2026-06-05",
+    "run_at": "2026-06-05T17:27:11.824534+00:00",
+    "feeds_fetched": 15,
+    "feeds_failed": 0,
+    "articles_scored": 66,
+    "articles_sent": 15,
+    "telegram_messages_sent": 17,
+    "big_picture": "**Today's Big Picture:** Enterprise software is rapidly pivoting toward agentic AI systems that promise autonomous workflows and dramatic operational transformation, as evidenced by OutSystems' new platform launch and real deployments at companies like Sanofi and ABN AMRO (which plans 25% workforce reduction by 2028). However, critical security vulnerabilities are emerging\u2014Meta's AI agent was easily manipulated to steal high-profile Instagram accounts\u2014while new research reveals that current AI benchmarks have massive blind spots, meaning models with identical scores can have vastly different real-world capabilities and error patterns. For enterprise buyers and ERP consultants, this creates a perfect storm requiring immediate focus on AI security frameworks and more sophisticated evaluation criteria beyond standard benchmarks, especially as regulatory pressure mounts with New York's data center moratorium signaling growing government intervention in AI infrastructure.",
+    "articles": [
+      {
+        "title": "ONE Amsterdam \u2013 OutSystems makes a category play via its Agentic Systems Platform",
+        "url": "https://diginomica.com/one-amsterdam-outsystems-category-play-agentic-systems-platform",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "OutSystems launched its Agentic Systems Platform at ONE Amsterdam, positioning itself in the enterprise AI agent orchestration space with governed deployment and industry-specific solutions. This represents a significant strategic move to capture the emerging market for enterprise-grade agentic AI systems.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Snowflake Summit 2026 - quality products will win out as AI revolutionizes \"the very nature of information work\", says CEO Sridhar Ramaswamy",
+        "url": "https://diginomica.com/snowflake-summit-2026-quality-products-will-win-out-ai-revolutionizes-very-nature-information-work",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "Snowflake CEO discusses how agentic AI will fundamentally transform information work and enterprise operations. The focus on AI agents reshaping business processes aligns with major enterprise software trends.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Why ABN AMRO's CEO  wishes the bank was going further and faster with the AI rollout set to take out a quarter of its headcount",
+        "url": "https://diginomica.com/why-abn-amros-ceo-wishes-bank-was-going-further-and-faster-ai-rollout-set-take-out-quarter-its",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "ABN AMRO's CEO discusses the bank's AI rollout plans that will eliminate 25% of workforce by 2028, with indications they may accelerate even further. This represents a major case study of AI's impact on enterprise operations and employment in financial services.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Snowflake Summit 2026 - how Sanofi uses Snowflake and AI agents to boost efficiency",
+        "url": "https://diginomica.com/snowflake-summit-2026-how-sanofi-uses-snowflake-and-ai-agents-boost-efficiency",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "Sanofi's implementation of Snowflake and AI agents represents a significant enterprise AI deployment in pharmaceuticals, showcasing how large organizations are moving from fragmented data environments to automated workflows. This demonstrates real-world enterprise AI adoption with measurable efficiency gains in a regulated industry.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "The Meta hack shows there\u2019s more to AI security than Mythos",
+        "url": "https://www.technologyreview.com/2026/06/05/1138437/the-meta-hack-shows-theres-more-to-ai-security-than-mythos/",
+        "source": "MIT Technology Review",
+        "score": 9,
+        "summary": "Attackers exploited Meta's AI customer support agent to steal Instagram accounts by simply requesting account email changes, including breaking into the Obama White House account. This demonstrates critical security vulnerabilities in AI agent systems that can be manipulated through social engineering.",
+        "category": "Tech Strategy & Analysis"
+      },
+      {
+        "title": "How Accruent is taking physical asset management into the agentic era",
+        "url": "https://diginomica.com/how-accruent-taking-physical-asset-management-agentic-era",
+        "source": "Diginomica",
+        "score": 7,
+        "summary": "Article discusses how Accruent is implementing agentic AI for physical asset management in the built environment, representing enterprise software evolution toward autonomous workflows. Covers practical AI deployment in facilities and infrastructure management with strategic implications for how enterprises manage physical assets.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "The Download: AI hacking beyond Mythos, and chatbots\u2019 impact on our brains",
+        "url": "https://www.technologyreview.com/2026/06/05/1138452/the-download-ai-hacking-mythos-chatbots-brain-impacts/",
+        "source": "MIT Technology Review",
+        "score": 7,
+        "summary": "MIT Technology Review newsletter covering AI security vulnerabilities in Meta's customer support systems and research on chatbots' cognitive effects. Highlights real-world AI agent security risks and broader implications for enterprise AI deployment.",
+        "category": "Tech Strategy & Analysis"
+      },
+      {
+        "title": "The Evaluation Blind Spot: A Stereological Theory of Benchmark Coverage for Large Language Models",
+        "url": "https://arxiv.org/abs/2606.05169",
+        "source": "arXiv - Machine Learning",
+        "score": 8,
+        "summary": "Academic paper presents mathematical theory showing that current LLM benchmarks have significant 'blind spots' - different models with same benchmark scores can have vastly different actual capabilities. The research demonstrates that major leaderboards structurally miss capability differences by orders of magnitude compared to observed score gaps.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Has Microsoft Lost Its Mojo (Again)?",
+        "url": "https://www.wired.com/story/has-microsoft-lost-its-mojo-again/",
+        "source": "Wired",
+        "score": 8,
+        "summary": "Critical analysis of Microsoft's AI strategy execution challenges, featuring internal perspective from VP Scott Hanselman on the company's competitive position. Addresses real concerns about AI product adoption and GitHub issues affecting Microsoft's broader tech ecosystem play.",
+        "category": "Broad Tech News"
+      },
+      {
+        "title": "Launch HN: General Instinct (YC P26) \u2013 Frontier models on edge devices",
+        "url": "https://news.ycombinator.com/item?id=48414869",
+        "source": "Hacker News",
+        "score": 8,
+        "summary": "YC-backed startup General Instinct is launching frontier AI models that can run on edge devices, potentially addressing latency, privacy, and cost issues with cloud-based AI deployment. This represents a significant technical achievement in model compression and optimization that could reshape how enterprises deploy AI capabilities.",
+        "category": "Community & Practitioner"
+      },
+      {
+        "title": "Can AI Refute Economic Theory? Evidence from Beyond the Knowledge Cutoff",
+        "url": "https://arxiv.org/abs/2606.05383",
+        "source": "arXiv - Economics & Tech Policy",
+        "score": 7,
+        "summary": "Research tests whether AI models can independently identify errors in published economic theory papers, finding that even advanced models like ChatGPT Pro require substantial human guidance to locate true errors. The study raises important questions about AI's current limitations in rigorous analytical tasks and potential data contamination issues.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Leveraging LLMs for Unstructured Claims Data Analysis",
+        "url": "https://arxiv.org/abs/2606.06089",
+        "source": "arXiv - Economics & Tech Policy",
+        "score": 7,
+        "summary": "Research demonstrates practical application of LLMs to extract structured data from unstructured insurance claims documents like medical records and adjuster notes. Shows enterprise AI moving beyond chat into core business processes like actuarial analysis and risk assessment.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "ICE\u2019s Plan to Let Cops Around the Country Scan Faces to Verify Immigration Status",
+        "url": "https://www.404media.co/ices-plan-to-let-cops-around-the-country-scan-faces-to-verify-immigration-status/",
+        "source": "404 Media",
+        "score": 7,
+        "summary": "ICE plans to expand facial recognition technology access to over a thousand law enforcement agencies for immigration status verification. This represents a significant scaling of government surveillance technology with implications for AI policy, civil liberties, and the broader deployment of facial recognition systems.",
+        "category": "Tech Strategy & Analysis"
+      },
+      {
+        "title": "New York lawmakers pass one-year ban on new data centers",
+        "url": "https://www.theverge.com/policy/944041/new-york-data-center-moratorium",
+        "source": "The Verge",
+        "score": 8,
+        "summary": "New York passes first statewide one-year moratorium on new large data centers to assess environmental and energy impacts. This represents significant regulatory intervention that could affect cloud providers and AI companies' expansion plans.",
+        "category": "Broad Tech News"
+      },
+      {
+        "title": "ERRORQUAKE: Heavy-Tailed Error Severity Distributions in Open-Weight Large Language Models",
+        "url": "https://arxiv.org/abs/2606.05170",
+        "source": "arXiv - Machine Learning",
+        "score": 7,
+        "summary": "Research introduces a novel benchmark for measuring error severity distributions in open-weight LLMs, revealing that models with similar accuracy rates have vastly different patterns of harmful vs. minor errors. This addresses a critical gap in AI evaluation where current benchmarks treat fabricated court rulings the same as wrong dates.",
+        "category": "AI & Research"
+      }
+    ]
   }
 ]
