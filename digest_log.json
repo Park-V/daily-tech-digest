@@ -5086,5 +5086,14 @@
         "category": "Community & Practitioner"
       }
     ]
+  },
+  {
+    "type": "weekly",
+    "date": "2026-06-07",
+    "run_at": "2026-06-07T16:53:26.415495+00:00",
+    "days_covered": 8,
+    "articles_featured": 22,
+    "telegram_messages_sent": 10,
+    "big_picture": "This week highlighted a critical inflection point for enterprise AI as major vendors like Salesforce, Microsoft, and Snowflake push aggressively into agentic AI deployment while real-world implementations reveal significant gaps between promise and performance\u2014from Microsoft's \"confidently bad\" Copilot agents to security vulnerabilities in Meta's AI systems. Enterprise buyers are simultaneously grappling with the financial reality of AI token costs and the operational challenge of moving beyond pilot projects, while regulatory uncertainty grows with proposed federal AI preemption laws and quantum computing threats to existing security infrastructure. For ERP consultants and enterprise software buyers, the message is clear: prepare for agent-first business processes that will fundamentally reshape work (as evidenced by ABN AMRO's 25% workforce reduction plans), but implement with rigorous cost controls, security frameworks, and realistic performance expectations rather than vendor hype."
   }
 ]
