@@ -5095,5 +5095,138 @@
     "articles_featured": 22,
     "telegram_messages_sent": 10,
     "big_picture": "This week highlighted a critical inflection point for enterprise AI as major vendors like Salesforce, Microsoft, and Snowflake push aggressively into agentic AI deployment while real-world implementations reveal significant gaps between promise and performance\u2014from Microsoft's \"confidently bad\" Copilot agents to security vulnerabilities in Meta's AI systems. Enterprise buyers are simultaneously grappling with the financial reality of AI token costs and the operational challenge of moving beyond pilot projects, while regulatory uncertainty grows with proposed federal AI preemption laws and quantum computing threats to existing security infrastructure. For ERP consultants and enterprise software buyers, the message is clear: prepare for agent-first business processes that will fundamentally reshape work (as evidenced by ABN AMRO's 25% workforce reduction plans), but implement with rigorous cost controls, security frameworks, and realistic performance expectations rather than vendor hype."
+  },
+  {
+    "type": "daily",
+    "date": "2026-06-08",
+    "run_at": "2026-06-08T18:10:20.346830+00:00",
+    "feeds_fetched": 15,
+    "feeds_failed": 0,
+    "articles_scored": 65,
+    "articles_sent": 15,
+    "telegram_messages_sent": 17,
+    "big_picture": "**Today's Big Picture:** Enterprise AI adoption is hitting a critical maturity wall where the gap between marketing promises and production reality is forcing companies to develop new frameworks like ECSIT and context engineering to bridge customer trust deficits and operational value gaps. Meanwhile, a perfect storm of security vulnerabilities (Microsoft GitHub breaches, ChatGPT memory poisoning) and geopolitical tensions (Europe and UK ditching US tech) is compelling enterprise buyers to fundamentally reassess their AI vendor strategies and digital sovereignty postures. For ERP consultants, this means immediately auditing client AI implementations for security risks while preparing for a fragmented technology landscape where formal verification frameworks and bias detection will become table stakes for any AI-enabled business process.",
+    "articles": [
+      {
+        "title": "Salesforce Connections 2026 - if Marketers trust agentic AI, but customers don't, what's to be done? You need an ECSIT strategy, says MIT",
+        "url": "https://diginomica.com/salesforce-connections-2026-if-marketers-trust-agentic-ai-customers-dont-whats-be-done-you-need",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "MIT researcher presents ECSIT strategy framework to address customer distrust of agentic AI systems while marketers increasingly adopt them. Highlights critical gap between enterprise AI adoption and customer acceptance that could impact business strategy.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "When old is new again - how Context Engineering could be the key to narrowing the gap between AI capabilities and production value",
+        "url": "https://diginomica.com/when-old-new-again-how-context-engineering-could-be-key-narrowing-gap-between-ai-capabilities-and",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "Cognizant CEO outlines a strategic framework for enterprises to bridge the gap between AI capabilities and production value through context engineering. The piece addresses the critical challenge of translating AI investments into measurable business outcomes.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Cisco Live - how Cloud Control harnesses the power of agents in a post-Mythos world",
+        "url": "https://diginomica.com/cisco-live-how-cloud-control-harnesses-power-agents-post-mythos-world",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "Cisco's Cloud Control represents a significant enterprise platform play leveraging AI agents for business automation, particularly relevant given the post-Mythos shift toward agentic AI systems. This appears to be Cisco's strategic move into enterprise workflow automation using autonomous agents.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Microsoft Hacked to Deliver Malware to Claude and Gemini Users",
+        "url": "https://www.404media.co/microsoft-hacked-to-deliver-malware-to-claude-and-gemini-users/",
+        "source": "404 Media",
+        "score": 9,
+        "summary": "Microsoft shut down over 70 GitHub repositories after hackers pushed malware targeting AI coding agent users' credentials. This represents a significant security breach affecting enterprise AI tooling and highlights vulnerabilities in the AI agent ecosystem.",
+        "category": "Tech Strategy & Analysis"
+      },
+      {
+        "title": "Apple WWDC 2026: Live updates on iOS 27, Siri and Tim Cook's last event as CEO",
+        "url": "https://www.zdnet.com/article/apple-wwdc-live-blog-06-08-2026/",
+        "source": "ZDNet Enterprise",
+        "score": 8,
+        "summary": "Apple's WWDC 2026 with potential CEO transition from Tim Cook represents a major leadership and strategic inflection point for one of tech's most influential companies. The event likely covers iOS 27 and Siri improvements, which could signal Apple's enterprise AI strategy and competitive positioning against other platform players.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "ChatGPT's new memory upgrade is powerful - and could poison every answer it gives you",
+        "url": "https://www.zdnet.com/article/chatgpts-new-memory-upgrade-is-powerful-and-could-poison-every-answer-it-gives-you/",
+        "source": "ZDNet Enterprise",
+        "score": 8,
+        "summary": "ZDNet reports on ChatGPT's memory upgrade revealing critical flaws where outdated assumptions and incorrect personal profiling could systematically distort future AI responses. This highlights fundamental reliability issues for enterprise AI deployment where persistent memory errors could compound over time.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Import AI 460: Reward hacking society, RSI data from Anthropic; and RL-based quadcopter racing",
+        "url": "https://jack-clark.net/2026/06/08/import-ai-460-reward-hacking-society-rsi-data-from-anthropic-and-rl-based-quadcopter-racing/",
+        "source": "Import AI",
+        "score": 7,
+        "summary": "Import AI newsletter covering reward hacking in society, RSI data from Anthropic, and RL-based quadcopter racing. Includes research on how reward optimization strategies from AI environments might apply to real-world systems.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "All the Ways Europe Is Ditching American Technology",
+        "url": "https://www.wired.com/story/all-the-ways-europe-is-ditching-american-technology/",
+        "source": "Wired",
+        "score": 9,
+        "summary": "Europe is systematically moving away from US Big Tech across multiple sectors and organizations, representing a major geopolitical shift in technology dependence. This trend reflects broader concerns about digital sovereignty, data control, and strategic autonomy that could reshape global tech market dynamics.",
+        "category": "Broad Tech News"
+      },
+      {
+        "title": "SafeGene: Reusable Adapters for Transferable Safety Alignment",
+        "url": "https://arxiv.org/abs/2606.06519",
+        "source": "arXiv - AI",
+        "score": 8,
+        "summary": "SafeGene proposes reusable safety adapters to address a critical enterprise AI challenge: how to maintain AI safety alignment when models are fine-tuned for specific business tasks. This addresses the practical deployment problem where customized AI systems lose safety guardrails, creating ongoing security and compliance risks for organizations.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Lean4Agent: Formal Modeling and Verification for Agent Workflow and Trajectory",
+        "url": "https://arxiv.org/abs/2606.06523",
+        "source": "arXiv - AI",
+        "score": 8,
+        "summary": "Researchers propose Lean4Agent, a formal verification framework for AI agent workflows using mathematical proof systems. This addresses a critical gap in making AI agents reliable for enterprise deployment by providing formal methods to specify, verify, and debug multi-step autonomous workflows.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "MacArena: Benchmarking Computer Use Agents on an Online macOS Environment",
+        "url": "https://arxiv.org/abs/2606.06560",
+        "source": "arXiv - Machine Learning",
+        "score": 8,
+        "summary": "New research introduces MacArena, a comprehensive benchmark for evaluating computer-use agents on macOS, addressing a significant gap in AI agent evaluation infrastructure. This work advances the development of AI agents that can autonomously operate desktop applications through visual interfaces.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "The UK Is Betting on a Billion-Dollar AI Supercomputer to Kick Its Addiction to US Tech",
+        "url": "https://www.wired.com/story/uk-supercomputer-investment-ai-homegrown-semiconductor/",
+        "source": "Wired",
+        "score": 8,
+        "summary": "The UK government is launching a billion-dollar AI supercomputer initiative to reduce dependence on US technology and support domestic chip startups. This represents a significant geopolitical and strategic shift in technology infrastructure with implications for global AI competitiveness.",
+        "category": "Broad Tech News"
+      },
+      {
+        "title": "Detecting and Mitigating Bias by Treating Fairness as a Symmetry Operation",
+        "url": "https://arxiv.org/abs/2606.06514",
+        "source": "arXiv - AI",
+        "score": 7,
+        "summary": "Research paper proposes treating fairness as a symmetry operation to detect and mitigate bias in machine learning systems, achieving 90% violation reduction in testing. The work addresses a critical challenge for AI deployment in high-stakes business and socioeconomic applications.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Elmes*: Automated Construction of Fine-Grained Evaluation Rubrics for Large Language Models in Long-Tail Educational Scenarios",
+        "url": "https://arxiv.org/abs/2606.06546",
+        "source": "arXiv - Machine Learning",
+        "score": 7,
+        "summary": "Academic research introduces Elmes*, a framework for automatically generating evaluation rubrics to assess how LLMs teach rather than just what they know, using multi-agent systems for teacher-student-judge interactions. This addresses a key challenge in deploying AI for educational applications by enabling scalable assessment of pedagogical effectiveness.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Meta Deletes Face-Recognition System From Its Smart Glasses App After WIRED Report",
+        "url": "https://www.wired.com/story/meta-removes-face-recognition-code-meta-ai-app-smart-glasses/",
+        "source": "Wired",
+        "score": 7,
+        "summary": "Meta removed face-recognition code from its smart glasses companion app following WIRED's investigation, but won't explain why or confirm future plans. This highlights ongoing privacy concerns and regulatory pressures around AI-powered consumer devices.",
+        "category": "Broad Tech News"
+      }
+    ]
   }
 ]
