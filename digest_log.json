@@ -5228,5 +5228,130 @@
         "category": "Broad Tech News"
       }
     ]
+  },
+  {
+    "type": "daily",
+    "date": "2026-06-09",
+    "run_at": "2026-06-09T17:32:27.572008+00:00",
+    "feeds_fetched": 15,
+    "feeds_failed": 0,
+    "articles_scored": 24,
+    "articles_sent": 14,
+    "telegram_messages_sent": 16,
+    "big_picture": "Today's digest spans key developments in enterprise AI and ERP \u2014 worth a careful read for any solution consultant staying ahead of the curve.",
+    "articles": [
+      {
+        "title": "Salesforce Connections 2026 - is Slack becoming Salesforce's best weapon in the pursuit of agentic UX?",
+        "url": "https://diginomica.com/salesforce-connections-2026-slack-becoming-salesforces-best-weapon-pursuit-agentic-ux",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "Article explores how Slack is becoming central to Salesforce's strategy for agentic AI experiences, with focus on hybrid human-AI workflows at enterprise scale. Covers real customer implementations and the strategic positioning of conversational interfaces for AI agents.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "AI makes most appdev management layers redundant, says Unit4's CTO",
+        "url": "https://diginomica.com/ai-makes-most-appdev-management-layers-redundant-says-unit4s-cto",
+        "source": "Diginomica",
+        "score": 8,
+        "summary": "Unit4's CTO argues that AI is fundamentally reshaping software development by making traditional management layers redundant and requiring new skills focused on intent, context, and governance. This represents a significant organizational transformation in how enterprise software companies structure their engineering teams.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Syll: Open-Source Personal Automation with Cross-Surface Execution",
+        "url": "https://arxiv.org/abs/2606.07594",
+        "source": "arXiv - AI",
+        "score": 9,
+        "summary": "Syll is an open-source multimodal AI agent framework that enables cross-platform automation across APIs, command lines, and GUIs, addressing a key challenge in enterprise AI deployment. This represents a significant technical breakthrough in agentic AI systems that could reshape how businesses implement autonomous workflows.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "What might a digital Euro mean for the CIO?",
+        "url": "https://diginomica.com/what-might-digital-euro-mean-cio",
+        "source": "Diginomica",
+        "score": 7,
+        "summary": "Article discusses how a digital euro could reshape B2B payments and enterprise finance systems, which would impact CIO technology decisions and financial software infrastructure. This represents a significant policy-driven technology shift affecting enterprise systems and payment platforms.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Bloomreach launches its Marketing Agent. Here's why retail Marketers should pay attention",
+        "url": "https://diginomica.com/bloomreach-launches-its-marketing-agent-heres-why-retail-marketers-should-pay-attention",
+        "source": "Diginomica",
+        "score": 7,
+        "summary": "Bloomreach launches Loomi Marketing Agent, an AI agent designed to assist retail marketers with automated marketing tasks. This represents the continued expansion of agentic AI into specialized enterprise workflows beyond general productivity tools.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Enterprise hits and misses - can AI fix Marketing, or is the treadmill just changing gears? Plus: Bain issues a data wake-up call on the ROI of AI",
+        "url": "https://diginomica.com/enterprise-hits-and-misses-can-ai-fix-marketing-or-treadmill-just-changing-gears-plus-bain-issues",
+        "source": "Diginomica",
+        "score": 7,
+        "summary": "Analysis of AI's potential to transform marketing functions and Bain's assessment of AI ROI challenges in enterprise settings. Covers both the strategic promise and practical limitations of AI deployment in business contexts.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "Anthropic's new Claude Fable 5 is a nerfed Mythos with guardrails attached",
+        "url": "https://www.zdnet.com/article/anthropiclaude-fable-5-nerfed-mythos-with-guardrails/",
+        "source": "ZDNet Enterprise",
+        "score": 8,
+        "summary": "Anthropic releases Claude Fable 5, bringing advanced AI coding capabilities to general users but with security restrictions and pricing considerations. This represents a significant product launch in the competitive AI foundation model space with potential enterprise implications.",
+        "category": "Enterprise & ERP"
+      },
+      {
+        "title": "A case study of evaluating AI agents on a neuroscience data-to-discovery pipeline",
+        "url": "https://arxiv.org/abs/2606.07718",
+        "source": "arXiv - AI",
+        "score": 8,
+        "summary": "Research study evaluates AI coding agents on real scientific workflows, testing them on complex neuroscience data pipelines that typically take domain experts days to months to complete. This represents a significant step toward autonomous AI systems handling substantial, domain-specific tasks beyond current benchmarks.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Unintended Consequences of Recommender System Interventions: Evidence from a Field Experiment",
+        "url": "https://arxiv.org/abs/2606.08265",
+        "source": "arXiv - Economics & Tech Policy",
+        "score": 8,
+        "summary": "Field experiment reveals that AI recommendation system interventions can backfire through adaptive learning, with sleep reminders paradoxically increasing late-night usage by 14.75%. This demonstrates critical unintended consequences when platforms deploy behavioral nudges without accounting for system learning dynamics.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "PathoSage: Towards Multi-Source Evidence Adjudication in Pathology via Experience-Aware Agentic Workflow",
+        "url": "https://arxiv.org/abs/2606.07549",
+        "source": "arXiv - AI",
+        "score": 7,
+        "summary": "PathoSage introduces a multi-stage agentic workflow for pathology that addresses hallucination and evidence conflicts in medical AI systems. The framework separates knowledge retrieval from decision-making to improve reliability in computational pathology applications.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "OmniMem: Perturbation-aware Memory Compression for Streaming Audio-Visual LLMs",
+        "url": "https://arxiv.org/abs/2606.07577",
+        "source": "arXiv - AI",
+        "score": 7,
+        "summary": "OmniMem presents a memory-efficient streaming framework for audio-visual large language models, addressing the fundamental scalability challenge of processing long-form video content. The research introduces modality-aware memory allocation to handle the token imbalance between visual and audio inputs in streaming scenarios.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Why Limit the Residual Stream to Layers and Not Tokens? Persistent Memory for Continuous Latent Reasoning",
+        "url": "https://arxiv.org/abs/2606.07720",
+        "source": "arXiv - AI",
+        "score": 7,
+        "summary": "Research paper proposes persistent memory architecture for LLMs to overcome 'concept bottleneck' where intermediate reasoning states get overwritten. Extends Chain of Continuous Thought paradigm to maintain critical facts across reasoning passes.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "Offline Reinforcement Learning for Plasma Control in Nuclear Fusion: Codebase and Benchmark",
+        "url": "https://arxiv.org/abs/2606.07550",
+        "source": "arXiv - Machine Learning",
+        "score": 7,
+        "summary": "Researchers introduce RL4F, a standardized benchmark for training AI agents to control plasma in nuclear fusion reactors using offline reinforcement learning from historical data. This addresses a critical infrastructure challenge where AI must learn complex control tasks without costly real-world experimentation.",
+        "category": "AI & Research"
+      },
+      {
+        "title": "SPIN: Decentralized Swarm Control via Tensorized Policy Coordination",
+        "url": "https://arxiv.org/abs/2606.07557",
+        "source": "arXiv - Machine Learning",
+        "score": 7,
+        "summary": "Academic research on SPIN framework for decentralized multi-agent swarm coordination using tensor networks to reduce computational complexity. The work addresses fundamental scalability challenges in distributed AI agent systems through novel mathematical approaches.",
+        "category": "AI & Research"
+      }
+    ]
   }
 ]
