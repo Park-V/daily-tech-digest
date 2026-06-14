@@ -5353,5 +5353,14 @@
         "category": "AI & Research"
       }
     ]
+  },
+  {
+    "type": "weekly",
+    "date": "2026-06-14",
+    "run_at": "2026-06-14T16:56:34.305019+00:00",
+    "days_covered": 3,
+    "articles_featured": 8,
+    "telegram_messages_sent": 5,
+    "big_picture": "This week brought notable developments across enterprise AI, ERP, and automation \u2014 themes worth tracking as the market accelerates."
   }
 ]
